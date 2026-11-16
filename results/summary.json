@@ -1,0 +1,914 @@
+{
+ "line": 160,
+ "card": "matharena-selection-replay",
+ "evidence_level": "前瞻（预注册冻结后首次取数与计算）；数据为公开缓存的回顾性记录",
+ "data": {
+  "repo": "MathArena/aime_2025_outputs",
+  "revision": "16e93d3bb9b0a25ea9422893464d46b3c5ff0ae9",
+  "file": "data/train-00000-of-00001.parquet",
+  "url": "https://huggingface.co/datasets/MathArena/aime_2025_outputs/resolve/16e93d3bb9b0a25ea9422893464d46b3c5ff0ae9/data/train-00000-of-00001.parquet",
+  "license": "cc-by-nc-sa-4.0",
+  "bytes": 142685920,
+  "sha256": "c7980ee5518384624cb690d08b03bfff5892d19141b7ca1de666a2e863b0e589",
+  "snapshot_commit_date_utc": "2026-09-11T10:55:10.000Z"
+ },
+ "gates": {
+  "entry": true,
+  "cost": true,
+  "execution": true,
+  "seed_collision_free": true
+ },
+ "frame": {
+  "n_candidates": 30,
+  "n_F": 30,
+  "target": 30,
+  "excluded": {}
+ },
+ "primary": {
+  "rotation": 0,
+  "K": 28,
+  "F": 30,
+  "S": [
+   [
+    "None",
+    "1"
+   ],
+   [
+    "None",
+    "2"
+   ],
+   [
+    "None",
+    "3"
+   ],
+   [
+    "None",
+    "4"
+   ],
+   [
+    "None",
+    "5"
+   ],
+   [
+    "None",
+    "6"
+   ],
+   [
+    "None",
+    "7"
+   ],
+   [
+    "None",
+    "8"
+   ],
+   [
+    "None",
+    "10"
+   ],
+   [
+    "None",
+    "11"
+   ],
+   [
+    "None",
+    "12"
+   ],
+   [
+    "None",
+    "13"
+   ],
+   [
+    "None",
+    "14"
+   ],
+   [
+    "None",
+    "15"
+   ],
+   [
+    "None",
+    "17"
+   ],
+   [
+    "None",
+    "18"
+   ],
+   [
+    "None",
+    "19"
+   ],
+   [
+    "None",
+    "20"
+   ],
+   [
+    "None",
+    "21"
+   ],
+   [
+    "None",
+    "22"
+   ],
+   [
+    "None",
+    "23"
+   ],
+   [
+    "None",
+    "24"
+   ],
+   [
+    "None",
+    "25"
+   ],
+   [
+    "None",
+    "26"
+   ],
+   [
+    "None",
+    "27"
+   ],
+   [
+    "None",
+    "28"
+   ],
+   [
+    "None",
+    "29"
+   ],
+   [
+    "None",
+    "30"
+   ]
+  ],
+  "A1_S": {
+   "exact": "1/84",
+   "value": 0.011905
+  },
+  "B1_S": {
+   "exact": "10/21",
+   "value": 0.47619
+  },
+  "G_naive": {
+   "exact": "10/21",
+   "value": 0.47619
+  },
+  "R": {
+   "exact": "1/84",
+   "value": 0.011905
+  },
+  "D": {
+   "exact": "13/28",
+   "value": 0.464286
+  },
+  "D_F": {
+   "exact": "41/90",
+   "value": 0.455556
+  },
+  "D_minus_D_F": {
+   "exact": "11/1260",
+   "value": 0.00873
+  }
+ },
+ "sensitivity_rotations": [
+  {
+   "rotation": 0,
+   "K": 28,
+   "F": 30,
+   "S": [
+    [
+     "None",
+     "1"
+    ],
+    [
+     "None",
+     "2"
+    ],
+    [
+     "None",
+     "3"
+    ],
+    [
+     "None",
+     "4"
+    ],
+    [
+     "None",
+     "5"
+    ],
+    [
+     "None",
+     "6"
+    ],
+    [
+     "None",
+     "7"
+    ],
+    [
+     "None",
+     "8"
+    ],
+    [
+     "None",
+     "10"
+    ],
+    [
+     "None",
+     "11"
+    ],
+    [
+     "None",
+     "12"
+    ],
+    [
+     "None",
+     "13"
+    ],
+    [
+     "None",
+     "14"
+    ],
+    [
+     "None",
+     "15"
+    ],
+    [
+     "None",
+     "17"
+    ],
+    [
+     "None",
+     "18"
+    ],
+    [
+     "None",
+     "19"
+    ],
+    [
+     "None",
+     "20"
+    ],
+    [
+     "None",
+     "21"
+    ],
+    [
+     "None",
+     "22"
+    ],
+    [
+     "None",
+     "23"
+    ],
+    [
+     "None",
+     "24"
+    ],
+    [
+     "None",
+     "25"
+    ],
+    [
+     "None",
+     "26"
+    ],
+    [
+     "None",
+     "27"
+    ],
+    [
+     "None",
+     "28"
+    ],
+    [
+     "None",
+     "29"
+    ],
+    [
+     "None",
+     "30"
+    ]
+   ],
+   "A1_S": {
+    "exact": "1/84",
+    "value": 0.011905
+   },
+   "B1_S": {
+    "exact": "10/21",
+    "value": 0.47619
+   },
+   "G_naive": {
+    "exact": "10/21",
+    "value": 0.47619
+   },
+   "R": {
+    "exact": "1/84",
+    "value": 0.011905
+   },
+   "D": {
+    "exact": "13/28",
+    "value": 0.464286
+   },
+   "D_F": {
+    "exact": "41/90",
+    "value": 0.455556
+   },
+   "D_minus_D_F": {
+    "exact": "11/1260",
+    "value": 0.00873
+   }
+  },
+  {
+   "rotation": 1,
+   "K": 29,
+   "F": 30,
+   "S": [
+    [
+     "None",
+     "2"
+    ],
+    [
+     "None",
+     "3"
+    ],
+    [
+     "None",
+     "4"
+    ],
+    [
+     "None",
+     "5"
+    ],
+    [
+     "None",
+     "6"
+    ],
+    [
+     "None",
+     "7"
+    ],
+    [
+     "None",
+     "8"
+    ],
+    [
+     "None",
+     "9"
+    ],
+    [
+     "None",
+     "10"
+    ],
+    [
+     "None",
+     "11"
+    ],
+    [
+     "None",
+     "12"
+    ],
+    [
+     "None",
+     "13"
+    ],
+    [
+     "None",
+     "14"
+    ],
+    [
+     "None",
+     "15"
+    ],
+    [
+     "None",
+     "16"
+    ],
+    [
+     "None",
+     "17"
+    ],
+    [
+     "None",
+     "18"
+    ],
+    [
+     "None",
+     "19"
+    ],
+    [
+     "None",
+     "20"
+    ],
+    [
+     "None",
+     "21"
+    ],
+    [
+     "None",
+     "22"
+    ],
+    [
+     "None",
+     "23"
+    ],
+    [
+     "None",
+     "24"
+    ],
+    [
+     "None",
+     "25"
+    ],
+    [
+     "None",
+     "26"
+    ],
+    [
+     "None",
+     "27"
+    ],
+    [
+     "None",
+     "28"
+    ],
+    [
+     "None",
+     "29"
+    ],
+    [
+     "None",
+     "30"
+    ]
+   ],
+   "A1_S": {
+    "exact": "1/29",
+    "value": 0.034483
+   },
+   "B1_S": {
+    "exact": "14/29",
+    "value": 0.482759
+   },
+   "G_naive": {
+    "exact": "14/29",
+    "value": 0.482759
+   },
+   "R": {
+    "exact": "1/29",
+    "value": 0.034483
+   },
+   "D": {
+    "exact": "13/29",
+    "value": 0.448276
+   },
+   "D_F": {
+    "exact": "7/15",
+    "value": 0.466667
+   },
+   "D_minus_D_F": {
+    "exact": "-8/435",
+    "value": -0.018391
+   }
+  },
+  {
+   "rotation": 2,
+   "K": 29,
+   "F": 30,
+   "S": [
+    [
+     "None",
+     "1"
+    ],
+    [
+     "None",
+     "2"
+    ],
+    [
+     "None",
+     "3"
+    ],
+    [
+     "None",
+     "4"
+    ],
+    [
+     "None",
+     "5"
+    ],
+    [
+     "None",
+     "6"
+    ],
+    [
+     "None",
+     "7"
+    ],
+    [
+     "None",
+     "8"
+    ],
+    [
+     "None",
+     "9"
+    ],
+    [
+     "None",
+     "10"
+    ],
+    [
+     "None",
+     "11"
+    ],
+    [
+     "None",
+     "12"
+    ],
+    [
+     "None",
+     "13"
+    ],
+    [
+     "None",
+     "14"
+    ],
+    [
+     "None",
+     "15"
+    ],
+    [
+     "None",
+     "17"
+    ],
+    [
+     "None",
+     "18"
+    ],
+    [
+     "None",
+     "19"
+    ],
+    [
+     "None",
+     "20"
+    ],
+    [
+     "None",
+     "21"
+    ],
+    [
+     "None",
+     "22"
+    ],
+    [
+     "None",
+     "23"
+    ],
+    [
+     "None",
+     "24"
+    ],
+    [
+     "None",
+     "25"
+    ],
+    [
+     "None",
+     "26"
+    ],
+    [
+     "None",
+     "27"
+    ],
+    [
+     "None",
+     "28"
+    ],
+    [
+     "None",
+     "29"
+    ],
+    [
+     "None",
+     "30"
+    ]
+   ],
+   "A1_S": {
+    "exact": "2/87",
+    "value": 0.022989
+   },
+   "B1_S": {
+    "exact": "41/87",
+    "value": 0.471264
+   },
+   "G_naive": {
+    "exact": "41/87",
+    "value": 0.471264
+   },
+   "R": {
+    "exact": "2/87",
+    "value": 0.022989
+   },
+   "D": {
+    "exact": "13/29",
+    "value": 0.448276
+   },
+   "D_F": {
+    "exact": "41/90",
+    "value": 0.455556
+   },
+   "D_minus_D_F": {
+    "exact": "-19/2610",
+    "value": -0.00728
+   }
+  },
+  {
+   "rotation": 3,
+   "K": 30,
+   "F": 30,
+   "S": [
+    [
+     "None",
+     "1"
+    ],
+    [
+     "None",
+     "2"
+    ],
+    [
+     "None",
+     "3"
+    ],
+    [
+     "None",
+     "4"
+    ],
+    [
+     "None",
+     "5"
+    ],
+    [
+     "None",
+     "6"
+    ],
+    [
+     "None",
+     "7"
+    ],
+    [
+     "None",
+     "8"
+    ],
+    [
+     "None",
+     "9"
+    ],
+    [
+     "None",
+     "10"
+    ],
+    [
+     "None",
+     "11"
+    ],
+    [
+     "None",
+     "12"
+    ],
+    [
+     "None",
+     "13"
+    ],
+    [
+     "None",
+     "14"
+    ],
+    [
+     "None",
+     "15"
+    ],
+    [
+     "None",
+     "16"
+    ],
+    [
+     "None",
+     "17"
+    ],
+    [
+     "None",
+     "18"
+    ],
+    [
+     "None",
+     "19"
+    ],
+    [
+     "None",
+     "20"
+    ],
+    [
+     "None",
+     "21"
+    ],
+    [
+     "None",
+     "22"
+    ],
+    [
+     "None",
+     "23"
+    ],
+    [
+     "None",
+     "24"
+    ],
+    [
+     "None",
+     "25"
+    ],
+    [
+     "None",
+     "26"
+    ],
+    [
+     "None",
+     "27"
+    ],
+    [
+     "None",
+     "28"
+    ],
+    [
+     "None",
+     "29"
+    ],
+    [
+     "None",
+     "30"
+    ]
+   ],
+   "A1_S": {
+    "exact": "2/45",
+    "value": 0.044444
+   },
+   "B1_S": {
+    "exact": "1/2",
+    "value": 0.5
+   },
+   "G_naive": {
+    "exact": "1/2",
+    "value": 0.5
+   },
+   "R": {
+    "exact": "2/45",
+    "value": 0.044444
+   },
+   "D": {
+    "exact": "41/90",
+    "value": 0.455556
+   },
+   "D_F": {
+    "exact": "41/90",
+    "value": 0.455556
+   },
+   "D_minus_D_F": {
+    "exact": "0/1",
+    "value": 0.0
+   }
+  }
+ ],
+ "rotation_range_where_defined": {
+  "n_defined": 4,
+  "G_naive": [
+   {
+    "exact": "41/87",
+    "value": 0.471264
+   },
+   {
+    "exact": "1/2",
+    "value": 0.5
+   }
+  ],
+  "R": [
+   {
+    "exact": "1/84",
+    "value": 0.011905
+   },
+   {
+    "exact": "2/45",
+    "value": 0.044444
+   }
+  ],
+  "D": [
+   {
+    "exact": "13/29",
+    "value": 0.448276
+   },
+   {
+    "exact": "13/28",
+    "value": 0.464286
+   }
+  ],
+  "D_minus_D_F": [
+   {
+    "exact": "-8/435",
+    "value": -0.018391
+   },
+   {
+    "exact": "11/1260",
+    "value": 0.00873
+   }
+  ]
+ },
+ "descriptive_background_not_registered": {
+  "A_all4_on_F": {
+   "exact": "1/30",
+   "value": 0.033333
+  },
+  "B_all4_on_F": {
+   "exact": "59/120",
+   "value": 0.491667
+  }
+ },
+ "uncertainty": "不强加 95% CI（预注册）：主结果是 30 题有限记录的精确描述；四套 p0 轮换仅作角色协议敏感性，共享同一缓存，不是四次独立实验，不除以 sqrt(4)。",
+ "timings": {
+  "stage1": {
+   "entry_gate_s": 0.6,
+   "read_and_mask_s": 22.79,
+   "seed_check_s": 1146.84,
+   "stage1_total_s": 1175.98
+  },
+  "stage2_read_s": 6.66,
+  "stage2_total_s": 6.69
+ },
+ "limits": {
+  "below_normal": true,
+  "memory_cap_job": true
+ },
+ "peak_working_set_mib": 18.0,
+ "added_diagnostics_not_preregistered": {
+  "d1_pre_unseal": {
+   "A_problems_with_all4_identical_answers": 0,
+   "B_problems_with_all4_identical_answers": 0,
+   "A_problems_with_any_repeat": 0,
+   "B_problems_with_any_repeat": 0,
+   "A_problems_with_zero_token_slots": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
+   ],
+   "problems_with_prompt_diff": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
+   ]
+  },
+  "d2_official_page": {
+   "A": {
+    "official_page": "https://matharena.ai/models/anthropic_claude_35",
+    "official_accuracy_pct": 3.33,
+    "official_ci_pct": 3.21,
+    "cached_all4_exact": "1/30",
+    "cached_all4_pct": 3.33,
+    "match": true
+   },
+   "B": {
+    "official_page": "https://matharena.ai/models/anthropic_claude_37",
+    "official_accuracy_pct": 49.17,
+    "official_ci_pct": 8.94,
+    "cached_all4_exact": "59/120",
+    "cached_all4_pct": 49.17,
+    "match": true
+   }
+  },
+  "files": [
+   "results/diag/d1_pre_unseal_record_mechanism.json",
+   "results/diag/d2_official_page_check.json"
+  ]
+ },
+ "plain_conclusion": "结论：A 在本缓存中几乎总答错（F 上 120 条记录只对 4 条），所以按 A 答错筛题几乎不改变人群（K = 28/30）。筛错后的缓存记录回升 R 只有 1.2 个百分点，G_naive（47.6 个百分点）与 D（46.4 个百分点）几乎相同；D 与全框 D_F（45.6 个百分点）只差 0.9 个百分点。四套轮换下 R 在 1.2 到 4.4 个百分点之间，D − D_F 在 -1.8 到 +0.9 个百分点之间。就这批冻结记录而言，按答错筛题造成的差异很小。但这是 A 几乎全错的地板情形（A 的总正确率 3.33% 在冻结前已公开），R 和 D − D_F 小主要由此决定，不能外推到旧配置正确率较高时的错筛。"
+}

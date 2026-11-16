@@ -1,0 +1,7 @@
+{"t_local": "2026-10-23 18:37:57", "event": "stage1_start", "pid": 33644, "limits": {"below_normal": true, "memory_cap_job": true}}
+{"t_local": "2026-10-23 18:39:59", "event": "frame_written", "n_cells": 12, "n_valid": 9, "stage1_s": 123.98, "peak_mib": 70.8}
+{"t_local": "2026-10-23 18:42:23", "event": "stage2_start", "pid": 3744, "n_cells": 12}
+{"t_local": "2026-10-23 18:42:55", "event": "stage2_start", "pid": 14936, "n_cells": 12}
+{"t_local": "2026-10-23 18:43:16", "event": "summary_written", "stage2_s": 20.76}
+{"t_local": "2026-10-23 18:49:13", "event": "independent_recompute", "all_agree": true, "seconds": 133.33}
+{"t_local": "2026-10-23 18:49:22", "event": "report_written"}

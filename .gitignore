@@ -1,0 +1,7 @@
+data/
+downloads/
+__pycache__/
+*.parquet
+slot_correct*.csv
+slots.csv
+per_problem_primary.csv

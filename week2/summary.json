@@ -1,0 +1,688 @@
+{
+ "card": "matharena-selection-replay",
+ "week": 2,
+ "prereg": "预注册_第二周_冻结_2026-10-23.md",
+ "evidence_level": "冻结设计后首次取数与计算；数据是公开缓存的回顾性记录。配对按公开榜分选型，不算未见效果验证。",
+ "data": {
+  "repo": "MathArena/hmmt_feb_2025_outputs",
+  "revision": "e3fb6c74f24eabf83413eb9e62b9816c1f3f7d2e",
+  "revision_is_main_head_on_fetch": true,
+  "revision_commit_date_utc": "2026-09-11T10:55:32.000Z",
+  "siblings": [
+   ".gitattributes",
+   "README.md",
+   "data/train-00000-of-00001.parquet"
+  ],
+  "card_download_size": 163542911,
+  "card_num_examples": 7680,
+  "license_in_card": "cc-by-nc-sa-4.0",
+  "url": "https://huggingface.co/datasets/MathArena/hmmt_feb_2025_outputs/resolve/e3fb6c74f24eabf83413eb9e62b9816c1f3f7d2e/data/train-00000-of-00001.parquet",
+  "parquet_bytes": 163542911,
+  "parquet_read_only": true,
+  "bytes_transferred_total": 163553558,
+  "transfer_cap_bytes": 250000000,
+  "retries": 0,
+  "new_api_calls": 0
+ },
+ "config_map": {
+  "A": {
+   "raw_model_config": "openai/o3-mini--medium",
+   "model_name": "o3-mini (medium)",
+   "official_identifier": "o3-mini--medium"
+  },
+  "B": {
+   "raw_model_config": "openai/o3-mini",
+   "model_name": "o3-mini (high)",
+   "official_identifier": "o3-mini--high"
+  },
+  "rule_detail": {
+   "A": {
+    "identifier": "o3-mini--medium",
+    "display": "o3-mini (medium)",
+    "matched_by_identifier": [
+     "openai/o3-mini--medium"
+    ],
+    "matched_by_display_name": [
+     "openai/o3-mini--medium"
+    ],
+    "candidates": [
+     "openai/o3-mini--medium"
+    ],
+    "model_names_of_candidates": {
+     "openai/o3-mini--medium": [
+      "o3-mini (medium)"
+     ]
+    }
+   },
+   "B": {
+    "identifier": "o3-mini--high",
+    "display": "o3-mini (high)",
+    "matched_by_identifier": [],
+    "matched_by_display_name": [
+     "openai/o3-mini"
+    ],
+    "candidates": [
+     "openai/o3-mini"
+    ],
+    "model_names_of_candidates": {
+     "openai/o3-mini": [
+      "o3-mini (high)"
+     ]
+    }
+   }
+  },
+  "o3_mini_configs_in_file": [
+   [
+    "openai/o3-mini",
+    "o3-mini (high)"
+   ],
+   [
+    "openai/o3-mini--low",
+    "o3-mini (low)"
+   ],
+   [
+    "openai/o3-mini--medium",
+    "o3-mini (medium)"
+   ]
+  ]
+ },
+ "frame": {
+  "n_candidates": 30,
+  "n_F": 30,
+  "full_30_contract": true,
+  "breaks": {},
+  "decided_before_correct": [
+   "配置对应：原始 model_config 去掉固定前缀 configs/models/ 与后缀 .yaml 后等于官网标识（或以 /标识 结尾），或其行的 model_name 恰等于官网显示名；每侧恰好收集到一个原始值、两侧不同、各只带一个 model_name 才算明确，否则 NA",
+   "题目按 problem_idx 识别；候选题 = 冻结副本全部行中出现的不同 problem_idx，须为 30",
+   "每侧 idx 0..3 各恰一条（完全相同的重复行折叠为一条）；同键内容不同或出现 0..3 以外的 idx 即违约",
+   "共同题文/gold：每题 8 条保留记录的 problem 与 gold_answer 各只有一个取值",
+   "完整提示：每条 user_message 非空且 all_messages 为含 user 轮的 JSON 列表；A/B 提示是否逐字相同只作调用条件属性报告，不据此删题",
+   "判分：correct 为已存布尔值（非空），gold_answer 非空",
+   "响应状态：answer 非空即保留（token 记 0 也保留，usage 按原记账层级读）；answer 空且 output_tokens>0 为已保存截断，按原 correct 计；answer 空且 output_tokens 空/0 为未知响应状态，不冒充答错，构成违约",
+   "任一题违约即整轮 NA：不删题、不换配置",
+   "主量固定 p0 = idx0 筛选、idx1–3 复评；四槽循环（筛选槽 = idx j）只作敏感性"
+  ]
+ },
+ "primary": {
+  "screen_idx": 0,
+  "K": 11,
+  "n_F": 30,
+  "S": [
+   "3",
+   "7",
+   "14",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "24",
+   "25",
+   "30"
+  ],
+  "A0_S": {
+   "exact": "0/1",
+   "value": 0.0
+  },
+  "A1_S": {
+   "exact": "0/1",
+   "value": 0.0
+  },
+  "B1_S": {
+   "exact": "3/11",
+   "value": 0.272727
+  },
+  "G": {
+   "exact": "3/11",
+   "value": 0.272727
+  },
+  "R": {
+   "exact": "0/1",
+   "value": 0.0
+  },
+  "D": {
+   "exact": "3/11",
+   "value": 0.272727
+  },
+  "D_F": {
+   "exact": "1/6",
+   "value": 0.166667
+  },
+  "D_minus_D_F": {
+   "exact": "7/66",
+   "value": 0.106061
+  }
+ },
+ "primary_counts": {
+  "A0_correct": 19,
+  "B0_correct": 21,
+  "A_rescore_hits_on_S": 0,
+  "B_rescore_hits_on_S": 9,
+  "rescore_records_per_side_on_S": 33
+ },
+ "sensitivity_four_slot_cycle": [
+  {
+   "screen_idx": 0,
+   "K": 11,
+   "n_F": 30,
+   "S": [
+    "3",
+    "7",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "24",
+    "25",
+    "30"
+   ],
+   "A0_S": {
+    "exact": "0/1",
+    "value": 0.0
+   },
+   "A1_S": {
+    "exact": "0/1",
+    "value": 0.0
+   },
+   "B1_S": {
+    "exact": "3/11",
+    "value": 0.272727
+   },
+   "G": {
+    "exact": "3/11",
+    "value": 0.272727
+   },
+   "R": {
+    "exact": "0/1",
+    "value": 0.0
+   },
+   "D": {
+    "exact": "3/11",
+    "value": 0.272727
+   },
+   "D_F": {
+    "exact": "1/6",
+    "value": 0.166667
+   },
+   "D_minus_D_F": {
+    "exact": "7/66",
+    "value": 0.106061
+   }
+  },
+  {
+   "screen_idx": 1,
+   "K": 13,
+   "n_F": 30,
+   "S": [
+    "3",
+    "7",
+    "8",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "24",
+    "25",
+    "27",
+    "30"
+   ],
+   "A0_S": {
+    "exact": "0/1",
+    "value": 0.0
+   },
+   "A1_S": {
+    "exact": "2/39",
+    "value": 0.051282
+   },
+   "B1_S": {
+    "exact": "5/13",
+    "value": 0.384615
+   },
+   "G": {
+    "exact": "5/13",
+    "value": 0.384615
+   },
+   "R": {
+    "exact": "2/39",
+    "value": 0.051282
+   },
+   "D": {
+    "exact": "1/3",
+    "value": 0.333333
+   },
+   "D_F": {
+    "exact": "7/45",
+    "value": 0.155556
+   },
+   "D_minus_D_F": {
+    "exact": "8/45",
+    "value": 0.177778
+   }
+  },
+  {
+   "screen_idx": 2,
+   "K": 15,
+   "n_F": 30,
+   "S": [
+    "3",
+    "7",
+    "8",
+    "9",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "24",
+    "25",
+    "27",
+    "29",
+    "30"
+   ],
+   "A0_S": {
+    "exact": "0/1",
+    "value": 0.0
+   },
+   "A1_S": {
+    "exact": "2/15",
+    "value": 0.133333
+   },
+   "B1_S": {
+    "exact": "17/45",
+    "value": 0.377778
+   },
+   "G": {
+    "exact": "17/45",
+    "value": 0.377778
+   },
+   "R": {
+    "exact": "2/15",
+    "value": 0.133333
+   },
+   "D": {
+    "exact": "11/45",
+    "value": 0.244444
+   },
+   "D_F": {
+    "exact": "2/15",
+    "value": 0.133333
+   },
+   "D_minus_D_F": {
+    "exact": "1/9",
+    "value": 0.111111
+   }
+  },
+  {
+   "screen_idx": 3,
+   "K": 17,
+   "n_F": 30,
+   "S": [
+    "3",
+    "7",
+    "8",
+    "9",
+    "10",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "24",
+    "25",
+    "27",
+    "28",
+    "29",
+    "30"
+   ],
+   "A0_S": {
+    "exact": "0/1",
+    "value": 0.0
+   },
+   "A1_S": {
+    "exact": "4/17",
+    "value": 0.235294
+   },
+   "B1_S": {
+    "exact": "8/17",
+    "value": 0.470588
+   },
+   "G": {
+    "exact": "8/17",
+    "value": 0.470588
+   },
+   "R": {
+    "exact": "4/17",
+    "value": 0.235294
+   },
+   "D": {
+    "exact": "4/17",
+    "value": 0.235294
+   },
+   "D_F": {
+    "exact": "1/9",
+    "value": 0.111111
+   },
+   "D_minus_D_F": {
+    "exact": "19/153",
+    "value": 0.124183
+   }
+  }
+ ],
+ "sensitivity_range_where_defined": {
+  "n_defined": 4,
+  "G": [
+   {
+    "exact": "3/11",
+    "value": 0.272727
+   },
+   {
+    "exact": "8/17",
+    "value": 0.470588
+   }
+  ],
+  "R": [
+   {
+    "exact": "0/1",
+    "value": 0.0
+   },
+   {
+    "exact": "4/17",
+    "value": 0.235294
+   }
+  ],
+  "D": [
+   {
+    "exact": "4/17",
+    "value": 0.235294
+   },
+   {
+    "exact": "1/3",
+    "value": 0.333333
+   }
+  ],
+  "D_minus_D_F": [
+   {
+    "exact": "7/66",
+    "value": 0.106061
+   },
+   {
+    "exact": "8/45",
+    "value": 0.177778
+   }
+  ]
+ },
+ "per_problem_patterns_p0": [
+  {
+   "A0": 0,
+   "A1": "0",
+   "B1": "0",
+   "n": 5
+  },
+  {
+   "A0": 0,
+   "A1": "0",
+   "B1": "1",
+   "n": 1
+  },
+  {
+   "A0": 0,
+   "A1": "0",
+   "B1": "1/3",
+   "n": 4
+  },
+  {
+   "A0": 0,
+   "A1": "0",
+   "B1": "2/3",
+   "n": 1
+  },
+  {
+   "A0": 1,
+   "A1": "0",
+   "B1": "2/3",
+   "n": 2
+  },
+  {
+   "A0": 1,
+   "A1": "1",
+   "B1": "1",
+   "n": 12
+  },
+  {
+   "A0": 1,
+   "A1": "1",
+   "B1": "2/3",
+   "n": 1
+  },
+  {
+   "A0": 1,
+   "A1": "1/3",
+   "B1": "1/3",
+   "n": 1
+  },
+  {
+   "A0": 1,
+   "A1": "1/3",
+   "B1": "2/3",
+   "n": 1
+  },
+  {
+   "A0": 1,
+   "A1": "2/3",
+   "B1": "1",
+   "n": 2
+  }
+ ],
+ "descriptive_not_registered": {
+  "A_all4_on_F": {
+   "exact": "8/15",
+   "value": 0.533333
+  },
+  "A_all4_hits": 64,
+  "B_all4_on_F": {
+   "exact": "27/40",
+   "value": 0.675
+  },
+  "B_all4_hits": 81,
+  "n_records_per_side": 120,
+  "official_page_pct_quoted_in_design": {
+   "A": "53.33%",
+   "B": "67.50%"
+  },
+  "B_rows_output_tokens_over_32000": 17,
+  "call_conditions": {
+   "A": {
+    "raw_model_config": "openai/o3-mini--medium",
+    "model_name": [
+     "o3-mini (medium)"
+    ],
+    "n_rows": 120,
+    "system_or_developer_turns": [
+     "NONE"
+    ],
+    "message_role_patterns": [
+     "user/assistant"
+    ],
+    "output_tokens": {
+     "min": 1118,
+     "max": 19333,
+     "n_null": 0,
+     "n_zero": 0,
+     "over_official_max_tokens_32000": 0
+    },
+    "input_tokens": {
+     "min": 48,
+     "max": 618,
+     "n_null": 0,
+     "n_zero": 0
+    },
+    "nonempty_answer_with_zero_or_null_output_tokens": 0,
+    "saved_truncations": 0,
+    "unknown_status": 0,
+    "parsed_answer_null": 0,
+    "prices_per_million": [
+     [
+      1.1,
+      4.4
+     ]
+    ],
+    "total_cost_usd": 4.030259,
+    "sources": [
+     "None"
+    ]
+   },
+   "B": {
+    "raw_model_config": "openai/o3-mini",
+    "model_name": [
+     "o3-mini (high)"
+    ],
+    "n_rows": 120,
+    "system_or_developer_turns": [
+     "NONE"
+    ],
+    "message_role_patterns": [
+     "user/assistant"
+    ],
+    "output_tokens": {
+     "min": 1712,
+     "max": 83984,
+     "n_null": 0,
+     "n_zero": 0
+    },
+    "input_tokens": {
+     "min": 48,
+     "max": 618,
+     "n_null": 0,
+     "n_zero": 0
+    },
+    "nonempty_answer_with_zero_or_null_output_tokens": 0,
+    "saved_truncations": 0,
+    "unknown_status": 0,
+    "parsed_answer_null": 0,
+    "prices_per_million": [
+     [
+      1.1,
+      4.4
+     ]
+    ],
+    "total_cost_usd": 9.34109,
+    "sources": [
+     "None"
+    ]
+   },
+   "prompts": {
+    "problems_with_identical_user_message_across_all_8_slots": 30,
+    "problems_with_identical_user_message_within_side": {
+     "A": 30,
+     "B": 30
+    },
+    "n_F": 30
+   },
+   "token_bookkeeping_by_idx": {
+    "A": {
+     "0": {
+      "n_zero_output": 0,
+      "n_zero_input": 0
+     },
+     "1": {
+      "n_zero_output": 0,
+      "n_zero_input": 0
+     },
+     "2": {
+      "n_zero_output": 0,
+      "n_zero_input": 0
+     },
+     "3": {
+      "n_zero_output": 0,
+      "n_zero_input": 0
+     }
+    },
+    "B": {
+     "0": {
+      "n_zero_output": 0,
+      "n_zero_input": 0
+     },
+     "1": {
+      "n_zero_output": 0,
+      "n_zero_input": 0
+     },
+     "2": {
+      "n_zero_output": 0,
+      "n_zero_input": 0
+     },
+     "3": {
+      "n_zero_output": 0,
+      "n_zero_input": 0
+     }
+    }
+   }
+  }
+ },
+ "uncertainty": "固定 30 题账本的精确描述；按冻结设计不给题目总体或独立调用置信区间。四槽循环共享同一批缓存记录，只作敏感性，不是四次独立重复，不据结果选主槽。",
+ "limits": {
+  "below_normal": true,
+  "memory_cap_job": true
+ },
+ "timings": {
+  "download_s": 56.04,
+  "stage1_total_s": 16.18,
+  "stage2_read_s": 3.4,
+  "stage2_total_s": 3.42,
+  "cumulative_cpu_process_s": 832.09,
+  "cap_s": 3600,
+  "independent_s": 752.49,
+  "independent_first_attempt_aborted_s": 60.0,
+  "cumulative_note": "复核更正：cumulative_cpu_process_s 实为墙钟秒数（第一阶段+第二阶段+独立重算+中止尝试），不是 CPU 时间，且不含下载 56.04 秒；含下载合计 888.13 秒（约 14.8 分钟），仍低于 3600 秒上限。"
+ },
+ "peak_working_set_mib": {
+  "stage1": 83.2,
+  "stage2": 18.9
+ },
+ "independent_recompute": {
+  "all_agree": true,
+  "agree": {
+   "K": true,
+   "G": true,
+   "R": true,
+   "D": true,
+   "D_F": true,
+   "D_minus_D_F": true,
+   "S": true
+  },
+  "values": {
+   "K": 11,
+   "G": "3/11",
+   "R": "0",
+   "D": "3/11",
+   "D_F": "1/6",
+   "D_minus_D_F": "7/66",
+   "S": [
+    "3",
+    "7",
+    "14",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "24",
+    "25",
+    "30"
+   ]
+  },
+  "method": "独立代码路径：自写 parquet 解码（Thrift compact、Snappy、RLE/位打包、字典），按 model_name 等于官网显示名选 A/B，自做齐全检查与精确分数运算；与主流程同一执行者，不是另一位复核者",
+  "seconds": 752.49,
+  "limits": {
+   "below_normal": true,
+   "memory_cap_2GiB": true,
+   "available_mb_at_start": 0.0
+  }
+ },
+ "decision": "完成（30 题合同满足；未触发 NA）"
+}

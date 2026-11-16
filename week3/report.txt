@@ -1,0 +1,156 @@
+第三周：四场 2025 最终答案赛中相邻 reasoning 档位配置的有限账本审计——结果报告
+
+证据等级：按冻结设计（预注册_第三周_冻结_2026-10-23.md，18:24 冻结；第一部分的 8 条操作定义优先于第二部分草稿）执行一次，范围固定。数据是 MathArena 公开缓存的回顾性记录。本报告只是有限账本描述，范围是“这四场比赛中有完整记录的相邻档位配置”，不推广到所有数学题或所有 LLM；不做逐 cell 显著性筛选，不给独立 pair 区间或 bootstrap 区间。已见 cell（开发材料）：HMMT o3-mini medium→high（第二周）；第一周的 AIME Claude-3.5→3.7 Think 不是档位 pair，不在本普查的 cell 中。全部配置、档位、合格 pair、不合格原因和逐 cell 合同在解码任何 correct 取值之前写入只读的 week3/frame/。
+
+结论（概括）：四场比赛共 210 个配置，按冻结规则得到 12 个相邻档位 cell（全部来自 o3-mini 与 o4-mini 两个基础端点）；其中 9 个合同有效，3 个 NA，NA 全部因为八槽完整提示不相同。CMIMC 的两个 cell 都 NA，所以加权汇总只覆盖 AIME、HMMT、BRUMO 三场比赛。在 9 个有效 cell 上（主槽 idx0）：R 在 +0.00 pp 到 +50.00 pp 之间，C = D − D_F 在 -9.44 pp 到 +22.22 pp 之间（7 正、1 零、1 负）；D 与 D_F 严格异号 1/9（BRUMO o4-mini medium→high）。冻结权重的三赛宏平均：G = +50.70 pp，R = +25.14 pp，D = +25.57 pp，D_F = +15.83 pp，C = +9.73 pp，G − D_F = +34.87 pp；去掉已见 cell 后分别为 +51.33 pp、+26.23 pp、+25.10 pp、+16.11 pp、+8.99 pp、+35.22 pp。
+
+一、数据与传输
+- AIME：MathArena/aime_2025_outputs，revision 16e93d3bb9b0a25ea9422893464d46b3c5ff0ae9（取到：是；该 revision 最后修改 2026-09-11T10:55:10.000Z），单个 parquet 142685920 字节，新下载（第三周），只读：是；许可 cc-by-nc-sa-4.0。
+- HMMT：MathArena/hmmt_feb_2025_outputs，revision e3fb6c74f24eabf83413eb9e62b9816c1f3f7d2e（取到：是；该 revision 最后修改 2026-09-11T10:55:32.000Z），单个 parquet 163542911 字节，复用第二周只读副本，只读：是；许可 cc-by-nc-sa-4.0。
+- BRUMO：MathArena/brumo_2025_outputs，revision 3b234efea64d03f80ec57a85e29879fc41b04864（取到：是；该 revision 最后修改 2026-09-11T10:59:35.000Z），单个 parquet 85941185 字节，新下载（第三周），只读：是；许可 cc-by-nc-sa-4.0。
+- CMIMC：MathArena/cmimc_2025_outputs，revision 27826187da75fb124dca803cc0274d3c5694df5c（取到：是；该 revision 最后修改 2026-10-19T07:37:57.000Z），单个 parquet 134011352 字节，新下载（第三周），只读：是；许可 cc-by-nc-sa-4.0。
+- 第三周传输合计 362646641 字节（三个 parquet 362638457 字节 + HF 元数据 JSON 8184 字节），上限 450 MB（含重试），重试 0 次；下载前 C 盘可用约 7.9 GiB（≥ 4 GB 门槛），下载后约 7.4 GiB（未触及 3 GB 停止线）；没有删除任何文件；新增模型 API 调用 0。
+- AIME 第一周已有同一 revision 的副本（非只读）；冻结设计写的是“新下载三个 parquet”、只复用 HMMT，所以 AIME 也重新下载到新文件夹并设为只读，第一周副本未动。
+
+二、配置枚举、档位与合格 pair（只用元数据，规则在读取 correct 之前固定）
+- AIME：配置 67 个，题框 30 题；有阶梯档位 19 个，无档位 48 个，配置 NA 0 个；合格相邻 pair 4 个；有效 cell 3，NA cell 1。
+- HMMT：配置 64 个，题框 30 题；有阶梯档位 18 个，无档位 46 个，配置 NA 0 个；合格相邻 pair 4 个；有效 cell 4，NA cell 0。
+- BRUMO：配置 44 个，题框 30 题；有阶梯档位 13 个，无档位 31 个，配置 NA 0 个；合格相邻 pair 2 个；有效 cell 2，NA cell 0。
+- CMIMC：配置 35 个，题框 40 题；有阶梯档位 13 个，无档位 22 个，配置 NA 0 个；合格相邻 pair 2 个；有效 cell 0，NA cell 2。
+- 合格 pair：o3-mini（low→medium、medium→high，只在 AIME、HMMT 有三档）与 o4-mini（low→medium、medium→high，四场都有三档）。o3-mini 的 high 档原始路径是 openai/o3-mini（无后缀），由显示名 “o3-mini (high)” 定档，与第二周相同。
+- 不合格配置的原因只有两类：显示名末尾括号与路径 --后缀都没有阶梯词（例如 “(Think)”、“(05-06)”、“(preview)” 不算档位），或该基础端点在这场比赛只有一个档位（GPT-5、GPT-5-mini、GPT-5.1、o1、o3、GPT OSS 等）。没有出现档位冲突、一个配置多个显示名或同端点同档位重复。逐配置原因见 frame/configs.csv，逐端点见 frame/endpoints.csv。
+- 规则边界上的配置（frame/near_miss_notes.csv，均按冻结规则不接）：GPT-5.2 (high) 路径 openai/gpt-52-high 与 GPT-5.2 (xhigh) 路径 openai/gpt-52 去掉 --<档位> 后不同（-high 是单连字符，不是冻结的 --<档位> 后缀），所以 AIME、HMMT 中 high→xhigh 这一对没有进入普查；若放宽到单连字符，它会是相邻的一对，本次按冻结规则不计算。Grok 3 Mini (low)/(high) 与 AIME 的 GPT-5-nano (low)/(high) 同样路径不同，而且即使合并也缺 medium，不相邻。
+
+三、逐 cell 合同（完整题框、两边 idx 0–3、每题单一题文与 gold、八槽完整提示逐字节相同、已存 correct 非缺失、响应状态）
+- AIME o3-mini low→medium：有效，30/30 题齐全。
+- AIME o3-mini medium→high：NA，13/30 题违约，原因全部是“八槽完整提示不相同”（A、B 两侧 user 提示不同的题 13 道；侧内四槽提示不一的题：A 0、B 1 道）。
+- AIME o4-mini low→medium：有效，30/30 题齐全。
+- AIME o4-mini medium→high：有效，30/30 题齐全。
+- HMMT o3-mini low→medium：有效，30/30 题齐全。
+- HMMT o3-mini medium→high【已见】：有效，30/30 题齐全。
+- HMMT o4-mini low→medium：有效，30/30 题齐全。
+- HMMT o4-mini medium→high：有效，30/30 题齐全。
+- BRUMO o4-mini low→medium：有效，30/30 题齐全。
+- BRUMO o4-mini medium→high：有效，30/30 题齐全。
+- CMIMC o4-mini low→medium：NA，36/40 题违约，原因全部是“八槽完整提示不相同”（A、B 两侧 user 提示不同的题 36 道；侧内四槽提示不一的题：A 0、B 0 道）。
+- CMIMC o4-mini medium→high：NA，39/40 题违约，原因全部是“八槽完整提示不相同”（A、B 两侧 user 提示不同的题 39 道；侧内四槽提示不一的题：A 0、B 0 道）。
+  NA 的具体差别（frame 写定之后另读提示文本，不读 correct；diag_prompt_mismatch.json）：AIME o3-mini medium→high 中，第 1–13 题两侧 user 提示不同（抽看的第 1–3 题：high 档要求“输出最终答案对 1000 取模”，medium 档说“答案是 0 到 999 之间的整数”，与第一周 AIME I 的提示差同一类），另有 1 道题 high 档四槽之间提示也不一致；CMIMC 中，抽看的示例题里 o4-mini medium 档提示比 low、high 档多一段最终答案格式说明（要求按固定标题格式给出 \boxed{} 答案），low→medium 有 36/40 题、medium→high 有 39/40 题两侧提示不同。按冻结规则这些 cell 只在覆盖表出现，不取两边交集、不删题。
+- 全部 12 个 cell 的 3040 个保留槽（含 NA cell；每个有效 cell 240 个）answer 都非空（已保存截断 0、未知响应状态 0），correct 无缺失，未出现重复行。AIME o3-mini 三档在第 1–15 题各有 45 个 output_tokens = 0 的槽：low、medium 两档都是这 15 题的 idx1–3（与第一周 AIME I 的记账方式相同：token 合计记在 idx0）；high 档是第 1–12、14、15 题的 idx1–3 和第 13 题的 idx0–2（第 13 题的 token 记在 idx3，该题 high 档 idx3 的提示也与 idx0–2 不同）。按规则保留，不当作零调用。o4-mini high 档在 AIME 有 3 条、HMMT 有 6 条输出 token 恰为 64000，answer 非空，按原 correct 计。各配置单价均为输入 1.1、输出 4.4 美元/百万 token。
+
+四、全部 cell 表（主槽固定 idx0，idx1–3 平均为 A₁、B₁；S = {A₀ = 0}，K = |S|；精确分数，括号内为百分点）
+- AIME o3-mini low→medium：K = 18/30；G = 17/27（+62.96 pp）；R = 13/54（+24.07 pp）；D = 7/18（+38.89 pp）；D_F = 23/90（+25.56 pp）；C = 2/15（+13.33 pp）；G − D_F = 101/270（+37.41 pp）；异号标志 1[D·D_F<0] = 0；A 四槽正确率 29/60，B 四槽正确率 23/30。
+- AIME o3-mini medium→high：NA（八槽完整提示不相同）
+- AIME o4-mini low→medium：K = 12/30；G = 23/36（+63.89 pp）；R = 1/4（+25.00 pp）；D = 7/18（+38.89 pp）；D_F = 19/90（+21.11 pp）；C = 8/45（+17.78 pp）；G − D_F = 77/180（+42.78 pp）；异号标志 1[D·D_F<0] = 0；A 四槽正确率 37/60，B 四槽正确率 101/120。
+- AIME o4-mini medium→high：K = 4/30；G = 7/12（+58.33 pp）；R = 1/4（+25.00 pp）；D = 1/3（+33.33 pp）；D_F = 1/9（+11.11 pp）；C = 2/9（+22.22 pp）；G − D_F = 17/36（+47.22 pp）；异号标志 1[D·D_F<0] = 0；A 四槽正确率 101/120，B 四槽正确率 11/12。
+- HMMT o3-mini low→medium：K = 23/30；G = 8/23（+34.78 pp）；R = 3/23（+13.04 pp）；D = 5/23（+21.74 pp）；D_F = 1/5（+20.00 pp）；C = 2/115（+1.74 pp）；G − D_F = 17/115（+14.78 pp）；异号标志 1[D·D_F<0] = 0；A 四槽正确率 17/60，B 四槽正确率 8/15。
+- HMMT o3-mini medium→high【已见】：K = 11/30；G = 3/11（+27.27 pp）；R = 0/1（+0.00 pp）；D = 3/11（+27.27 pp）；D_F = 1/6（+16.67 pp）；C = 7/66（+10.61 pp）；G − D_F = 7/66（+10.61 pp）；异号标志 1[D·D_F<0] = 0；A 四槽正确率 8/15，B 四槽正确率 27/40。
+- HMMT o4-mini low→medium：K = 15/30；G = 4/9（+44.44 pp）；R = 4/15（+26.67 pp）；D = 8/45（+17.78 pp）；D_F = 8/45（+17.78 pp）；C = 0/1（+0.00 pp）；G − D_F = 4/15（+26.67 pp）；异号标志 1[D·D_F<0] = 0；A 四槽正确率 19/40，B 四槽正确率 27/40。
+- HMMT o4-mini medium→high：K = 7/30；G = 4/7（+57.14 pp）；R = 5/21（+23.81 pp）；D = 1/3（+33.33 pp）；D_F = 1/6（+16.67 pp）；C = 1/6（+16.67 pp）；G − D_F = 17/42（+40.48 pp）；异号标志 1[D·D_F<0] = 0；A 四槽正确率 27/40，B 四槽正确率 5/6。
+- BRUMO o4-mini low→medium：K = 10/30；G = 17/30（+56.67 pp）；R = 1/5（+20.00 pp）；D = 11/30（+36.67 pp）；D_F = 1/6（+16.67 pp）；C = 1/5（+20.00 pp）；G − D_F = 2/5（+40.00 pp）；异号标志 1[D·D_F<0] = 0；A 四槽正确率 2/3，B 四槽正确率 101/120。
+- BRUMO o4-mini medium→high：K = 4/30；G = 5/12（+41.67 pp）；R = 1/2（+50.00 pp）；D = -1/12（-8.33 pp）；D_F = 1/90（+1.11 pp）；C = -17/180（-9.44 pp）；G − D_F = 73/180（+40.56 pp）；异号标志 1[D·D_F<0] = 1；A 四槽正确率 101/120，B 四槽正确率 13/15。
+- CMIMC o4-mini low→medium：NA（八槽完整提示不相同）
+- CMIMC o4-mini medium→high：NA（八槽完整提示不相同）
+  每个有效 cell 都满足 G − R = D 与 G − D_F = R + C（代码内精确断言）。逐题明细见 tables/per_problem_primary.csv，逐槽 correct 见 tables/slot_correct.csv。
+
+五、未加权 cell 分布（这组有限配置的分布；同一配置会同时出现在一个端点的两个 cell 中，cell 不是独立样本）
+- 全部有效 cell：有效 9 个（合同 NA 3 个，K = 0 的 0 个）。
+    K：最小 4，中位 11，最大 23（从小到大：4、4、7、10、11、12、15、18、23）
+    G：最小 +27.27 pp，中位 +56.67 pp，最大 +63.89 pp；正 9、零 0、负 0（从小到大：3/11、8/23、5/12、4/9、17/30、4/7、7/12、17/27、23/36）
+    R：最小 +0.00 pp，中位 +24.07 pp，最大 +50.00 pp；正 8、零 1、负 0（从小到大：0/1、3/23、1/5、5/21、13/54、1/4、1/4、4/15、1/2）
+    D：最小 -8.33 pp，中位 +33.33 pp，最大 +38.89 pp；正 8、零 0、负 1（从小到大：-1/12、8/45、5/23、3/11、1/3、1/3、11/30、7/18、7/18）
+    D_F：最小 +1.11 pp，中位 +16.67 pp，最大 +25.56 pp；正 9、零 0、负 0（从小到大：1/90、1/9、1/6、1/6、1/6、8/45、1/5、19/90、23/90）
+    C = D − D_F：最小 -9.44 pp，中位 +13.33 pp，最大 +22.22 pp；正 7、零 1、负 1（从小到大：-17/180、0/1、2/115、7/66、2/15、1/6、8/45、1/5、2/9）
+    G − D_F：最小 +10.61 pp，中位 +40.00 pp，最大 +47.22 pp；正 9、零 0、负 0（从小到大：7/66、17/115、4/15、101/270、2/5、17/42、73/180、77/180、17/36）
+    D 与 D_F 严格异号：1/9（BRUMO o4-mini medium→high）；分母是 D、D_F 都有定义的全部 cell，D 为零的 cell 0 个，D_F 为零的 cell 0 个（零值留在分母内）。
+- 去掉已见 cell：有效 8 个（合同 NA 3 个，K = 0 的 0 个）。
+    K：最小 4，中位 11，最大 23（从小到大：4、4、7、10、12、15、18、23）
+    G：最小 +34.78 pp，中位 +56.90 pp，最大 +63.89 pp；正 8、零 0、负 0（从小到大：8/23、5/12、4/9、17/30、4/7、7/12、17/27、23/36）
+    R：最小 +13.04 pp，中位 +24.54 pp，最大 +50.00 pp；正 8、零 0、负 0（从小到大：3/23、1/5、5/21、13/54、1/4、1/4、4/15、1/2）
+    D：最小 -8.33 pp，中位 +33.33 pp，最大 +38.89 pp；正 7、零 0、负 1（从小到大：-1/12、8/45、5/23、1/3、1/3、11/30、7/18、7/18）
+    D_F：最小 +1.11 pp，中位 +17.22 pp，最大 +25.56 pp；正 8、零 0、负 0（从小到大：1/90、1/9、1/6、1/6、8/45、1/5、19/90、23/90）
+    C = D − D_F：最小 -9.44 pp，中位 +15.00 pp，最大 +22.22 pp；正 6、零 1、负 1（从小到大：-17/180、0/1、2/115、2/15、1/6、8/45、1/5、2/9）
+    G − D_F：最小 +14.78 pp，中位 +40.24 pp，最大 +47.22 pp；正 8、零 0、负 0（从小到大：17/115、4/15、101/270、2/5、17/42、73/180、77/180、17/36）
+    D 与 D_F 严格异号：1/8（BRUMO o4-mini medium→high）；分母是 D、D_F 都有定义的全部 cell，D 为零的 cell 0 个，D_F 为零的 cell 0 个（零值留在分母内）。
+- 零值另列：C = 0 的 cell：HMMT o4-mini low→medium（D = D_F）；R = 0 的 cell：HMMT o3-mini medium→high（即第二周已见 cell，A 在被筛出题的 idx1–3 也全错）。R ≥ 0 在布尔判分加 A₀ = 0 的筛选下由定义保证，R 为正本身不是机制证据。
+- 唯一异号 cell（BRUMO o4-mini medium→high）：K = 4，在被筛出的 4 题上 D = −1/12，全框 D_F = +1/90；R = 1/2 而 G = 5/12，即 medium 档在这 4 题其余三槽的回升大于 high 档。K 只有 4，这个异号只描述这本账，不推断 high 档在这类题上更差。
+
+六、冻结权重汇总（每场比赛先对一个基础端点的有效相邻 pair 等权，再对端点等权；有效比赛再等权宏平均）
+- 全部 cell：
+    G：宏平均 2909461/5738040（+50.70 pp），有效比赛 3/4（NA 1）；AIME +62.04 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +40.91 pp（端点 有效 2/NA 0，cell 有效 4/合同NA 0/K=0 0）；BRUMO +49.17 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    R：宏平均 26227/104328（+25.14 pp），有效比赛 3/4（NA 1）；AIME +24.54 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +15.88 pp（端点 有效 2/NA 0，cell 有效 4/合同NA 0/K=0 0）；BRUMO +35.00 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    D：宏平均 8732/34155（+25.57 pp），有效比赛 3/4（NA 1）；AIME +37.50 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +25.03 pp（端点 有效 2/NA 0，cell 有效 4/合同NA 0/K=0 0）；BRUMO +14.17 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    D_F：宏平均 19/120（+15.83 pp），有效比赛 3/4（NA 1）；AIME +20.83 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +17.78 pp（端点 有效 2/NA 0，cell 有效 4/合同NA 0/K=0 0）；BRUMO +8.89 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    C = D − D_F：宏平均 26593/273240（+9.73 pp），有效比赛 3/4（NA 1）；AIME +16.67 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +7.25 pp（端点 有效 2/NA 0，cell 有效 4/合同NA 0/K=0 0）；BRUMO +5.28 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    G − D_F：宏平均 1000469/2869020（+34.87 pp），有效比赛 3/4（NA 1）；AIME +41.20 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +23.13 pp（端点 有效 2/NA 0，cell 有效 4/合同NA 0/K=0 0）；BRUMO +40.28 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+- 去掉已见 cell：
+    G：宏平均 267761/521640（+51.33 pp），有效比赛 3/4（NA 1）；AIME +62.04 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +42.79 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 0/K=0 0）；BRUMO +49.17 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    R：宏平均 27361/104328（+26.23 pp），有效比赛 3/4（NA 1）；AIME +24.54 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +19.14 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 0/K=0 0）；BRUMO +35.00 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    D：宏平均 1559/6210（+25.10 pp），有效比赛 3/4（NA 1）；AIME +37.50 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +23.65 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 0/K=0 0）；BRUMO +14.17 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    D_F：宏平均 29/180（+16.11 pp），有效比赛 3/4（NA 1）；AIME +20.83 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +18.61 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 0/K=0 0）；BRUMO +8.89 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    C = D − D_F：宏平均 1117/12420（+8.99 pp），有效比赛 3/4（NA 1）；AIME +16.67 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +5.04 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 0/K=0 0）；BRUMO +5.28 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+    G − D_F：宏平均 183719/521640（+35.22 pp），有效比赛 3/4（NA 1）；AIME +41.20 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 1/K=0 0）；HMMT +24.18 pp（端点 有效 2/NA 0，cell 有效 3/合同NA 0/K=0 0）；BRUMO +40.28 pp（端点 有效 1/NA 0，cell 有效 2/合同NA 0/K=0 0）；CMIMC 未定义（端点 有效 0/NA 1，cell 有效 0/合同NA 2/K=0 0）
+  端点层：AIME 的 o3-mini 端点只剩 low→medium 一个有效 cell（medium→high 为 NA），所以该端点的值就是这一 cell；去掉已见 cell 后 HMMT 的 o3-mini 端点也只剩 low→medium。CMIMC 没有有效端点，宏平均是三场比赛的平均，不是四场结论。逐层数值见 tables/aggregates.csv。
+
+七、预定描述分层（A 在全题框四槽合计缓存正确率是否落在 30%–70%；只作描述，不用于入选）
+- 30%–70% 内：6 个 cell（AIME o3-mini low→medium, AIME o4-mini low→medium, HMMT o3-mini medium→high, HMMT o4-mini low→medium, HMMT o4-mini medium→high, BRUMO o4-mini low→medium）；R +0.00 pp 到 +26.67 pp，C +0.00 pp 到 +20.00 pp，异号 0/6。
+- 30%–70% 外：3 个 cell（AIME o4-mini medium→high, HMMT o3-mini low→medium, BRUMO o4-mini medium→high）；R +13.04 pp 到 +50.00 pp，C -9.44 pp 到 +22.22 pp，异号 1/3。
+  层内 cell 太少且共享记录，这只是描述，不说明分层与效果的关系。
+
+八、四槽循环（只作敏感性；筛选槽依次为 idx0–3，其余三槽复评；四套共享同一批缓存记录，不是四次独立重复；主槽 idx0 冻结时已固定）
+- AIME o3-mini low→medium：K 18, 15, 15, 14；R +7.14 pp 到 +24.07 pp；C +13.33 pp 到 +24.60 pp；异号标志 0, 0, 0, 0。
+- AIME o4-mini low→medium：K 12, 9, 12, 13；R +11.11 pp 到 +30.77 pp；C +13.89 pp 到 +24.07 pp；异号标志 0, 0, 0, 0。
+- AIME o4-mini medium→high：K 4, 7, 5, 3；R +25.00 pp 到 +52.38 pp；C +2.22 pp 到 +22.22 pp；异号标志 0, 0, 0, 0。
+- HMMT o3-mini low→medium：K 23, 23, 21, 19；R +3.51 pp 到 +14.49 pp；C -2.86 pp 到 +1.74 pp；异号标志 0, 0, 0, 0。
+- HMMT o3-mini medium→high：K 11, 13, 15, 17；R +0.00 pp 到 +23.53 pp；C +10.61 pp 到 +17.78 pp；异号标志 0, 0, 0, 0。
+- HMMT o4-mini low→medium：K 15, 17, 12, 19；R +11.11 pp 到 +31.58 pp；C +0.00 pp 到 +5.75 pp；异号标志 0, 0, 0, 0。
+- HMMT o4-mini medium→high：K 7, 9, 11, 12；R +23.81 pp 到 +51.52 pp；C -3.43 pp 到 +16.67 pp；异号标志 0, 0, 0, 0。
+- BRUMO o4-mini low→medium：K 10, 9, 8, 13；R +14.81 pp 到 +35.90 pp；C +15.56 pp 到 +20.68 pp；异号标志 0, 0, 0, 0。
+- BRUMO o4-mini medium→high：K 4, 4, 3, 8；R +50.00 pp 到 +66.67 pp；C -13.33 pp 到 +3.89 pp；异号标志 1, 0, 1, 0。
+  四槽中 C 同时出现正值和负值的 cell 有 3 个；至少一个槽出现 D、D_F 异号的 cell 有 1 个。不按循环结果改主槽。逐槽明细见 tables/four_slot_cycle.csv。
+
+九、独立重算
+- 另写代码 code/week3/w3_independent.py：自写 parquet 解码（Thrift compact、Snappy、RLE/位打包、字典编码、v1/v2 数据页），不导入 pq_reader、w1_*、w2_*、w3_* 代码；自己实现档位/基础端点/相邻规则、逐 cell 合同（含八槽提示比较）、主槽与四槽循环的精确分数运算、冻结权重汇总和异号计数，从三个新 parquet 与 HMMT 副本重新解码，再与 frame.json、summary.json 逐项比较。
+- 结果：不一致 0 项（全部一致）；墙钟 133.33 秒，峰值工作集 73.6 MiB。
+- 局限：由同一执行者写成，代码路径独立，人员不独立。
+
+十、局限
+1. 有限账本描述：范围只是这四场比赛中有完整记录的相邻档位配置，实际只涉及 OpenAI 的 o3-mini 与 o4-mini 两个基础端点、9 个有效 cell；不推广到所有数学题、所有 LLM 或所有 reasoning 档位。CMIMC 缺失，汇总是三场比赛的描述。
+2. cell 不是独立样本：同一基础端点的两个 cell 共用中间档（medium）的记录，同题、同配置和四槽也共享记录；不做显著性筛选，不给独立 pair 区间或把逐行 bootstrap 当复现。
+3. 档位比较是同一基础端点不同 reasoning 档位的缓存比较，包含预算和调用条件差（例如 o4-mini high 有输出 token 恰为 64000 的记录），不识别纯能力效应；命名相同不证明权重或服务历史恒定。历史请求参数、重试/替换链、真实随机种子、判分版本与 usage 归属均为 UNKNOWN，可交换性与独立性 UNKNOWN；账本恒等式不需要这些假设，把槽均值解释为 iid 成功概率则需要。
+4. 判分层是各 revision 存储的 correct，没有重判、没有另写宽松解析；原 parser 版本 UNKNOWN。
+5. 已见材料：HMMT o3-mini medium→high 是第二周开发材料，已单列并另给去掉它的汇总；HMMT o3-mini low→medium 的 B 侧（medium 档）记录也在第二周解码过，但按冻结规则（比赛×pair）不算已见 cell。第二周及更早的工作看过这些配置的公开榜分，配对范围本身不是未见验证。
+6. 覆盖受冻结规则限制：严格读取 “--<档位>” 后缀使 GPT-5.2 high→xhigh（AIME、HMMT）未进入普查；八槽提示须逐字节相同使 3 个 cell 成为 NA。这些是覆盖缺口，不是模型机制被否定。
+7. 30%–70% 分层只是预定描述层，非效果保证；K 小（最小 4）的 cell 中单题就能明显改变 R、D、C。
+
+十一、计时与资源
+- 下载（含 HF 元数据请求）约 66.0 秒；第一阶段（元数据、档位、合同、写只读 frame）123.98 秒，峰值工作集 70.8 MiB；第二阶段（解码 correct、计算、写表）20.76 秒，峰值工作集 23.6 MiB（此前一次尝试在算完 cell 后因分布函数的类型错误退出，约 10 秒，未写任何输出）；独立重算 133.33 秒，峰值工作集 73.6 MiB。从第一次联网请求到报告写成的总墙钟约 25.8 分钟（含编写代码的时间），低于 2 小时上限。
+- 每个 Python 进程单进程、单线程、BelowNormal，job object 进程内存上限 2 GiB；重步骤前用 PDH 读 \Memory\Available MBytes，均 ≥ 1500 MB 才放行（读 correct 前读数：AIME 2116 MB, HMMT 2110 MB, BRUMO 2111 MB）。没有动任何其他进程或其他项目的文件。
+
+十二、文件
+- week3/frame/（只读，解码 correct 之前写定）：frame.json（全部配置、档位、端点、合格 pair、逐 cell 合同与操作定义）、configs.csv、endpoints.csv、cells.csv、slots.csv、near_miss_notes.csv。
+- week3/summary.json：全部数值（精确分数与小数）、覆盖、汇总、分布、分层、四槽范围、独立重算结果、计时。
+- week3/tables/：cells_all.csv（全部 12 个 cell，含 NA 及原因）、per_problem_primary.csv、four_slot_cycle.csv、aggregates.csv、slot_correct.csv。
+- week3/independent_recompute.json、diag_prompt_mismatch.json、run_log.txt、timeline.jsonl、stage*.stdout.txt、independent.stdout.txt。
+- 代码：code/week3/（w3_common.py、w3_frame.py、w3_compute.py、w3_independent.py、w3_report.py、w3_diag_prompts.py、test_w3.py、两个只读元数据探查脚本 w3_probe_*.py）。
+- 数据：downloads/w3_hf_aime_2025_outputs_16e93d3/、w3_hf_brumo_2025_outputs_3b234ef/、w3_hf_cmimc_2025_outputs_2782618/（只读）；复用 downloads/hf_hmmt_feb_2025_outputs_e3fb6c7/；元数据与下载记录 downloads/w3_meta_web/。
+
+十三、执行中自行决定的操作细节（均在解码 correct 之前写进代码与 frame.json）
+- 档位阶梯 minimal < low < medium < high < xhigh；显示名末尾括号内容恰为阶梯词（不分大小写）才算档位标签，其他末尾括号（Think、05-06、preview 等）不算，留在基础名里
+- 路径后缀只认最后一段路径里最后一个 "--" 之后、恰为阶梯词的部分；单个连字符（-low、-high）不是冻结的 --<档位> 后缀；路径只去掉固定前缀 configs/models/ 与后缀 .yaml
+- 档位优先取显示名标签，没有时取路径后缀；两处都有但不一致 → 该配置 NA；一个配置值带不止一个 model_name → 该配置 NA
+- 基础端点 = (显示名去掉末尾档位括号及其前空白, 路径去掉 --<档位> 后缀)，两者都相同才算同一端点；同端点同档位多于一个配置 → 该端点本赛 NA
+- 合格 pair：同一端点、阶梯上相邻的两档，A 为较低档；不相邻不接
+- 题框 = 该比赛冻结副本全部行中出现的不同 problem_idx（source 列全为空，不参与键）
+- 每个 cell 每题：A、B 各 idx 0..3 恰一条（除 correct 外各列完全相同的重复行折叠，第二阶段再核 correct 是否也相同）；内容不同的重复或 0..3 以外的 idx 即违约；缺任何一条即违约
+- 题文/gold：每题 8 条保留记录的 problem 与 gold_answer 各只有一个取值，gold 非空
+- 完整提示 = (user_message, all_messages 中所有非 assistant 条目按原顺序、键排序的规范 JSON)；须 user_message 非空、all_messages 为含 user 轮的 JSON 列表；八槽须逐字节相同
+- 已存 correct 非缺失：只读 parquet 定义层（空值掩码），不解码取值；物理类型须为 BOOLEAN
+- 响应状态（沿用第二周）：answer 非空即保留（token 为 0 也保留，usage 按原记账层级读）；answer 空且 output_tokens>0 为已保存截断，按原 correct 计；answer 空且 output_tokens 空/0 为未知响应状态 → 违约
+- 任一题违约 → 该 cell NA，不取两边交集、不删题、不换配置；NA cell 留在覆盖分母
+- 主槽固定 idx0 筛选、idx1–3 复评；四槽循环只作敏感性
+- 已见 cell：第二周 HMMT openai/o3-mini--medium → openai/o3-mini；第一周 AIME claude-35 → claude-37 不是档位 pair，不会出现在合格 cell 中
+- 预定描述分层（第二部分“30–70%只作预定描述分层”）：A（较低档）在全题框四槽合计的缓存正确率落在闭区间 [30%, 70%]；只作描述，不用于入选
+- 合同里的 correct 非缺失只读 parquet 定义层（空值掩码），取值字节在第一阶段从未解码。
+- 汇总中某个量在某 cell 无定义（K = 0）时，该 cell 在该量的这一层计为无定义；本次所有有效 cell 的 K ≥ 4，未出现 K = 0。
+- 冻结第一部分第 7 条要求的独立重算照做。
+- 写 frame 之前跑过两个只读探查（w3_probe_schema.py：列结构与配置名；w3_probe_prompts.py：按规则得到的合格配置的消息角色结构），都不读 correct；完整提示的定义在探查之前已写进代码，探查只确认 all_messages 的结构是 [user, assistant]。

@@ -1,0 +1,48 @@
+{
+ "entry": true,
+ "cost": true,
+ "execution": true,
+ "seed_collision_free": true,
+ "cost_gate": {
+  "note": "草稿未写成本门的数值阈值；按原文：保留原生生成上限、不补 retry、不重查询，故新增 API 调用为 0；资源约束（下载 <= 1 GB；启动重活前可用内存 >= 1500 MB；单进程、1 线程、BelowNormal、<= 2 GiB）。",
+  "new_api_calls": 0,
+  "downloads_bytes": 143707284,
+  "downloads_limit_bytes": 1073741824,
+  "available_mb_at_start": 5238.0,
+  "limits": {
+   "below_normal": true,
+   "memory_cap_job": true
+  },
+  "pass": true
+ },
+ "execution_gate": {
+  "locked_A": "anthropic/claude-35",
+  "locked_B": "anthropic/claude-37",
+  "raw_path_values": {
+   "anthropic/claude-35": [
+    "anthropic/claude-35"
+   ],
+   "anthropic/claude-37": [
+    "anthropic/claude-37"
+   ]
+  },
+  "model_names": {
+   "anthropic/claude-35": [
+    "Claude-3.5-Sonnet"
+   ],
+   "anthropic/claude-37": [
+    "Claude-3.7-Sonnet (Think)"
+   ]
+  },
+  "normalization": "only prefix configs/models/ and suffix .yaml may be removed; no fuzzy matching",
+  "A_present": true,
+  "B_present": true,
+  "n_candidates": 30,
+  "target_n": 30,
+  "n_complete_F": 30,
+  "n_excluded": 0,
+  "full_frame": true,
+  "rule": "门：两锁定配置的路径值在该 revision 中按允许的规范化精确出现，并逐题核对 A/B 的 idx=0..3 唯一齐全；不齐全的题按草稿整题排除并报告覆盖分母；完整框 F 为空则停止。",
+  "pass": true
+ }
+}

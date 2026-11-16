@@ -1,0 +1,76 @@
+{
+ "method": "独立代码路径：自写 parquet 解码（Thrift compact、Snappy、RLE/位打包、字典），按 model_name 等于官网显示名选 A/B，自做齐全检查与精确分数运算；与主流程同一执行者，不是另一位复核者",
+ "n_rows": 7680,
+ "configs_by_display_name": {
+  "A": [
+   "openai/o3-mini--medium"
+  ],
+  "B": [
+   "openai/o3-mini"
+  ]
+ },
+ "n_problems": 30,
+ "complete_unique_idx0_3_nonnull": true,
+ "idx_outside_0_3": [],
+ "A_all4_hits": 64,
+ "B_all4_hits": 81,
+ "independent": {
+  "K": 11,
+  "G": "3/11",
+  "R": "0",
+  "D": "3/11",
+  "D_F": "1/6",
+  "D_minus_D_F": "7/66",
+  "S": [
+   "3",
+   "7",
+   "14",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "24",
+   "25",
+   "30"
+  ]
+ },
+ "main_pipeline": {
+  "K": 11,
+  "G": "3/11",
+  "R": "0",
+  "D": "3/11",
+  "D_F": "1/6",
+  "D_minus_D_F": "7/66",
+  "S": [
+   "3",
+   "7",
+   "14",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "24",
+   "25",
+   "30"
+  ]
+ },
+ "agree": {
+  "K": true,
+  "G": true,
+  "R": true,
+  "D": true,
+  "D_F": true,
+  "D_minus_D_F": true,
+  "S": true
+ },
+ "all_agree": true,
+ "identity_G_minus_R_equals_D": true,
+ "limits": {
+  "below_normal": true,
+  "memory_cap_2GiB": true,
+  "available_mb_at_start": 0.0
+ },
+ "seconds": 752.49
+}

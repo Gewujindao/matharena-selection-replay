@@ -1,0 +1,9 @@
+{"t_local": "2026-10-23 15:57:22", "event": "stage1_start", "pid": 19740, "limits": {"below_normal": true, "memory_cap_job": true}}
+{"t_local": "2026-10-23 15:57:23", "event": "entry_gate", "passed": true}
+{"t_local": "2026-10-23 15:57:28", "event": "cost_gate", "passed": true}
+{"t_local": "2026-10-23 15:57:50", "event": "execution_gate", "passed": true, "n_F": 30, "n_candidates": 30}
+{"t_local": "2026-10-23 16:16:57", "event": "seed_check", "collision_free": true}
+{"t_local": "2026-10-23 16:16:58", "event": "sealed", "files": ["code_at_seal", "exclusions.csv", "gates.json", "manifest_frozen.json", "roles.csv", "seed_check.json", "seed_manifest.json", "slots.csv"]}
+{"t_local": "2026-10-23 16:18:38", "event": "unseal_start", "pid": 26052, "n_F": 30}
+{"t_local": "2026-10-23 16:18:44", "event": "unsealed", "n_slots": 240}
+{"t_local": "2026-10-23 16:18:44", "event": "summary_written"}

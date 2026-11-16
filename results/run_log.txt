@@ -1,0 +1,17 @@
+[2026-10-23 15:57:22] stage 1 start; pid 19740; limits {'below_normal': True, 'memory_cap_job': True}
+[2026-10-23 15:57:23] entry gate: pass=True (local sha256 == registered LFS oid; size 142685920)
+[2026-10-23 15:57:28] RAM ok before metadata read: 5238 MB available
+[2026-10-23 15:57:28] cost gate: pass=True (downloads 137.0 MiB, new calls 0)
+[2026-10-23 15:57:28] read 13 metadata columns for 7915 rows; 240 rows match the locked A/B configs
+[2026-10-23 15:57:28] reader check: cost identity holds on 7915/7915 rows
+[2026-10-23 15:57:35] RAM ok before masked columns: 5237 MB available
+[2026-10-23 15:57:50] masked reduction done (22.79 s; peak working set 105.6 MiB)
+[2026-10-23 15:57:50] execution gate: pass=True; candidates 30, complete F 30, excluded 0
+[2026-10-23 15:57:56] RAM ok before seed literal scan: 5103 MB available
+[2026-10-23 16:16:57] seed check: 120 entries, collision_free=True, 20173 text files scanned (94880030 literal occurrences), 85 registered ranges, 1146.84 s
+[2026-10-23 16:16:58] sealed manifest, exclusions, roles, slots, seeds and gates (1175.98 s total)
+[2026-10-23 16:18:38] stage 2 start; pid 26052; limits {'below_normal': True, 'memory_cap_job': True}
+[2026-10-23 16:18:43] RAM ok before reading correct: 3034 MB available
+[2026-10-23 16:18:44] unsealed correct for 240 sealed slots (30 problems)
+[2026-10-23 16:18:44] primary: K=28, G_naive=10/21, R=1/84, D=13/28, D_F=41/90
+[2026-10-23 16:18:44] report written (6.72 s stage 2)

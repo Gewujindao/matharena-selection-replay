@@ -1,0 +1,52 @@
+competition,display_base,config_base,tiers,configs,status,adjacent_pairs,reason
+AIME,GPT OSS 120B,openai/oss-120b,high,openai/oss-120b,ok,,只有一个档位
+AIME,GPT OSS 20B,openai/oss-20b,high,openai/oss-20b,ok,,只有一个档位
+AIME,GPT-5,openai/gpt-5,high,openai/gpt-5,ok,,只有一个档位
+AIME,GPT-5-mini,openai/gpt-5-mini,high,openai/gpt-5-mini,ok,,只有一个档位
+AIME,GPT-5-nano,openai/gpt-5-nano,high,openai/gpt-5-nano,ok,,只有一个档位
+AIME,GPT-5-nano,openai/gpt-5-nano-low,low,openai/gpt-5-nano-low,ok,,只有一个档位
+AIME,GPT-5.1,openai/gpt-51,high,openai/gpt-51,ok,,只有一个档位
+AIME,GPT-5.2,openai/gpt-52,xhigh,openai/gpt-52,ok,,只有一个档位
+AIME,GPT-5.2,openai/gpt-52-high,high,openai/gpt-52-high,ok,,只有一个档位
+AIME,Grok 3 Mini,xai/grok-3-mini-high,high,xai/grok-3-mini-high,ok,,只有一个档位
+AIME,Grok 3 Mini,xai/grok-3-mini-low,low,xai/grok-3-mini-low,ok,,只有一个档位
+AIME,o1,openai/o1,medium,openai/o1,ok,,只有一个档位
+AIME,o3,openai/o3,high,openai/o3,ok,,只有一个档位
+AIME,o3-mini,openai/o3-mini,"low,medium,high","openai/o3-mini--low,openai/o3-mini--medium,openai/o3-mini",ok,"low->medium,medium->high",
+AIME,o4-mini,openai/o4-mini,"low,medium,high","openai/o4-mini--low,openai/o4-mini--medium,openai/o4-mini--high",ok,"low->medium,medium->high",
+HMMT,GPT OSS 120B,openai/oss-120b,high,openai/oss-120b,ok,,只有一个档位
+HMMT,GPT OSS 20B,openai/oss-20b,high,openai/oss-20b,ok,,只有一个档位
+HMMT,GPT-5,openai/gpt-5,high,openai/gpt-5,ok,,只有一个档位
+HMMT,GPT-5-mini,openai/gpt-5-mini,high,openai/gpt-5-mini,ok,,只有一个档位
+HMMT,GPT-5-nano,openai/gpt-5-nano,high,openai/gpt-5-nano,ok,,只有一个档位
+HMMT,GPT-5.1,openai/gpt-51,high,openai/gpt-51,ok,,只有一个档位
+HMMT,GPT-5.2,openai/gpt-52,xhigh,openai/gpt-52,ok,,只有一个档位
+HMMT,GPT-5.2,openai/gpt-52-high,high,openai/gpt-52-high,ok,,只有一个档位
+HMMT,Grok 3 Mini,xai/grok-3-mini-high,high,xai/grok-3-mini-high,ok,,只有一个档位
+HMMT,Grok 3 Mini,xai/grok-3-mini-low,low,xai/grok-3-mini-low,ok,,只有一个档位
+HMMT,o1,openai/o1,medium,openai/o1,ok,,只有一个档位
+HMMT,o3,openai/o3,high,openai/o3,ok,,只有一个档位
+HMMT,o3-mini,openai/o3-mini,"low,medium,high","openai/o3-mini--low,openai/o3-mini--medium,openai/o3-mini",ok,"low->medium,medium->high",
+HMMT,o4-mini,openai/o4-mini,"low,medium,high","openai/o4-mini--low,openai/o4-mini--medium,openai/o4-mini--high",ok,"low->medium,medium->high",
+BRUMO,GPT OSS 120B,openai/oss-120b,high,openai/oss-120b,ok,,只有一个档位
+BRUMO,GPT OSS 20B,openai/oss-20b,high,openai/oss-20b,ok,,只有一个档位
+BRUMO,GPT-5,openai/gpt-5,high,openai/gpt-5,ok,,只有一个档位
+BRUMO,GPT-5-mini,openai/gpt-5-mini,high,openai/gpt-5-mini,ok,,只有一个档位
+BRUMO,GPT-5-nano,openai/gpt-5-nano,high,openai/gpt-5-nano,ok,,只有一个档位
+BRUMO,GPT-5.1,openai/gpt-51,high,openai/gpt-51,ok,,只有一个档位
+BRUMO,GPT-5.2,openai/gpt-52-high,high,openai/gpt-52-high,ok,,只有一个档位
+BRUMO,Grok 3 Mini,xai/grok-3-mini-high,high,xai/grok-3-mini-high,ok,,只有一个档位
+BRUMO,Grok 3 Mini,xai/grok-3-mini-low,low,xai/grok-3-mini-low,ok,,只有一个档位
+BRUMO,o3,openai/o3,high,openai/o3,ok,,只有一个档位
+BRUMO,o4-mini,openai/o4-mini,"low,medium,high","openai/o4-mini--low,openai/o4-mini--medium,openai/o4-mini--high",ok,"low->medium,medium->high",
+CMIMC,GPT OSS 120B,openai/oss-120b,high,openai/oss-120b,ok,,只有一个档位
+CMIMC,GPT OSS 20B,openai/oss-20b,high,openai/oss-20b,ok,,只有一个档位
+CMIMC,GPT-5,openai/gpt-5,high,openai/gpt-5,ok,,只有一个档位
+CMIMC,GPT-5-mini,openai/gpt-5-mini,high,openai/gpt-5-mini,ok,,只有一个档位
+CMIMC,GPT-5-nano,openai/gpt-5-nano,high,openai/gpt-5-nano,ok,,只有一个档位
+CMIMC,GPT-5.1,openai/gpt-51,high,openai/gpt-51,ok,,只有一个档位
+CMIMC,GPT-5.2,openai/gpt-52-high,high,openai/gpt-52-high,ok,,只有一个档位
+CMIMC,Grok 3 Mini,xai/grok-3-mini-high,high,xai/grok-3-mini-high,ok,,只有一个档位
+CMIMC,Grok 3 Mini,xai/grok-3-mini-low,low,xai/grok-3-mini-low,ok,,只有一个档位
+CMIMC,o3,openai/o3,high,openai/o3,ok,,只有一个档位
+CMIMC,o4-mini,openai/o4-mini,"low,medium,high","openai/o4-mini--low,openai/o4-mini--medium,openai/o4-mini--high",ok,"low->medium,medium->high",

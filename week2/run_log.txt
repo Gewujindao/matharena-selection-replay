@@ -1,0 +1,15 @@
+[2026-10-23 17:16:02] stage 1 start; pid 16816; limits {'below_normal': True, 'memory_cap_job': True}
+[2026-10-23 17:16:02] data: revision e3fb6c7 (main head on fetch: True), 163542911 bytes, transferred 163553558 bytes (cap 250000000)
+[2026-10-23 17:16:06] RAM ok before metadata read: 2839 MB available
+[2026-10-23 17:16:06] read 8 metadata columns for 7680 rows (64 configs); config correspondence clear=True: {'A': 'openai/o3-mini--medium', 'B': 'openai/o3-mini'}
+[2026-10-23 17:16:10] RAM ok before A/B row columns: 2707 MB available
+[2026-10-23 17:16:18] A/B rows reduced to contract flags (240 rows, 11.84 s, peak working set 83.2 MiB)
+[2026-10-23 17:16:18] contract: candidates 30, complete 30, breaks 0; full 30 = True
+[2026-10-23 17:16:18] frame written read-only (16.18 s)
+[2026-10-23 17:17:20] stage 2 start; pid 12260; limits {'below_normal': True, 'memory_cap_job': True}
+[2026-10-23 17:17:23] RAM ok before reading correct: 2754 MB available
+[2026-10-23 17:17:24] read correct for 240 kept slots (30 problems)
+[2026-10-23 17:17:24] primary (idx0 screening): K=11, G=3/11, R=0/1, D=3/11, D_F=1/6, D-D_F=7/66
+[2026-10-23 17:22:40] independent recompute start (own reader, separate code path); first attempt before it aborted at the RAM counter (typeperf timeout) without reading data
+[2026-10-23 17:35:12] independent recompute done (752.49 s wall): K=11, G=3/11, R=0, D=3/11, D_F=1/6, D-D_F=7/66; all agree with summary.json
+[2026-10-23 17:38:54] report.txt written; summary.json updated with independent result and total timings (cumulative 832.09 s)

@@ -1,0 +1,8 @@
+{"t_local": "2026-10-23 17:16:02", "event": "stage1_start", "pid": 16816, "limits": {"below_normal": true, "memory_cap_job": true}}
+{"t_local": "2026-10-23 17:16:06", "event": "config_match", "clear": true, "mapping": {"A": "openai/o3-mini--medium", "B": "openai/o3-mini"}}
+{"t_local": "2026-10-23 17:16:18", "event": "contract", "n_candidates": 30, "n_F": 30, "full": true}
+{"t_local": "2026-10-23 17:16:18", "event": "frame_written", "n_F": 30, "full": true, "stage1_s": 16.18}
+{"t_local": "2026-10-23 17:17:21", "event": "stage2_start", "pid": 12260, "n_F": 30}
+{"t_local": "2026-10-23 17:17:24", "event": "summary_written", "K": 11, "stage2_s": 3.42}
+{"t_local": "2026-10-23 17:35:12", "event": "independent_recompute", "all_agree": true, "seconds": 752.49}
+{"t_local": "2026-10-23 17:39:00", "event": "report_written"}

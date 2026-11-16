@@ -1,0 +1,440 @@
+{
+ "line": 160,
+ "card": "matharena-selection-replay",
+ "prereg": "预注册_第一周_冻结_2026-10-23.md",
+ "stage": "sealed before unmasking correct",
+ "sealed_local": "2026-10-23 16:16:58",
+ "data": {
+  "entry_gate": {
+   "revision": "16e93d3bb9b0a25ea9422893464d46b3c5ff0ae9",
+   "revision_api_sha": "16e93d3bb9b0a25ea9422893464d46b3c5ff0ae9",
+   "revision_matches": true,
+   "parquet_files_at_revision": [
+    "data/train-00000-of-00001.parquet"
+   ],
+   "single_parquet": true,
+   "lfs_oid_at_revision": "c7980ee5518384624cb690d08b03bfff5892d19141b7ca1de666a2e863b0e589",
+   "lfs_oid_registered": "c7980ee5518384624cb690d08b03bfff5892d19141b7ca1de666a2e863b0e589",
+   "local_sha256": "c7980ee5518384624cb690d08b03bfff5892d19141b7ca1de666a2e863b0e589",
+   "local_size": 142685920,
+   "api_size": 142685920,
+   "license_in_card": true,
+   "url": "https://huggingface.co/datasets/MathArena/aime_2025_outputs/resolve/16e93d3bb9b0a25ea9422893464d46b3c5ff0ae9/data/train-00000-of-00001.parquet",
+   "snapshot_commit_date_utc": "2026-09-11T10:55:10.000Z",
+   "snapshot_commit_title": "Upload dataset",
+   "revision_is_main_head_on_fetch": true,
+   "pass": true
+  },
+  "parquet_describe": {
+   "num_rows": 7915,
+   "created_by": "parquet-cpp-arrow version 21.0.0",
+   "n_row_groups": 4,
+   "columns": [
+    "problem_idx",
+    "problem",
+    "model_name",
+    "model_config",
+    "idx_answer",
+    "all_messages",
+    "user_message",
+    "answer",
+    "input_tokens",
+    "output_tokens",
+    "cost",
+    "input_cost_per_tokens",
+    "output_cost_per_tokens",
+    "source",
+    "gold_answer",
+    "parsed_answer",
+    "correct"
+   ]
+  },
+  "reader": "pure-Python parquet reader (code/pq_reader.py); pyarrow absent, no installs",
+  "reader_check": {
+   "rows_checked": 7915,
+   "cost_identity_matches": 7915,
+   "idx_answer_range": [
+    0,
+    3
+   ]
+  }
+ },
+ "configs": {
+  "A": {
+   "locked": "anthropic/claude-35",
+   "raw_path_values": [
+    "anthropic/claude-35"
+   ],
+   "model_names": [
+    "Claude-3.5-Sonnet"
+   ],
+   "official_page": "https://matharena.ai/models/anthropic_claude_35 (fetched 2026-10-23): endpoint claude-3-5-sonnet-20241022, Max Tokens 8000, no temperature listed",
+   "github_main_config_text": "model: claude-3-5-sonnet-20241022\napi: anthropic\nmax_tokens: 8000\nconcurrent_requests: 20\nread_cost: 3\nwrite_cost: 15\nhuman_readable_id: Claude-3.5-Sonnet\ndate: \"2024-10-22\"\nother_params:\n  open: false\n  creator: Anthropic",
+   "github_config_commits": [
+    {
+     "sha": "1b2c2eda04558d3e0d1d7734dd39290a98c095a0",
+     "date": "2025-12-22T14:20:22Z",
+     "title": "Big update"
+    },
+    {
+     "sha": "462e6f47ccc4df187a2c0100169af246c60f03f8",
+     "date": "2025-05-15T09:31:04Z",
+     "title": "add scripts"
+    },
+    {
+     "sha": "5e8b18c03490ef9ab03a6110111e366e3166dec9",
+     "date": "2025-04-16T13:47:33Z",
+     "title": "updated data source"
+    }
+   ]
+  },
+  "B": {
+   "locked": "anthropic/claude-37",
+   "raw_path_values": [
+    "anthropic/claude-37"
+   ],
+   "model_names": [
+    "Claude-3.7-Sonnet (Think)"
+   ],
+   "official_page": "https://matharena.ai/models/anthropic_claude_37 (fetched 2026-10-23): endpoint claude-3-7-sonnet-20250219, Max Tokens 64000, Temperature 1, thinking budget 32000",
+   "github_main_config_text": "model: claude-3-7-sonnet-20250219\napi: anthropic\nmax_tokens: 64000\nconcurrent_requests: 1\ntemperature: 1\ntop_p: null\nthinking:\n  type: enabled \n  budget_tokens: 32000\nread_cost: 3\nwrite_cost: 15\nbatch_processing: false\nhuman_readable_id: Claude-3.7-Sonnet (Think)\ndate: \"2025-02-19\"\nother_params:\n  open: false\n  creator: Anthropic",
+   "github_config_commits": [
+    {
+     "sha": "1b2c2eda04558d3e0d1d7734dd39290a98c095a0",
+     "date": "2025-12-22T14:20:22Z",
+     "title": "Big update"
+    },
+    {
+     "sha": "2465ac382bd8f85ba1eac9fe1e4f4682f6407e7e",
+     "date": "2025-09-15T18:50:02Z",
+     "title": "big update"
+    },
+    {
+     "sha": "42029c4bf9bb38fd070244f8a876c24c2b680854",
+     "date": "2025-05-13T12:21:55Z",
+     "title": "brumo 2025"
+    },
+    {
+     "sha": "5e8b18c03490ef9ab03a6110111e366e3166dec9",
+     "date": "2025-04-16T13:47:33Z",
+     "title": "updated data source"
+    }
+   ]
+  },
+  "github_head": {
+   "sha": "e921f1aa8bd09394a1506886a5d8b032ff591655",
+   "date": "2026-10-16T14:08:12Z"
+  },
+  "historical_config_hash": "UNKNOWN",
+  "call_times": "UNKNOWN",
+  "resolved_model_receipts": "UNKNOWN",
+  "original_seed_retry": "UNKNOWN",
+  "parser_commit": "UNKNOWN",
+  "note": "GitHub configs are the current main versions; the files changed after generation (commit list), so the config at generation time is not verified."
+ },
+ "prompts": {
+  "system_prompt_sha256_values": {
+   "A": [
+    "NONE"
+   ],
+   "B": [
+    "NONE"
+   ]
+  },
+  "n_distinct_user_message_hashes": {
+   "A": 30,
+   "B": 30
+  },
+  "problems_in_F_with_identical_user_message_across_A_B": 15
+ },
+ "tokens": {
+  "A": {
+   "n": 120,
+   "min": 0,
+   "max": 2802,
+   "over_native_max_tokens": 0,
+   "native_max_tokens": 8000,
+   "empty_visible_answer": 0,
+   "no_valid_response": 0,
+   "parsed_answer_null": 0,
+   "correct_null": 0
+  },
+  "B": {
+   "n": 120,
+   "min": 8139,
+   "max": 46211,
+   "over_native_max_tokens": 0,
+   "native_max_tokens": 64000,
+   "empty_visible_answer": 0,
+   "no_valid_response": 0,
+   "parsed_answer_null": 0,
+   "correct_null": 0
+  }
+ },
+ "candidates": [
+  [
+   "None",
+   "1"
+  ],
+  [
+   "None",
+   "2"
+  ],
+  [
+   "None",
+   "3"
+  ],
+  [
+   "None",
+   "4"
+  ],
+  [
+   "None",
+   "5"
+  ],
+  [
+   "None",
+   "6"
+  ],
+  [
+   "None",
+   "7"
+  ],
+  [
+   "None",
+   "8"
+  ],
+  [
+   "None",
+   "9"
+  ],
+  [
+   "None",
+   "10"
+  ],
+  [
+   "None",
+   "11"
+  ],
+  [
+   "None",
+   "12"
+  ],
+  [
+   "None",
+   "13"
+  ],
+  [
+   "None",
+   "14"
+  ],
+  [
+   "None",
+   "15"
+  ],
+  [
+   "None",
+   "16"
+  ],
+  [
+   "None",
+   "17"
+  ],
+  [
+   "None",
+   "18"
+  ],
+  [
+   "None",
+   "19"
+  ],
+  [
+   "None",
+   "20"
+  ],
+  [
+   "None",
+   "21"
+  ],
+  [
+   "None",
+   "22"
+  ],
+  [
+   "None",
+   "23"
+  ],
+  [
+   "None",
+   "24"
+  ],
+  [
+   "None",
+   "25"
+  ],
+  [
+   "None",
+   "26"
+  ],
+  [
+   "None",
+   "27"
+  ],
+  [
+   "None",
+   "28"
+  ],
+  [
+   "None",
+   "29"
+  ],
+  [
+   "None",
+   "30"
+  ]
+ ],
+ "F": [
+  [
+   "None",
+   "1"
+  ],
+  [
+   "None",
+   "2"
+  ],
+  [
+   "None",
+   "3"
+  ],
+  [
+   "None",
+   "4"
+  ],
+  [
+   "None",
+   "5"
+  ],
+  [
+   "None",
+   "6"
+  ],
+  [
+   "None",
+   "7"
+  ],
+  [
+   "None",
+   "8"
+  ],
+  [
+   "None",
+   "9"
+  ],
+  [
+   "None",
+   "10"
+  ],
+  [
+   "None",
+   "11"
+  ],
+  [
+   "None",
+   "12"
+  ],
+  [
+   "None",
+   "13"
+  ],
+  [
+   "None",
+   "14"
+  ],
+  [
+   "None",
+   "15"
+  ],
+  [
+   "None",
+   "16"
+  ],
+  [
+   "None",
+   "17"
+  ],
+  [
+   "None",
+   "18"
+  ],
+  [
+   "None",
+   "19"
+  ],
+  [
+   "None",
+   "20"
+  ],
+  [
+   "None",
+   "21"
+  ],
+  [
+   "None",
+   "22"
+  ],
+  [
+   "None",
+   "23"
+  ],
+  [
+   "None",
+   "24"
+  ],
+  [
+   "None",
+   "25"
+  ],
+  [
+   "None",
+   "26"
+  ],
+  [
+   "None",
+   "27"
+  ],
+  [
+   "None",
+   "28"
+  ],
+  [
+   "None",
+   "29"
+  ],
+  [
+   "None",
+   "30"
+  ]
+ ],
+ "exclusions": {},
+ "time_evidence": {
+  "snapshot_commit_date_utc": "2026-09-11T10:55:10.000Z",
+  "per_row_generation_time": "UNKNOWN (not in the data; not invented)"
+ },
+ "retry_replacement_chain": "UNKNOWN for every slot",
+ "decided_before_unmask": [
+  "候选题 = 该 revision 全部行中出现的不同 (source, problem_idx)",
+  "idx=0..3 各恰一条（完全相同的重复行折叠）；同键内容不同或出现 0..3 之外的 idx 视为冲突，整题两边排除",
+  "明确技术失败/无有效响应 = answer 为空或仅空白 且 output_tokens 为空或 0；answer 为空但 output_tokens>0 视为已保存截断，保留并按锁定 correct",
+  "判分字段缺失 = correct 为空；parsed_answer 为空但 correct 非空视为已判分",
+  "配对：每题所有保留 A/B 行的题文 SHA256 与 gold_answer 各只有一个值",
+  "主量为轮换 0（p0 筛选），轮换 1..3 只作角色协议敏感性"
+ ],
+ "timings": {
+  "entry_gate_s": 0.6,
+  "read_and_mask_s": 22.79,
+  "seed_check_s": 1146.84,
+  "stage1_total_s": 1175.98
+ },
+ "code_snapshot": "results/frozen/code_at_seal/",
+ "peak_working_set_mib": 105.6
+}

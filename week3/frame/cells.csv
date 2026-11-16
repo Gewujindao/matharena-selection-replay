@@ -1,0 +1,13 @@
+cell_id,competition,endpoint,tier_A,tier_B,A,B,A_name,B_name,seen,seen_label,n_problems_frame,n_problems_complete,n_problems_breaking,contract,na_reason
+AIME|o3-mini|low->medium,AIME,o3-mini | openai/o3-mini,low,medium,openai/o3-mini--low,openai/o3-mini--medium,o3-mini (low),o3-mini (medium),0,,30,30,0,valid,
+AIME|o3-mini|medium->high,AIME,o3-mini | openai/o3-mini,medium,high,openai/o3-mini--medium,openai/o3-mini,o3-mini (medium),o3-mini (high),0,,30,17,13,NA,八槽完整提示不相同
+AIME|o4-mini|low->medium,AIME,o4-mini | openai/o4-mini,low,medium,openai/o4-mini--low,openai/o4-mini--medium,o4-mini (low),o4-mini (medium),0,,30,30,0,valid,
+AIME|o4-mini|medium->high,AIME,o4-mini | openai/o4-mini,medium,high,openai/o4-mini--medium,openai/o4-mini--high,o4-mini (medium),o4-mini (high),0,,30,30,0,valid,
+HMMT|o3-mini|low->medium,HMMT,o3-mini | openai/o3-mini,low,medium,openai/o3-mini--low,openai/o3-mini--medium,o3-mini (low),o3-mini (medium),0,,30,30,0,valid,
+HMMT|o3-mini|medium->high,HMMT,o3-mini | openai/o3-mini,medium,high,openai/o3-mini--medium,openai/o3-mini,o3-mini (medium),o3-mini (high),1,第二周（HMMT o3-mini medium→high）,30,30,0,valid,
+HMMT|o4-mini|low->medium,HMMT,o4-mini | openai/o4-mini,low,medium,openai/o4-mini--low,openai/o4-mini--medium,o4-mini (low),o4-mini (medium),0,,30,30,0,valid,
+HMMT|o4-mini|medium->high,HMMT,o4-mini | openai/o4-mini,medium,high,openai/o4-mini--medium,openai/o4-mini--high,o4-mini (medium),o4-mini (high),0,,30,30,0,valid,
+BRUMO|o4-mini|low->medium,BRUMO,o4-mini | openai/o4-mini,low,medium,openai/o4-mini--low,openai/o4-mini--medium,o4-mini (low),o4-mini (medium),0,,30,30,0,valid,
+BRUMO|o4-mini|medium->high,BRUMO,o4-mini | openai/o4-mini,medium,high,openai/o4-mini--medium,openai/o4-mini--high,o4-mini (medium),o4-mini (high),0,,30,30,0,valid,
+CMIMC|o4-mini|low->medium,CMIMC,o4-mini | openai/o4-mini,low,medium,openai/o4-mini--low,openai/o4-mini--medium,o4-mini (low),o4-mini (medium),0,,40,4,36,NA,八槽完整提示不相同
+CMIMC|o4-mini|medium->high,CMIMC,o4-mini | openai/o4-mini,medium,high,openai/o4-mini--medium,openai/o4-mini--high,o4-mini (medium),o4-mini (high),0,,40,1,39,NA,八槽完整提示不相同

@@ -1,0 +1,18 @@
+{
+ "A": {
+  "official_page": "https://matharena.ai/models/anthropic_claude_35",
+  "official_accuracy_pct": 3.33,
+  "official_ci_pct": 3.21,
+  "cached_all4_exact": "1/30",
+  "cached_all4_pct": 3.33,
+  "match": true
+ },
+ "B": {
+  "official_page": "https://matharena.ai/models/anthropic_claude_37",
+  "official_accuracy_pct": 49.17,
+  "official_ci_pct": 8.94,
+  "cached_all4_exact": "59/120",
+  "cached_all4_pct": 49.17,
+  "match": true
+ }
+}

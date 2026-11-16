@@ -1,0 +1,1 @@
+{"configs_by_display_name": {"A": ["openai/o3-mini--medium"], "B": ["openai/o3-mini"]}, "complete_unique_idx0_3_nonnull": true, "independent": {"K": 11, "G": "3/11", "R": "0", "D": "3/11", "D_F": "1/6", "D_minus_D_F": "7/66", "S": ["3", "7", "14", "16", "17", "18", "19", "20", "24", "25", "30"]}, "all_agree": true, "seconds": 752.49}

@@ -1,0 +1,8 @@
+competition,display_base,configs_tiers,note
+AIME,GPT-5-nano,"[[""openai/gpt-5-nano"", ""high""], [""openai/gpt-5-nano-low"", ""low""]]",显示名基础相同但路径去掉 --<档位> 后不同，按冻结规则不算同一端点；即使合并，档位也不相邻
+AIME,GPT-5.2,"[[""openai/gpt-52"", ""xhigh""], [""openai/gpt-52-high"", ""high""]]",显示名基础相同但路径去掉 --<档位> 后不同，按冻结规则不算同一端点；若把单连字符后缀也当档位后缀，这些档位中有相邻的一对（本次不计算）
+AIME,Grok 3 Mini,"[[""xai/grok-3-mini-high"", ""high""], [""xai/grok-3-mini-low"", ""low""]]",显示名基础相同但路径去掉 --<档位> 后不同，按冻结规则不算同一端点；即使合并，档位也不相邻
+HMMT,GPT-5.2,"[[""openai/gpt-52"", ""xhigh""], [""openai/gpt-52-high"", ""high""]]",显示名基础相同但路径去掉 --<档位> 后不同，按冻结规则不算同一端点；若把单连字符后缀也当档位后缀，这些档位中有相邻的一对（本次不计算）
+HMMT,Grok 3 Mini,"[[""xai/grok-3-mini-high"", ""high""], [""xai/grok-3-mini-low"", ""low""]]",显示名基础相同但路径去掉 --<档位> 后不同，按冻结规则不算同一端点；即使合并，档位也不相邻
+BRUMO,Grok 3 Mini,"[[""xai/grok-3-mini-high"", ""high""], [""xai/grok-3-mini-low"", ""low""]]",显示名基础相同但路径去掉 --<档位> 后不同，按冻结规则不算同一端点；即使合并，档位也不相邻
+CMIMC,Grok 3 Mini,"[[""xai/grok-3-mini-high"", ""high""], [""xai/grok-3-mini-low"", ""low""]]",显示名基础相同但路径去掉 --<档位> 后不同，按冻结规则不算同一端点；即使合并，档位也不相邻

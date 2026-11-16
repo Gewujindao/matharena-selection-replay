@@ -1,0 +1,587 @@
+{
+ "card": "matharena-selection-replay",
+ "week": 2,
+ "prereg": "预注册_第二周_冻结_2026-10-23.md",
+ "stage": "frame written before any correct value is used",
+ "written_local": "2026-10-23 17:16:18",
+ "data": {
+  "repo": "MathArena/hmmt_feb_2025_outputs",
+  "revision": "e3fb6c74f24eabf83413eb9e62b9816c1f3f7d2e",
+  "revision_is_main_head_on_fetch": true,
+  "revision_commit_date_utc": "2026-09-11T10:55:32.000Z",
+  "siblings": [
+   ".gitattributes",
+   "README.md",
+   "data/train-00000-of-00001.parquet"
+  ],
+  "card_download_size": 163542911,
+  "card_num_examples": 7680,
+  "license_in_card": "cc-by-nc-sa-4.0",
+  "url": "https://huggingface.co/datasets/MathArena/hmmt_feb_2025_outputs/resolve/e3fb6c74f24eabf83413eb9e62b9816c1f3f7d2e/data/train-00000-of-00001.parquet",
+  "parquet_bytes": 163542911,
+  "parquet_read_only": true,
+  "bytes_transferred_total": 163553558,
+  "transfer_cap_bytes": 250000000,
+  "retries": 0,
+  "new_api_calls": 0
+ },
+ "reader": "pure-Python parquet reader code/pq_reader.py (week 1); pyarrow absent, nothing installed",
+ "n_rows_file": 7680,
+ "n_configs_file": 64,
+ "config_match": {
+  "clear": true,
+  "mapping": {
+   "A": "openai/o3-mini--medium",
+   "B": "openai/o3-mini"
+  },
+  "detail": {
+   "A": {
+    "identifier": "o3-mini--medium",
+    "display": "o3-mini (medium)",
+    "matched_by_identifier": [
+     "openai/o3-mini--medium"
+    ],
+    "matched_by_display_name": [
+     "openai/o3-mini--medium"
+    ],
+    "candidates": [
+     "openai/o3-mini--medium"
+    ],
+    "model_names_of_candidates": {
+     "openai/o3-mini--medium": [
+      "o3-mini (medium)"
+     ]
+    }
+   },
+   "B": {
+    "identifier": "o3-mini--high",
+    "display": "o3-mini (high)",
+    "matched_by_identifier": [],
+    "matched_by_display_name": [
+     "openai/o3-mini"
+    ],
+    "candidates": [
+     "openai/o3-mini"
+    ],
+    "model_names_of_candidates": {
+     "openai/o3-mini": [
+      "o3-mini (high)"
+     ]
+    }
+   }
+  }
+ },
+ "candidates": [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30"
+ ],
+ "n_candidates": 30,
+ "F": [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30"
+ ],
+ "n_F": 30,
+ "full_30_contract": true,
+ "breaks": {},
+ "kept": {
+  "1": {
+   "A0": 4120,
+   "A1": 4121,
+   "A2": 4122,
+   "A3": 4123,
+   "B0": 5200,
+   "B1": 5201,
+   "B2": 5202,
+   "B3": 5203
+  },
+  "2": {
+   "A0": 4080,
+   "A1": 4081,
+   "A2": 4082,
+   "A3": 4083,
+   "B0": 5160,
+   "B1": 5161,
+   "B2": 5162,
+   "B3": 5163
+  },
+  "3": {
+   "A0": 4172,
+   "A1": 4173,
+   "A2": 4174,
+   "A3": 4175,
+   "B0": 5252,
+   "B1": 5253,
+   "B2": 5254,
+   "B3": 5255
+  },
+  "4": {
+   "A0": 4152,
+   "A1": 4153,
+   "A2": 4154,
+   "A3": 4155,
+   "B0": 5232,
+   "B1": 5233,
+   "B2": 5234,
+   "B3": 5235
+  },
+  "5": {
+   "A0": 4196,
+   "A1": 4197,
+   "A2": 4198,
+   "A3": 4199,
+   "B0": 5276,
+   "B1": 5277,
+   "B2": 5278,
+   "B3": 5279
+  },
+  "6": {
+   "A0": 4192,
+   "A1": 4193,
+   "A2": 4194,
+   "A3": 4195,
+   "B0": 5272,
+   "B1": 5273,
+   "B2": 5274,
+   "B3": 5275
+  },
+  "7": {
+   "A0": 4104,
+   "A1": 4105,
+   "A2": 4106,
+   "A3": 4107,
+   "B0": 5184,
+   "B1": 5185,
+   "B2": 5186,
+   "B3": 5187
+  },
+  "8": {
+   "A0": 4144,
+   "A1": 4145,
+   "A2": 4146,
+   "A3": 4147,
+   "B0": 5224,
+   "B1": 5225,
+   "B2": 5226,
+   "B3": 5227
+  },
+  "9": {
+   "A0": 4180,
+   "A1": 4181,
+   "A2": 4182,
+   "A3": 4183,
+   "B0": 5260,
+   "B1": 5261,
+   "B2": 5262,
+   "B3": 5263
+  },
+  "10": {
+   "A0": 4116,
+   "A1": 4117,
+   "A2": 4118,
+   "A3": 4119,
+   "B0": 5196,
+   "B1": 5197,
+   "B2": 5198,
+   "B3": 5199
+  },
+  "11": {
+   "A0": 4092,
+   "A1": 4093,
+   "A2": 4094,
+   "A3": 4095,
+   "B0": 5172,
+   "B1": 5173,
+   "B2": 5174,
+   "B3": 5175
+  },
+  "12": {
+   "A0": 4132,
+   "A1": 4133,
+   "A2": 4134,
+   "A3": 4135,
+   "B0": 5212,
+   "B1": 5213,
+   "B2": 5214,
+   "B3": 5215
+  },
+  "13": {
+   "A0": 4088,
+   "A1": 4089,
+   "A2": 4090,
+   "A3": 4091,
+   "B0": 5168,
+   "B1": 5169,
+   "B2": 5170,
+   "B3": 5171
+  },
+  "14": {
+   "A0": 4124,
+   "A1": 4125,
+   "A2": 4126,
+   "A3": 4127,
+   "B0": 5204,
+   "B1": 5205,
+   "B2": 5206,
+   "B3": 5207
+  },
+  "15": {
+   "A0": 4084,
+   "A1": 4085,
+   "A2": 4086,
+   "A3": 4087,
+   "B0": 5164,
+   "B1": 5165,
+   "B2": 5166,
+   "B3": 5167
+  },
+  "16": {
+   "A0": 4148,
+   "A1": 4149,
+   "A2": 4150,
+   "A3": 4151,
+   "B0": 5228,
+   "B1": 5229,
+   "B2": 5230,
+   "B3": 5231
+  },
+  "17": {
+   "A0": 4168,
+   "A1": 4169,
+   "A2": 4170,
+   "A3": 4171,
+   "B0": 5248,
+   "B1": 5249,
+   "B2": 5250,
+   "B3": 5251
+  },
+  "18": {
+   "A0": 4156,
+   "A1": 4157,
+   "A2": 4158,
+   "A3": 4159,
+   "B0": 5236,
+   "B1": 5237,
+   "B2": 5238,
+   "B3": 5239
+  },
+  "19": {
+   "A0": 4188,
+   "A1": 4189,
+   "A2": 4190,
+   "A3": 4191,
+   "B0": 5268,
+   "B1": 5269,
+   "B2": 5270,
+   "B3": 5271
+  },
+  "20": {
+   "A0": 4176,
+   "A1": 4177,
+   "A2": 4178,
+   "A3": 4179,
+   "B0": 5256,
+   "B1": 5257,
+   "B2": 5258,
+   "B3": 5259
+  },
+  "21": {
+   "A0": 4096,
+   "A1": 4097,
+   "A2": 4098,
+   "A3": 4099,
+   "B0": 5176,
+   "B1": 5177,
+   "B2": 5178,
+   "B3": 5179
+  },
+  "22": {
+   "A0": 4164,
+   "A1": 4165,
+   "A2": 4166,
+   "A3": 4167,
+   "B0": 5244,
+   "B1": 5245,
+   "B2": 5246,
+   "B3": 5247
+  },
+  "23": {
+   "A0": 4160,
+   "A1": 4161,
+   "A2": 4162,
+   "A3": 4163,
+   "B0": 5240,
+   "B1": 5241,
+   "B2": 5242,
+   "B3": 5243
+  },
+  "24": {
+   "A0": 4140,
+   "A1": 4141,
+   "A2": 4142,
+   "A3": 4143,
+   "B0": 5220,
+   "B1": 5221,
+   "B2": 5222,
+   "B3": 5223
+  },
+  "25": {
+   "A0": 4112,
+   "A1": 4113,
+   "A2": 4114,
+   "A3": 4115,
+   "B0": 5192,
+   "B1": 5193,
+   "B2": 5194,
+   "B3": 5195
+  },
+  "26": {
+   "A0": 4136,
+   "A1": 4137,
+   "A2": 4138,
+   "A3": 4139,
+   "B0": 5216,
+   "B1": 5217,
+   "B2": 5218,
+   "B3": 5219
+  },
+  "27": {
+   "A0": 4100,
+   "A1": 4101,
+   "A2": 4102,
+   "A3": 4103,
+   "B0": 5180,
+   "B1": 5181,
+   "B2": 5182,
+   "B3": 5183
+  },
+  "28": {
+   "A0": 4108,
+   "A1": 4109,
+   "A2": 4110,
+   "A3": 4111,
+   "B0": 5188,
+   "B1": 5189,
+   "B2": 5190,
+   "B3": 5191
+  },
+  "29": {
+   "A0": 4184,
+   "A1": 4185,
+   "A2": 4186,
+   "A3": 4187,
+   "B0": 5264,
+   "B1": 5265,
+   "B2": 5266,
+   "B3": 5267
+  },
+  "30": {
+   "A0": 4128,
+   "A1": 4129,
+   "A2": 4130,
+   "A3": 4131,
+   "B0": 5208,
+   "B1": 5209,
+   "B2": 5210,
+   "B3": 5211
+  }
+ },
+ "call_condition_attributes": {
+  "A": {
+   "raw_model_config": "openai/o3-mini--medium",
+   "model_name": [
+    "o3-mini (medium)"
+   ],
+   "n_rows": 120,
+   "system_or_developer_turns": [
+    "NONE"
+   ],
+   "message_role_patterns": [
+    "user/assistant"
+   ],
+   "output_tokens": {
+    "min": 1118,
+    "max": 19333,
+    "n_null": 0,
+    "n_zero": 0,
+    "over_official_max_tokens_32000": 0
+   },
+   "input_tokens": {
+    "min": 48,
+    "max": 618,
+    "n_null": 0,
+    "n_zero": 0
+   },
+   "nonempty_answer_with_zero_or_null_output_tokens": 0,
+   "saved_truncations": 0,
+   "unknown_status": 0,
+   "parsed_answer_null": 0,
+   "prices_per_million": [
+    [
+     1.1,
+     4.4
+    ]
+   ],
+   "total_cost_usd": 4.030259,
+   "sources": [
+    "None"
+   ]
+  },
+  "B": {
+   "raw_model_config": "openai/o3-mini",
+   "model_name": [
+    "o3-mini (high)"
+   ],
+   "n_rows": 120,
+   "system_or_developer_turns": [
+    "NONE"
+   ],
+   "message_role_patterns": [
+    "user/assistant"
+   ],
+   "output_tokens": {
+    "min": 1712,
+    "max": 83984,
+    "n_null": 0,
+    "n_zero": 0
+   },
+   "input_tokens": {
+    "min": 48,
+    "max": 618,
+    "n_null": 0,
+    "n_zero": 0
+   },
+   "nonempty_answer_with_zero_or_null_output_tokens": 0,
+   "saved_truncations": 0,
+   "unknown_status": 0,
+   "parsed_answer_null": 0,
+   "prices_per_million": [
+    [
+     1.1,
+     4.4
+    ]
+   ],
+   "total_cost_usd": 9.34109,
+   "sources": [
+    "None"
+   ]
+  },
+  "prompts": {
+   "problems_with_identical_user_message_across_all_8_slots": 30,
+   "problems_with_identical_user_message_within_side": {
+    "A": 30,
+    "B": 30
+   },
+   "n_F": 30
+  },
+  "token_bookkeeping_by_idx": {
+   "A": {
+    "0": {
+     "n_zero_output": 0,
+     "n_zero_input": 0
+    },
+    "1": {
+     "n_zero_output": 0,
+     "n_zero_input": 0
+    },
+    "2": {
+     "n_zero_output": 0,
+     "n_zero_input": 0
+    },
+    "3": {
+     "n_zero_output": 0,
+     "n_zero_input": 0
+    }
+   },
+   "B": {
+    "0": {
+     "n_zero_output": 0,
+     "n_zero_input": 0
+    },
+    "1": {
+     "n_zero_output": 0,
+     "n_zero_input": 0
+    },
+    "2": {
+     "n_zero_output": 0,
+     "n_zero_input": 0
+    },
+    "3": {
+     "n_zero_output": 0,
+     "n_zero_input": 0
+    }
+   }
+  }
+ },
+ "decided_before_correct": [
+  "配置对应：原始 model_config 去掉固定前缀 configs/models/ 与后缀 .yaml 后等于官网标识（或以 /标识 结尾），或其行的 model_name 恰等于官网显示名；每侧恰好收集到一个原始值、两侧不同、各只带一个 model_name 才算明确，否则 NA",
+  "题目按 problem_idx 识别；候选题 = 冻结副本全部行中出现的不同 problem_idx，须为 30",
+  "每侧 idx 0..3 各恰一条（完全相同的重复行折叠为一条）；同键内容不同或出现 0..3 以外的 idx 即违约",
+  "共同题文/gold：每题 8 条保留记录的 problem 与 gold_answer 各只有一个取值",
+  "完整提示：每条 user_message 非空且 all_messages 为含 user 轮的 JSON 列表；A/B 提示是否逐字相同只作调用条件属性报告，不据此删题",
+  "判分：correct 为已存布尔值（非空），gold_answer 非空",
+  "响应状态：answer 非空即保留（token 记 0 也保留，usage 按原记账层级读）；answer 空且 output_tokens>0 为已保存截断，按原 correct 计；answer 空且 output_tokens 空/0 为未知响应状态，不冒充答错，构成违约",
+  "任一题违约即整轮 NA：不删题、不换配置",
+  "主量固定 p0 = idx0 筛选、idx1–3 复评；四槽循环（筛选槽 = idx j）只作敏感性"
+ ],
+ "timings": {
+  "read_s": 11.84,
+  "stage1_total_s": 16.18
+ },
+ "peak_working_set_mib": 83.2
+}

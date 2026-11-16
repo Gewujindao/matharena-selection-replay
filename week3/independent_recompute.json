@@ -1,0 +1,319 @@
+{
+ "note": "独立重算：自写 parquet 解码（Thrift compact、Snappy、RLE/位打包、字典编码、v1/v2 数据页），不导入 pq_reader、w1_*、w2_*、w3_* 代码；自做档位/端点/相邻规则、逐 cell 合同、精确分数运算与冻结汇总；与 frame.json、summary.json 对比。由同一执行者写成，代码路径独立，人员不独立。",
+ "cells": [
+  {
+   "cell": "AIME|o3-mini|low->medium",
+   "valid": true,
+   "seen": false,
+   "n_problems_breaking": 0,
+   "breaking_reasons": [],
+   "primary": {
+    "K": 18,
+    "G": "17/27",
+    "R": "13/54",
+    "D": "7/18",
+    "D_F": "23/90",
+    "C": "2/15",
+    "GmDF": "101/270",
+    "flag": 0
+   }
+  },
+  {
+   "cell": "AIME|o3-mini|medium->high",
+   "valid": false,
+   "seen": false,
+   "n_problems_breaking": 13,
+   "breaking_reasons": [
+    "prompt differs"
+   ],
+   "primary": null
+  },
+  {
+   "cell": "AIME|o4-mini|low->medium",
+   "valid": true,
+   "seen": false,
+   "n_problems_breaking": 0,
+   "breaking_reasons": [],
+   "primary": {
+    "K": 12,
+    "G": "23/36",
+    "R": "1/4",
+    "D": "7/18",
+    "D_F": "19/90",
+    "C": "8/45",
+    "GmDF": "77/180",
+    "flag": 0
+   }
+  },
+  {
+   "cell": "AIME|o4-mini|medium->high",
+   "valid": true,
+   "seen": false,
+   "n_problems_breaking": 0,
+   "breaking_reasons": [],
+   "primary": {
+    "K": 4,
+    "G": "7/12",
+    "R": "1/4",
+    "D": "1/3",
+    "D_F": "1/9",
+    "C": "2/9",
+    "GmDF": "17/36",
+    "flag": 0
+   }
+  },
+  {
+   "cell": "HMMT|o3-mini|low->medium",
+   "valid": true,
+   "seen": false,
+   "n_problems_breaking": 0,
+   "breaking_reasons": [],
+   "primary": {
+    "K": 23,
+    "G": "8/23",
+    "R": "3/23",
+    "D": "5/23",
+    "D_F": "1/5",
+    "C": "2/115",
+    "GmDF": "17/115",
+    "flag": 0
+   }
+  },
+  {
+   "cell": "HMMT|o3-mini|medium->high",
+   "valid": true,
+   "seen": true,
+   "n_problems_breaking": 0,
+   "breaking_reasons": [],
+   "primary": {
+    "K": 11,
+    "G": "3/11",
+    "R": "0/1",
+    "D": "3/11",
+    "D_F": "1/6",
+    "C": "7/66",
+    "GmDF": "7/66",
+    "flag": 0
+   }
+  },
+  {
+   "cell": "HMMT|o4-mini|low->medium",
+   "valid": true,
+   "seen": false,
+   "n_problems_breaking": 0,
+   "breaking_reasons": [],
+   "primary": {
+    "K": 15,
+    "G": "4/9",
+    "R": "4/15",
+    "D": "8/45",
+    "D_F": "8/45",
+    "C": "0/1",
+    "GmDF": "4/15",
+    "flag": 0
+   }
+  },
+  {
+   "cell": "HMMT|o4-mini|medium->high",
+   "valid": true,
+   "seen": false,
+   "n_problems_breaking": 0,
+   "breaking_reasons": [],
+   "primary": {
+    "K": 7,
+    "G": "4/7",
+    "R": "5/21",
+    "D": "1/3",
+    "D_F": "1/6",
+    "C": "1/6",
+    "GmDF": "17/42",
+    "flag": 0
+   }
+  },
+  {
+   "cell": "BRUMO|o4-mini|low->medium",
+   "valid": true,
+   "seen": false,
+   "n_problems_breaking": 0,
+   "breaking_reasons": [],
+   "primary": {
+    "K": 10,
+    "G": "17/30",
+    "R": "1/5",
+    "D": "11/30",
+    "D_F": "1/6",
+    "C": "1/5",
+    "GmDF": "2/5",
+    "flag": 0
+   }
+  },
+  {
+   "cell": "BRUMO|o4-mini|medium->high",
+   "valid": true,
+   "seen": false,
+   "n_problems_breaking": 0,
+   "breaking_reasons": [],
+   "primary": {
+    "K": 4,
+    "G": "5/12",
+    "R": "1/2",
+    "D": "-1/12",
+    "D_F": "1/90",
+    "C": "-17/180",
+    "GmDF": "73/180",
+    "flag": 1
+   }
+  },
+  {
+   "cell": "CMIMC|o4-mini|low->medium",
+   "valid": false,
+   "seen": false,
+   "n_problems_breaking": 36,
+   "breaking_reasons": [
+    "prompt differs"
+   ],
+   "primary": null
+  },
+  {
+   "cell": "CMIMC|o4-mini|medium->high",
+   "valid": false,
+   "seen": false,
+   "n_problems_breaking": 39,
+   "breaking_reasons": [
+    "prompt differs"
+   ],
+   "primary": null
+  }
+ ],
+ "aggregates": {
+  "all": {
+   "G": {
+    "macro": "2909461/5738040",
+    "competitions": {
+     "AIME": "67/108",
+     "HMMT": "26083/63756",
+     "BRUMO": "59/120",
+     "CMIMC": null
+    }
+   },
+   "R": {
+    "macro": "26227/104328",
+    "competitions": {
+     "AIME": "53/216",
+     "HMMT": "767/4830",
+     "BRUMO": "7/20",
+     "CMIMC": null
+    }
+   },
+   "D": {
+    "macro": "8732/34155",
+    "competitions": {
+     "AIME": "3/8",
+     "HMMT": "11399/45540",
+     "BRUMO": "17/120",
+     "CMIMC": null
+    }
+   },
+   "D_F": {
+    "macro": "19/120",
+    "competitions": {
+     "AIME": "5/24",
+     "HMMT": "8/45",
+     "BRUMO": "4/45",
+     "CMIMC": null
+    }
+   },
+   "C": {
+    "macro": "26593/273240",
+    "competitions": {
+     "AIME": "1/6",
+     "HMMT": "367/5060",
+     "BRUMO": "19/360",
+     "CMIMC": null
+    }
+   },
+   "GmDF": {
+    "macro": "1000469/2869020",
+    "competitions": {
+     "AIME": "89/216",
+     "HMMT": "24581/106260",
+     "BRUMO": "29/72",
+     "CMIMC": null
+    }
+   },
+   "reversal": {
+    "n": 1,
+    "den": 9
+   }
+  },
+  "excluding_seen": {
+   "G": {
+    "macro": "267761/521640",
+    "competitions": {
+     "AIME": "67/108",
+     "HMMT": "620/1449",
+     "BRUMO": "59/120",
+     "CMIMC": null
+    }
+   },
+   "R": {
+    "macro": "27361/104328",
+    "competitions": {
+     "AIME": "53/216",
+     "HMMT": "1849/9660",
+     "BRUMO": "7/20",
+     "CMIMC": null
+    }
+   },
+   "D": {
+    "macro": "1559/6210",
+    "competitions": {
+     "AIME": "3/8",
+     "HMMT": "979/4140",
+     "BRUMO": "17/120",
+     "CMIMC": null
+    }
+   },
+   "D_F": {
+    "macro": "29/180",
+    "competitions": {
+     "AIME": "5/24",
+     "HMMT": "67/360",
+     "BRUMO": "4/45",
+     "CMIMC": null
+    }
+   },
+   "C": {
+    "macro": "1117/12420",
+    "competitions": {
+     "AIME": "1/6",
+     "HMMT": "139/2760",
+     "BRUMO": "19/360",
+     "CMIMC": null
+    }
+   },
+   "GmDF": {
+    "macro": "183719/521640",
+    "competitions": {
+     "AIME": "89/216",
+     "HMMT": "1557/6440",
+     "BRUMO": "29/72",
+     "CMIMC": null
+    }
+   },
+   "reversal": {
+    "n": 1,
+    "den": 8
+   }
+  }
+ },
+ "mismatches": [],
+ "all_agree": true,
+ "seconds": 133.33,
+ "peak_working_set_mib": 73.6,
+ "limits": {
+  "below_normal": true,
+  "job_memory_cap_2GiB": true
+ },
+ "pid": 27272
+}
