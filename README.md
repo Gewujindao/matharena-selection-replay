@@ -2,6 +2,14 @@
 
 **中文简介**：本仓库用 MathArena 公开的模型作答记录做回放，量化"按某个配置答错来筛题"带来的选择效应。把两个配置记为 A、B：在 A 首次作答答错的题上，B 的提升（G）中有多少只是 A 自己重答也能拿回的（R），剩下的配置差（D = G − R）与全部题目上的配置差（D_F）相比如何。研究分三个阶段，每个阶段都先冻结预注册，再取数计算；第三阶段覆盖四场 2025 最终答案比赛中同一基础模型相邻推理档位的全部配置对。数据不随仓库分发。
 
+## At a glance
+
+- Replays MathArena's cached responses to measure how screening on a lower reasoning tier's wrong answers inflates the next tier's apparent gain, across all adjacent o3-mini / o4-mini tier pairs in four 2025 competitions.
+- Macro-averaged over the 9 valid cells, the apparent gain on screened problems is G = +50.70 pp, of which R = +25.14 pp is recovered by the lower tier's own re-attempts, while the gap on all problems is D_F = +15.83 pp.
+- Each stage was preregistered and frozen before scoring, and an independent recomputation with a separate Parquet decoder and implementation agrees on every reported item.
+
+![Apparent gain G, lower-tier recovery R and all-problem gap D_F for the 9 valid adjacent-tier cells and their macro average](figures/summary.png)
+
 ---
 
 ## 1. Research question
