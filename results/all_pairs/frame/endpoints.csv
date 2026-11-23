@@ -1,0 +1,52 @@
+competition,display_base,config_base,tiers,configs,status,adjacent_pairs,reason
+AIME,GPT OSS 120B,openai/oss-120b,high,openai/oss-120b,ok,,only one tier
+AIME,GPT OSS 20B,openai/oss-20b,high,openai/oss-20b,ok,,only one tier
+AIME,GPT-5,openai/gpt-5,high,openai/gpt-5,ok,,only one tier
+AIME,GPT-5-mini,openai/gpt-5-mini,high,openai/gpt-5-mini,ok,,only one tier
+AIME,GPT-5-nano,openai/gpt-5-nano,high,openai/gpt-5-nano,ok,,only one tier
+AIME,GPT-5-nano,openai/gpt-5-nano-low,low,openai/gpt-5-nano-low,ok,,only one tier
+AIME,GPT-5.1,openai/gpt-51,high,openai/gpt-51,ok,,only one tier
+AIME,GPT-5.2,openai/gpt-52,xhigh,openai/gpt-52,ok,,only one tier
+AIME,GPT-5.2,openai/gpt-52-high,high,openai/gpt-52-high,ok,,only one tier
+AIME,Grok 3 Mini,xai/grok-3-mini-high,high,xai/grok-3-mini-high,ok,,only one tier
+AIME,Grok 3 Mini,xai/grok-3-mini-low,low,xai/grok-3-mini-low,ok,,only one tier
+AIME,o1,openai/o1,medium,openai/o1,ok,,only one tier
+AIME,o3,openai/o3,high,openai/o3,ok,,only one tier
+AIME,o3-mini,openai/o3-mini,"low,medium,high","openai/o3-mini--low,openai/o3-mini--medium,openai/o3-mini",ok,"low->medium,medium->high",
+AIME,o4-mini,openai/o4-mini,"low,medium,high","openai/o4-mini--low,openai/o4-mini--medium,openai/o4-mini--high",ok,"low->medium,medium->high",
+HMMT,GPT OSS 120B,openai/oss-120b,high,openai/oss-120b,ok,,only one tier
+HMMT,GPT OSS 20B,openai/oss-20b,high,openai/oss-20b,ok,,only one tier
+HMMT,GPT-5,openai/gpt-5,high,openai/gpt-5,ok,,only one tier
+HMMT,GPT-5-mini,openai/gpt-5-mini,high,openai/gpt-5-mini,ok,,only one tier
+HMMT,GPT-5-nano,openai/gpt-5-nano,high,openai/gpt-5-nano,ok,,only one tier
+HMMT,GPT-5.1,openai/gpt-51,high,openai/gpt-51,ok,,only one tier
+HMMT,GPT-5.2,openai/gpt-52,xhigh,openai/gpt-52,ok,,only one tier
+HMMT,GPT-5.2,openai/gpt-52-high,high,openai/gpt-52-high,ok,,only one tier
+HMMT,Grok 3 Mini,xai/grok-3-mini-high,high,xai/grok-3-mini-high,ok,,only one tier
+HMMT,Grok 3 Mini,xai/grok-3-mini-low,low,xai/grok-3-mini-low,ok,,only one tier
+HMMT,o1,openai/o1,medium,openai/o1,ok,,only one tier
+HMMT,o3,openai/o3,high,openai/o3,ok,,only one tier
+HMMT,o3-mini,openai/o3-mini,"low,medium,high","openai/o3-mini--low,openai/o3-mini--medium,openai/o3-mini",ok,"low->medium,medium->high",
+HMMT,o4-mini,openai/o4-mini,"low,medium,high","openai/o4-mini--low,openai/o4-mini--medium,openai/o4-mini--high",ok,"low->medium,medium->high",
+BRUMO,GPT OSS 120B,openai/oss-120b,high,openai/oss-120b,ok,,only one tier
+BRUMO,GPT OSS 20B,openai/oss-20b,high,openai/oss-20b,ok,,only one tier
+BRUMO,GPT-5,openai/gpt-5,high,openai/gpt-5,ok,,only one tier
+BRUMO,GPT-5-mini,openai/gpt-5-mini,high,openai/gpt-5-mini,ok,,only one tier
+BRUMO,GPT-5-nano,openai/gpt-5-nano,high,openai/gpt-5-nano,ok,,only one tier
+BRUMO,GPT-5.1,openai/gpt-51,high,openai/gpt-51,ok,,only one tier
+BRUMO,GPT-5.2,openai/gpt-52-high,high,openai/gpt-52-high,ok,,only one tier
+BRUMO,Grok 3 Mini,xai/grok-3-mini-high,high,xai/grok-3-mini-high,ok,,only one tier
+BRUMO,Grok 3 Mini,xai/grok-3-mini-low,low,xai/grok-3-mini-low,ok,,only one tier
+BRUMO,o3,openai/o3,high,openai/o3,ok,,only one tier
+BRUMO,o4-mini,openai/o4-mini,"low,medium,high","openai/o4-mini--low,openai/o4-mini--medium,openai/o4-mini--high",ok,"low->medium,medium->high",
+CMIMC,GPT OSS 120B,openai/oss-120b,high,openai/oss-120b,ok,,only one tier
+CMIMC,GPT OSS 20B,openai/oss-20b,high,openai/oss-20b,ok,,only one tier
+CMIMC,GPT-5,openai/gpt-5,high,openai/gpt-5,ok,,only one tier
+CMIMC,GPT-5-mini,openai/gpt-5-mini,high,openai/gpt-5-mini,ok,,only one tier
+CMIMC,GPT-5-nano,openai/gpt-5-nano,high,openai/gpt-5-nano,ok,,only one tier
+CMIMC,GPT-5.1,openai/gpt-51,high,openai/gpt-51,ok,,only one tier
+CMIMC,GPT-5.2,openai/gpt-52-high,high,openai/gpt-52-high,ok,,only one tier
+CMIMC,Grok 3 Mini,xai/grok-3-mini-high,high,xai/grok-3-mini-high,ok,,only one tier
+CMIMC,Grok 3 Mini,xai/grok-3-mini-low,low,xai/grok-3-mini-low,ok,,only one tier
+CMIMC,o3,openai/o3,high,openai/o3,ok,,only one tier
+CMIMC,o4-mini,openai/o4-mini,"low,medium,high","openai/o4-mini--low,openai/o4-mini--medium,openai/o4-mini--high",ok,"low->medium,medium->high",

@@ -1,0 +1,70 @@
+{
+ "method": "Separate code path: own parquet decoding (Thrift compact, Snappy, RLE/bit-packing, dictionary), A/B selected by model_name equal to the official display name, own completeness check and exact fraction arithmetic",
+ "n_rows": 7680,
+ "configs_by_display_name": {
+  "A": [
+   "openai/o3-mini--medium"
+  ],
+  "B": [
+   "openai/o3-mini"
+  ]
+ },
+ "n_problems": 30,
+ "complete_unique_idx0_3_nonnull": true,
+ "idx_outside_0_3": [],
+ "A_all4_hits": 64,
+ "B_all4_hits": 81,
+ "independent": {
+  "K": 11,
+  "G": "3/11",
+  "R": "0",
+  "D": "3/11",
+  "D_F": "1/6",
+  "D_minus_D_F": "7/66",
+  "S": [
+   "3",
+   "7",
+   "14",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "24",
+   "25",
+   "30"
+  ]
+ },
+ "main_pipeline": {
+  "K": 11,
+  "G": "3/11",
+  "R": "0",
+  "D": "3/11",
+  "D_F": "1/6",
+  "D_minus_D_F": "7/66",
+  "S": [
+   "3",
+   "7",
+   "14",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "24",
+   "25",
+   "30"
+  ]
+ },
+ "agree": {
+  "K": true,
+  "G": true,
+  "R": true,
+  "D": true,
+  "D_F": true,
+  "D_minus_D_F": true,
+  "S": true
+ },
+ "all_agree": true,
+ "identity_G_minus_R_equals_D": true
+}

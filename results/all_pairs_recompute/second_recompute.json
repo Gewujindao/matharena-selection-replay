@@ -1,0 +1,4726 @@
+{
+ "mapping": {
+  "AIME": {
+   "n_rows": 7915,
+   "n_configs": 67,
+   "n_problems": 30,
+   "configs": {
+    "anthropic/claude-35": {
+     "names": [
+      "Claude-3.5-Sonnet"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-3.5-Sonnet",
+     "config_base": "anthropic/claude-35",
+     "status": "no_tier",
+     "tier": null
+    },
+    "anthropic/claude-37": {
+     "names": [
+      "Claude-3.7-Sonnet (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-3.7-Sonnet (Think)",
+     "config_base": "anthropic/claude-37",
+     "status": "no_tier",
+     "tier": null
+    },
+    "anthropic/claude-opus-4": {
+     "names": [
+      "Claude-Opus-4.0 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-Opus-4.0 (Think)",
+     "config_base": "anthropic/claude-opus-4",
+     "status": "no_tier",
+     "tier": null
+    },
+    "anthropic/claude-sonnet-45": {
+     "names": [
+      "Claude-Sonnet-4.5 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-Sonnet-4.5 (Think)",
+     "config_base": "anthropic/claude-sonnet-45",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_1.5b": {
+     "names": [
+      "DeepSeek-R1-Distill-1.5B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-1.5B",
+     "config_base": "deepseek/deepseek_distill_1.5b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_14b": {
+     "names": [
+      "DeepSeek-R1-Distill-14B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-14B",
+     "config_base": "deepseek/deepseek_distill_14b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_32b": {
+     "names": [
+      "DeepSeek-R1-Distill-32B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-32B",
+     "config_base": "deepseek/deepseek_distill_32b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_70b": {
+     "names": [
+      "DeepSeek-R1-Distill-70B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-70B",
+     "config_base": "deepseek/deepseek_distill_70b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_r1": {
+     "names": [
+      "DeepSeek-R1"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1",
+     "config_base": "deepseek/deepseek_r1",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_r1_0528": {
+     "names": [
+      "DeepSeek-R1-0528"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-0528",
+     "config_base": "deepseek/deepseek_r1_0528",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v3": {
+     "names": [
+      "DeepSeek-V3"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-V3",
+     "config_base": "deepseek/deepseek_v3",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v31": {
+     "names": [
+      "DeepSeek-v3.1 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.1 (Think)",
+     "config_base": "deepseek/deepseek_v31",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32": {
+     "names": [
+      "DeepSeek-v3.2-Exp (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2-Exp (Think)",
+     "config_base": "deepseek/deepseek_v32",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32_dec": {
+     "names": [
+      "DeepSeek-v3.2 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2 (Think)",
+     "config_base": "deepseek/deepseek_v32_dec",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32_special": {
+     "names": [
+      "DeepSeek-v3.2-Speciale"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2-Speciale",
+     "config_base": "deepseek/deepseek_v32_special",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v3_03_24": {
+     "names": [
+      "DeepSeek-V3-03-24"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-V3-03-24",
+     "config_base": "deepseek/deepseek_v3_03_24",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-3-flash": {
+     "names": [
+      "Gemini 3 Flash"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 3 Flash",
+     "config_base": "gemini/gemini-3-flash",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-flash-2.0": {
+     "names": [
+      "gemini-2.0-flash"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "gemini-2.0-flash",
+     "config_base": "gemini/gemini-flash-2.0",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-flash-2.5": {
+     "names": [
+      "Gemini 2.5 Flash (Thinking)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Flash (Thinking)",
+     "config_base": "gemini/gemini-flash-2.5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-flash-thinking-2.0": {
+     "names": [
+      "gemini-2.0-flash-thinking"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "gemini-2.0-flash-thinking",
+     "config_base": "gemini/gemini-flash-thinking-2.0",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-pro-2.0": {
+     "names": [
+      "gemini-2.0-pro"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "gemini-2.0-pro",
+     "config_base": "gemini/gemini-pro-2.0",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-pro-2.5": {
+     "names": [
+      "Gemini 2.5 Pro"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Pro",
+     "config_base": "gemini/gemini-pro-2.5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-pro-2.5-05-06": {
+     "names": [
+      "Gemini 2.5 Pro (05-06)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Pro (05-06)",
+     "config_base": "gemini/gemini-pro-2.5-05-06",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/riftrunner": {
+     "names": [
+      "Gemini 3 Pro (preview)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 3 Pro (preview)",
+     "config_base": "gemini/riftrunner",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-45": {
+     "names": [
+      "GLM 4.5"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.5",
+     "config_base": "glm/glm-45",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-45-air": {
+     "names": [
+      "GLM 4.5 Air"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.5 Air",
+     "config_base": "glm/glm-45-air",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-46": {
+     "names": [
+      "GLM 4.6"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.6",
+     "config_base": "glm/glm-46",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-47": {
+     "names": [
+      "GLM 4.7"
+     ],
+     "rows": 117,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.7",
+     "config_base": "glm/glm-47",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-5": {
+     "names": [
+      "GLM 5"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 5",
+     "config_base": "glm/glm-5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "llama4/maverick": {
+     "names": [
+      "Llama-4-Maverick"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Llama-4-Maverick",
+     "config_base": "llama4/maverick",
+     "status": "no_tier",
+     "tier": null
+    },
+    "moonshot/k2-thinking": {
+     "names": [
+      "Kimi K2 Thinking"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Kimi K2 Thinking",
+     "config_base": "moonshot/k2-thinking",
+     "status": "no_tier",
+     "tier": null
+    },
+    "moonshot/k25": {
+     "names": [
+      "Kimi K2.5 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Kimi K2.5 (Think)",
+     "config_base": "moonshot/k25",
+     "status": "no_tier",
+     "tier": null
+    },
+    "openai/gpt-4o": {
+     "names": [
+      "gpt-4o"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "gpt-4o",
+     "config_base": "openai/gpt-4o",
+     "status": "no_tier",
+     "tier": null
+    },
+    "openai/gpt-5": {
+     "names": [
+      "GPT-5 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5",
+     "config_base": "openai/gpt-5",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-5-mini": {
+     "names": [
+      "GPT-5-mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5-mini",
+     "config_base": "openai/gpt-5-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-5-nano": {
+     "names": [
+      "GPT-5-nano (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-5-nano-low": {
+     "names": [
+      "GPT-5-nano (low)"
+     ],
+     "rows": 117,
+     "name_tier": "low",
+     "path_tier": null,
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano-low",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "openai/gpt-51": {
+     "names": [
+      "GPT-5.1 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5.1",
+     "config_base": "openai/gpt-51",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-52": {
+     "names": [
+      "GPT-5.2 (xhigh)"
+     ],
+     "rows": 120,
+     "name_tier": "xhigh",
+     "path_tier": null,
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52",
+     "status": "tiered",
+     "tier": "xhigh"
+    },
+    "openai/gpt-52-high": {
+     "names": [
+      "GPT-5.2 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52-high",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o1": {
+     "names": [
+      "o1 (medium)"
+     ],
+     "rows": 120,
+     "name_tier": "medium",
+     "path_tier": null,
+     "display_base": "o1",
+     "config_base": "openai/o1",
+     "status": "tiered",
+     "tier": "medium"
+    },
+    "openai/o3": {
+     "names": [
+      "o3 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "o3",
+     "config_base": "openai/o3",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o3-mini": {
+     "names": [
+      "o3-mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "o3-mini",
+     "config_base": "openai/o3-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o3-mini--low": {
+     "names": [
+      "o3-mini (low)"
+     ],
+     "rows": 120,
+     "name_tier": "low",
+     "path_tier": "low",
+     "display_base": "o3-mini",
+     "config_base": "openai/o3-mini",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "openai/o3-mini--medium": {
+     "names": [
+      "o3-mini (medium)"
+     ],
+     "rows": 120,
+     "name_tier": "medium",
+     "path_tier": "medium",
+     "display_base": "o3-mini",
+     "config_base": "openai/o3-mini",
+     "status": "tiered",
+     "tier": "medium"
+    },
+    "openai/o4-mini--high": {
+     "names": [
+      "o4-mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": "high",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o4-mini--low": {
+     "names": [
+      "o4-mini (low)"
+     ],
+     "rows": 120,
+     "name_tier": "low",
+     "path_tier": "low",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "openai/o4-mini--medium": {
+     "names": [
+      "o4-mini (medium)"
+     ],
+     "rows": 120,
+     "name_tier": "medium",
+     "path_tier": "medium",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "medium"
+    },
+    "openai/oss-120b": {
+     "names": [
+      "GPT OSS 120B (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT OSS 120B",
+     "config_base": "openai/oss-120b",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/oss-20b": {
+     "names": [
+      "GPT OSS 20B (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT OSS 20B",
+     "config_base": "openai/oss-20b",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "other/k2-think": {
+     "names": [
+      "K2-Think"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "K2-Think",
+     "config_base": "other/k2-think",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/limo": {
+     "names": [
+      "LIMO"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "LIMO",
+     "config_base": "other/limo",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/open-thoughts": {
+     "names": [
+      "OpenThinker-32B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "OpenThinker-32B",
+     "config_base": "other/open-thoughts",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/qed-nano": {
+     "names": [
+      "QED-Nano"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "QED-Nano",
+     "config_base": "other/qed-nano",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/s1": {
+     "names": [
+      "s1.1-32B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "s1.1-32B",
+     "config_base": "other/s1",
+     "status": "no_tier",
+     "tier": null
+    },
+    "phi4/14b-reasoning-plus": {
+     "names": [
+      "Phi-4-reasoning-plus"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Phi-4-reasoning-plus",
+     "config_base": "phi4/14b-reasoning-plus",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwen3_235b_a22b": {
+     "names": [
+      "Qwen3-235B-A22B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Qwen3-235B-A22B",
+     "config_base": "qwen/qwen3_235b_a22b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwen3_30b_a3b": {
+     "names": [
+      "Qwen3-30B-A3B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Qwen3-30B-A3B",
+     "config_base": "qwen/qwen3_30b_a3b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwq": {
+     "names": [
+      "QwQ-32B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "QwQ-32B",
+     "config_base": "qwen/qwq",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwq-preview": {
+     "names": [
+      "QwQ-32B-Preview"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "QwQ-32B-Preview",
+     "config_base": "qwen/qwq-preview",
+     "status": "no_tier",
+     "tier": null
+    },
+    "stepfun/3.5-flash": {
+     "names": [
+      "Step 3.5 Flash"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Step 3.5 Flash",
+     "config_base": "stepfun/3.5-flash",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-3-mini-high": {
+     "names": [
+      "Grok 3 Mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-high",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "xai/grok-3-mini-low": {
+     "names": [
+      "Grok 3 Mini (low)"
+     ],
+     "rows": 120,
+     "name_tier": "low",
+     "path_tier": null,
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-low",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "xai/grok-4": {
+     "names": [
+      "Grok 4"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4",
+     "config_base": "xai/grok-4",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-4-fast-reasoning": {
+     "names": [
+      "Grok 4 Fast R"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4 Fast R",
+     "config_base": "xai/grok-4-fast-reasoning",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-4-fast-selfcheckagent": {
+     "names": [
+      "Grok 4 Fast (Reasoning) (Selfcheck Agent)"
+     ],
+     "rows": 1,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4 Fast (Reasoning) (Selfcheck Agent)",
+     "config_base": "xai/grok-4-fast-selfcheckagent",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-41-fast-reasoning": {
+     "names": [
+      "Grok 4.1 Fast (Reasoning)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4.1 Fast (Reasoning)",
+     "config_base": "xai/grok-41-fast-reasoning",
+     "status": "no_tier",
+     "tier": null
+    }
+   },
+   "endpoints": {
+    "GPT OSS 120B | openai/oss-120b": {
+     "display_base": "GPT OSS 120B",
+     "config_base": "openai/oss-120b",
+     "tiers": {
+      "high": [
+       "openai/oss-120b"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT OSS 20B | openai/oss-20b": {
+     "display_base": "GPT OSS 20B",
+     "config_base": "openai/oss-20b",
+     "tiers": {
+      "high": [
+       "openai/oss-20b"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5 | openai/gpt-5": {
+     "display_base": "GPT-5",
+     "config_base": "openai/gpt-5",
+     "tiers": {
+      "high": [
+       "openai/gpt-5"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5-mini | openai/gpt-5-mini": {
+     "display_base": "GPT-5-mini",
+     "config_base": "openai/gpt-5-mini",
+     "tiers": {
+      "high": [
+       "openai/gpt-5-mini"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5-nano | openai/gpt-5-nano": {
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano",
+     "tiers": {
+      "high": [
+       "openai/gpt-5-nano"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5-nano | openai/gpt-5-nano-low": {
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano-low",
+     "tiers": {
+      "low": [
+       "openai/gpt-5-nano-low"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.1 | openai/gpt-51": {
+     "display_base": "GPT-5.1",
+     "config_base": "openai/gpt-51",
+     "tiers": {
+      "high": [
+       "openai/gpt-51"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.2 | openai/gpt-52": {
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52",
+     "tiers": {
+      "xhigh": [
+       "openai/gpt-52"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.2 | openai/gpt-52-high": {
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52-high",
+     "tiers": {
+      "high": [
+       "openai/gpt-52-high"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "Grok 3 Mini | xai/grok-3-mini-high": {
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-high",
+     "tiers": {
+      "high": [
+       "xai/grok-3-mini-high"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "Grok 3 Mini | xai/grok-3-mini-low": {
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-low",
+     "tiers": {
+      "low": [
+       "xai/grok-3-mini-low"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o1 | openai/o1": {
+     "display_base": "o1",
+     "config_base": "openai/o1",
+     "tiers": {
+      "medium": [
+       "openai/o1"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o3 | openai/o3": {
+     "display_base": "o3",
+     "config_base": "openai/o3",
+     "tiers": {
+      "high": [
+       "openai/o3"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o3-mini | openai/o3-mini": {
+     "display_base": "o3-mini",
+     "config_base": "openai/o3-mini",
+     "tiers": {
+      "low": [
+       "openai/o3-mini--low"
+      ],
+      "medium": [
+       "openai/o3-mini--medium"
+      ],
+      "high": [
+       "openai/o3-mini"
+      ]
+     },
+     "status": "ok",
+     "pairs": [
+      [
+       "low",
+       "medium"
+      ],
+      [
+       "medium",
+       "high"
+      ]
+     ]
+    },
+    "o4-mini | openai/o4-mini": {
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "tiers": {
+      "low": [
+       "openai/o4-mini--low"
+      ],
+      "medium": [
+       "openai/o4-mini--medium"
+      ],
+      "high": [
+       "openai/o4-mini--high"
+      ]
+     },
+     "status": "ok",
+     "pairs": [
+      [
+       "low",
+       "medium"
+      ],
+      [
+       "medium",
+       "high"
+      ]
+     ]
+    }
+   },
+   "pairs": [
+    {
+     "competition": "AIME",
+     "endpoint": "o3-mini | openai/o3-mini",
+     "tier_A": "low",
+     "tier_B": "medium",
+     "A": "openai/o3-mini--low",
+     "B": "openai/o3-mini--medium",
+     "seen": false
+    },
+    {
+     "competition": "AIME",
+     "endpoint": "o3-mini | openai/o3-mini",
+     "tier_A": "medium",
+     "tier_B": "high",
+     "A": "openai/o3-mini--medium",
+     "B": "openai/o3-mini",
+     "seen": false
+    },
+    {
+     "competition": "AIME",
+     "endpoint": "o4-mini | openai/o4-mini",
+     "tier_A": "low",
+     "tier_B": "medium",
+     "A": "openai/o4-mini--low",
+     "B": "openai/o4-mini--medium",
+     "seen": false
+    },
+    {
+     "competition": "AIME",
+     "endpoint": "o4-mini | openai/o4-mini",
+     "tier_A": "medium",
+     "tier_B": "high",
+     "A": "openai/o4-mini--medium",
+     "B": "openai/o4-mini--high",
+     "seen": false
+    }
+   ],
+   "null_problem_idx": 0
+  },
+  "HMMT": {
+   "n_rows": 7680,
+   "n_configs": 64,
+   "n_problems": 30,
+   "configs": {
+    "anthropic/claude-35": {
+     "names": [
+      "Claude-3.5-Sonnet"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-3.5-Sonnet",
+     "config_base": "anthropic/claude-35",
+     "status": "no_tier",
+     "tier": null
+    },
+    "anthropic/claude-37": {
+     "names": [
+      "Claude-3.7-Sonnet (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-3.7-Sonnet (Think)",
+     "config_base": "anthropic/claude-37",
+     "status": "no_tier",
+     "tier": null
+    },
+    "anthropic/claude-opus-4": {
+     "names": [
+      "Claude-Opus-4.0 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-Opus-4.0 (Think)",
+     "config_base": "anthropic/claude-opus-4",
+     "status": "no_tier",
+     "tier": null
+    },
+    "anthropic/claude-sonnet-45": {
+     "names": [
+      "Claude-Sonnet-4.5 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-Sonnet-4.5 (Think)",
+     "config_base": "anthropic/claude-sonnet-45",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_1.5b": {
+     "names": [
+      "DeepSeek-R1-Distill-1.5B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-1.5B",
+     "config_base": "deepseek/deepseek_distill_1.5b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_14b": {
+     "names": [
+      "DeepSeek-R1-Distill-14B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-14B",
+     "config_base": "deepseek/deepseek_distill_14b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_32b": {
+     "names": [
+      "DeepSeek-R1-Distill-32B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-32B",
+     "config_base": "deepseek/deepseek_distill_32b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_70b": {
+     "names": [
+      "DeepSeek-R1-Distill-70B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-70B",
+     "config_base": "deepseek/deepseek_distill_70b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_r1": {
+     "names": [
+      "DeepSeek-R1"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1",
+     "config_base": "deepseek/deepseek_r1",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_r1_0528": {
+     "names": [
+      "DeepSeek-R1-0528"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-0528",
+     "config_base": "deepseek/deepseek_r1_0528",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v3": {
+     "names": [
+      "DeepSeek-V3"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-V3",
+     "config_base": "deepseek/deepseek_v3",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v31": {
+     "names": [
+      "DeepSeek-v3.1 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.1 (Think)",
+     "config_base": "deepseek/deepseek_v31",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32": {
+     "names": [
+      "DeepSeek-v3.2-Exp (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2-Exp (Think)",
+     "config_base": "deepseek/deepseek_v32",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32_dec": {
+     "names": [
+      "DeepSeek-v3.2 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2 (Think)",
+     "config_base": "deepseek/deepseek_v32_dec",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32_special": {
+     "names": [
+      "DeepSeek-v3.2-Speciale"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2-Speciale",
+     "config_base": "deepseek/deepseek_v32_special",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v3_03_24": {
+     "names": [
+      "DeepSeek-V3-03-24"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-V3-03-24",
+     "config_base": "deepseek/deepseek_v3_03_24",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-3-flash": {
+     "names": [
+      "Gemini 3 Flash"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 3 Flash",
+     "config_base": "gemini/gemini-3-flash",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-flash-2.0": {
+     "names": [
+      "gemini-2.0-flash"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "gemini-2.0-flash",
+     "config_base": "gemini/gemini-flash-2.0",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-flash-2.5": {
+     "names": [
+      "Gemini 2.5 Flash (Thinking)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Flash (Thinking)",
+     "config_base": "gemini/gemini-flash-2.5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-flash-thinking-2.0": {
+     "names": [
+      "gemini-2.0-flash-thinking"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "gemini-2.0-flash-thinking",
+     "config_base": "gemini/gemini-flash-thinking-2.0",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-pro-2.0": {
+     "names": [
+      "gemini-2.0-pro"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "gemini-2.0-pro",
+     "config_base": "gemini/gemini-pro-2.0",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-pro-2.5": {
+     "names": [
+      "Gemini 2.5 Pro"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Pro",
+     "config_base": "gemini/gemini-pro-2.5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-pro-2.5-05-06": {
+     "names": [
+      "Gemini 2.5 Pro (05-06)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Pro (05-06)",
+     "config_base": "gemini/gemini-pro-2.5-05-06",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/riftrunner": {
+     "names": [
+      "Gemini 3 Pro (preview)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 3 Pro (preview)",
+     "config_base": "gemini/riftrunner",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-45": {
+     "names": [
+      "GLM 4.5"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.5",
+     "config_base": "glm/glm-45",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-45-air": {
+     "names": [
+      "GLM 4.5 Air"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.5 Air",
+     "config_base": "glm/glm-45-air",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-46": {
+     "names": [
+      "GLM 4.6"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.6",
+     "config_base": "glm/glm-46",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-5": {
+     "names": [
+      "GLM 5"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 5",
+     "config_base": "glm/glm-5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "llama4/maverick": {
+     "names": [
+      "Llama-4-Maverick"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Llama-4-Maverick",
+     "config_base": "llama4/maverick",
+     "status": "no_tier",
+     "tier": null
+    },
+    "moonshot/k2-thinking": {
+     "names": [
+      "Kimi K2 Thinking"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Kimi K2 Thinking",
+     "config_base": "moonshot/k2-thinking",
+     "status": "no_tier",
+     "tier": null
+    },
+    "moonshot/k25": {
+     "names": [
+      "Kimi K2.5 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Kimi K2.5 (Think)",
+     "config_base": "moonshot/k25",
+     "status": "no_tier",
+     "tier": null
+    },
+    "openai/gpt-4o": {
+     "names": [
+      "gpt-4o"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "gpt-4o",
+     "config_base": "openai/gpt-4o",
+     "status": "no_tier",
+     "tier": null
+    },
+    "openai/gpt-5": {
+     "names": [
+      "GPT-5 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5",
+     "config_base": "openai/gpt-5",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-5-mini": {
+     "names": [
+      "GPT-5-mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5-mini",
+     "config_base": "openai/gpt-5-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-5-nano": {
+     "names": [
+      "GPT-5-nano (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-51": {
+     "names": [
+      "GPT-5.1 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5.1",
+     "config_base": "openai/gpt-51",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-52": {
+     "names": [
+      "GPT-5.2 (xhigh)"
+     ],
+     "rows": 120,
+     "name_tier": "xhigh",
+     "path_tier": null,
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52",
+     "status": "tiered",
+     "tier": "xhigh"
+    },
+    "openai/gpt-52-high": {
+     "names": [
+      "GPT-5.2 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52-high",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o1": {
+     "names": [
+      "o1 (medium)"
+     ],
+     "rows": 120,
+     "name_tier": "medium",
+     "path_tier": null,
+     "display_base": "o1",
+     "config_base": "openai/o1",
+     "status": "tiered",
+     "tier": "medium"
+    },
+    "openai/o3": {
+     "names": [
+      "o3 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "o3",
+     "config_base": "openai/o3",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o3-mini": {
+     "names": [
+      "o3-mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "o3-mini",
+     "config_base": "openai/o3-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o3-mini--low": {
+     "names": [
+      "o3-mini (low)"
+     ],
+     "rows": 120,
+     "name_tier": "low",
+     "path_tier": "low",
+     "display_base": "o3-mini",
+     "config_base": "openai/o3-mini",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "openai/o3-mini--medium": {
+     "names": [
+      "o3-mini (medium)"
+     ],
+     "rows": 120,
+     "name_tier": "medium",
+     "path_tier": "medium",
+     "display_base": "o3-mini",
+     "config_base": "openai/o3-mini",
+     "status": "tiered",
+     "tier": "medium"
+    },
+    "openai/o4-mini--high": {
+     "names": [
+      "o4-mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": "high",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o4-mini--low": {
+     "names": [
+      "o4-mini (low)"
+     ],
+     "rows": 120,
+     "name_tier": "low",
+     "path_tier": "low",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "openai/o4-mini--medium": {
+     "names": [
+      "o4-mini (medium)"
+     ],
+     "rows": 120,
+     "name_tier": "medium",
+     "path_tier": "medium",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "medium"
+    },
+    "openai/oss-120b": {
+     "names": [
+      "GPT OSS 120B (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT OSS 120B",
+     "config_base": "openai/oss-120b",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/oss-20b": {
+     "names": [
+      "GPT OSS 20B (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT OSS 20B",
+     "config_base": "openai/oss-20b",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "other/k2-think": {
+     "names": [
+      "K2-Think"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "K2-Think",
+     "config_base": "other/k2-think",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/limo": {
+     "names": [
+      "LIMO"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "LIMO",
+     "config_base": "other/limo",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/open-thoughts": {
+     "names": [
+      "OpenThinker-32B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "OpenThinker-32B",
+     "config_base": "other/open-thoughts",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/qed-nano": {
+     "names": [
+      "QED-Nano"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "QED-Nano",
+     "config_base": "other/qed-nano",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/s1": {
+     "names": [
+      "s1.1-32B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "s1.1-32B",
+     "config_base": "other/s1",
+     "status": "no_tier",
+     "tier": null
+    },
+    "phi4/14b-reasoning-plus": {
+     "names": [
+      "Phi-4-reasoning-plus"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Phi-4-reasoning-plus",
+     "config_base": "phi4/14b-reasoning-plus",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwen3_235b_a22b": {
+     "names": [
+      "Qwen3-235B-A22B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Qwen3-235B-A22B",
+     "config_base": "qwen/qwen3_235b_a22b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwen3_30b_a3b": {
+     "names": [
+      "Qwen3-30B-A3B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Qwen3-30B-A3B",
+     "config_base": "qwen/qwen3_30b_a3b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwq": {
+     "names": [
+      "QwQ-32B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "QwQ-32B",
+     "config_base": "qwen/qwq",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwq-preview": {
+     "names": [
+      "QwQ-32B-Preview"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "QwQ-32B-Preview",
+     "config_base": "qwen/qwq-preview",
+     "status": "no_tier",
+     "tier": null
+    },
+    "stepfun/3.5-flash": {
+     "names": [
+      "Step 3.5 Flash"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Step 3.5 Flash",
+     "config_base": "stepfun/3.5-flash",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-3-mini-high": {
+     "names": [
+      "Grok 3 Mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-high",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "xai/grok-3-mini-low": {
+     "names": [
+      "Grok 3 Mini (low)"
+     ],
+     "rows": 120,
+     "name_tier": "low",
+     "path_tier": null,
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-low",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "xai/grok-4": {
+     "names": [
+      "Grok 4"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4",
+     "config_base": "xai/grok-4",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-4-fast-reasoning": {
+     "names": [
+      "Grok 4 Fast R"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4 Fast R",
+     "config_base": "xai/grok-4-fast-reasoning",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-41-fast-reasoning": {
+     "names": [
+      "Grok 4.1 Fast (Reasoning)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4.1 Fast (Reasoning)",
+     "config_base": "xai/grok-41-fast-reasoning",
+     "status": "no_tier",
+     "tier": null
+    }
+   },
+   "endpoints": {
+    "GPT OSS 120B | openai/oss-120b": {
+     "display_base": "GPT OSS 120B",
+     "config_base": "openai/oss-120b",
+     "tiers": {
+      "high": [
+       "openai/oss-120b"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT OSS 20B | openai/oss-20b": {
+     "display_base": "GPT OSS 20B",
+     "config_base": "openai/oss-20b",
+     "tiers": {
+      "high": [
+       "openai/oss-20b"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5 | openai/gpt-5": {
+     "display_base": "GPT-5",
+     "config_base": "openai/gpt-5",
+     "tiers": {
+      "high": [
+       "openai/gpt-5"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5-mini | openai/gpt-5-mini": {
+     "display_base": "GPT-5-mini",
+     "config_base": "openai/gpt-5-mini",
+     "tiers": {
+      "high": [
+       "openai/gpt-5-mini"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5-nano | openai/gpt-5-nano": {
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano",
+     "tiers": {
+      "high": [
+       "openai/gpt-5-nano"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.1 | openai/gpt-51": {
+     "display_base": "GPT-5.1",
+     "config_base": "openai/gpt-51",
+     "tiers": {
+      "high": [
+       "openai/gpt-51"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.2 | openai/gpt-52": {
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52",
+     "tiers": {
+      "xhigh": [
+       "openai/gpt-52"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.2 | openai/gpt-52-high": {
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52-high",
+     "tiers": {
+      "high": [
+       "openai/gpt-52-high"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "Grok 3 Mini | xai/grok-3-mini-high": {
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-high",
+     "tiers": {
+      "high": [
+       "xai/grok-3-mini-high"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "Grok 3 Mini | xai/grok-3-mini-low": {
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-low",
+     "tiers": {
+      "low": [
+       "xai/grok-3-mini-low"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o1 | openai/o1": {
+     "display_base": "o1",
+     "config_base": "openai/o1",
+     "tiers": {
+      "medium": [
+       "openai/o1"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o3 | openai/o3": {
+     "display_base": "o3",
+     "config_base": "openai/o3",
+     "tiers": {
+      "high": [
+       "openai/o3"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o3-mini | openai/o3-mini": {
+     "display_base": "o3-mini",
+     "config_base": "openai/o3-mini",
+     "tiers": {
+      "low": [
+       "openai/o3-mini--low"
+      ],
+      "medium": [
+       "openai/o3-mini--medium"
+      ],
+      "high": [
+       "openai/o3-mini"
+      ]
+     },
+     "status": "ok",
+     "pairs": [
+      [
+       "low",
+       "medium"
+      ],
+      [
+       "medium",
+       "high"
+      ]
+     ]
+    },
+    "o4-mini | openai/o4-mini": {
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "tiers": {
+      "low": [
+       "openai/o4-mini--low"
+      ],
+      "medium": [
+       "openai/o4-mini--medium"
+      ],
+      "high": [
+       "openai/o4-mini--high"
+      ]
+     },
+     "status": "ok",
+     "pairs": [
+      [
+       "low",
+       "medium"
+      ],
+      [
+       "medium",
+       "high"
+      ]
+     ]
+    }
+   },
+   "pairs": [
+    {
+     "competition": "HMMT",
+     "endpoint": "o3-mini | openai/o3-mini",
+     "tier_A": "low",
+     "tier_B": "medium",
+     "A": "openai/o3-mini--low",
+     "B": "openai/o3-mini--medium",
+     "seen": false
+    },
+    {
+     "competition": "HMMT",
+     "endpoint": "o3-mini | openai/o3-mini",
+     "tier_A": "medium",
+     "tier_B": "high",
+     "A": "openai/o3-mini--medium",
+     "B": "openai/o3-mini",
+     "seen": true
+    },
+    {
+     "competition": "HMMT",
+     "endpoint": "o4-mini | openai/o4-mini",
+     "tier_A": "low",
+     "tier_B": "medium",
+     "A": "openai/o4-mini--low",
+     "B": "openai/o4-mini--medium",
+     "seen": false
+    },
+    {
+     "competition": "HMMT",
+     "endpoint": "o4-mini | openai/o4-mini",
+     "tier_A": "medium",
+     "tier_B": "high",
+     "A": "openai/o4-mini--medium",
+     "B": "openai/o4-mini--high",
+     "seen": false
+    }
+   ],
+   "null_problem_idx": 0
+  },
+  "BRUMO": {
+   "n_rows": 5280,
+   "n_configs": 44,
+   "n_problems": 30,
+   "configs": {
+    "anthropic/claude-37": {
+     "names": [
+      "Claude-3.7-Sonnet (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-3.7-Sonnet (Think)",
+     "config_base": "anthropic/claude-37",
+     "status": "no_tier",
+     "tier": null
+    },
+    "anthropic/claude-opus-4": {
+     "names": [
+      "Claude-Opus-4.0 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-Opus-4.0 (Think)",
+     "config_base": "anthropic/claude-opus-4",
+     "status": "no_tier",
+     "tier": null
+    },
+    "anthropic/claude-sonnet-45": {
+     "names": [
+      "Claude-Sonnet-4.5 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-Sonnet-4.5 (Think)",
+     "config_base": "anthropic/claude-sonnet-45",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_14b": {
+     "names": [
+      "DeepSeek-R1-Distill-14B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-14B",
+     "config_base": "deepseek/deepseek_distill_14b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_32b": {
+     "names": [
+      "DeepSeek-R1-Distill-32B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-32B",
+     "config_base": "deepseek/deepseek_distill_32b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_distill_70b": {
+     "names": [
+      "DeepSeek-R1-Distill-70B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-Distill-70B",
+     "config_base": "deepseek/deepseek_distill_70b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_r1": {
+     "names": [
+      "DeepSeek-R1"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1",
+     "config_base": "deepseek/deepseek_r1",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_r1_0528": {
+     "names": [
+      "DeepSeek-R1-0528"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-0528",
+     "config_base": "deepseek/deepseek_r1_0528",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v31": {
+     "names": [
+      "DeepSeek-v3.1 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.1 (Think)",
+     "config_base": "deepseek/deepseek_v31",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32": {
+     "names": [
+      "DeepSeek-v3.2-Exp (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2-Exp (Think)",
+     "config_base": "deepseek/deepseek_v32",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32_dec": {
+     "names": [
+      "DeepSeek-v3.2 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2 (Think)",
+     "config_base": "deepseek/deepseek_v32_dec",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32_special": {
+     "names": [
+      "DeepSeek-v3.2-Speciale"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2-Speciale",
+     "config_base": "deepseek/deepseek_v32_special",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-3-flash": {
+     "names": [
+      "Gemini 3 Flash"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 3 Flash",
+     "config_base": "gemini/gemini-3-flash",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-flash-2.5": {
+     "names": [
+      "Gemini 2.5 Flash (Thinking)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Flash (Thinking)",
+     "config_base": "gemini/gemini-flash-2.5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-pro-2.5": {
+     "names": [
+      "Gemini 2.5 Pro"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Pro",
+     "config_base": "gemini/gemini-pro-2.5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-pro-2.5-05-06": {
+     "names": [
+      "Gemini 2.5 Pro (05-06)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Pro (05-06)",
+     "config_base": "gemini/gemini-pro-2.5-05-06",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/riftrunner": {
+     "names": [
+      "Gemini 3 Pro (preview)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 3 Pro (preview)",
+     "config_base": "gemini/riftrunner",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-45": {
+     "names": [
+      "GLM 4.5"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.5",
+     "config_base": "glm/glm-45",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-45-air": {
+     "names": [
+      "GLM 4.5 Air"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.5 Air",
+     "config_base": "glm/glm-45-air",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-46": {
+     "names": [
+      "GLM 4.6"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.6",
+     "config_base": "glm/glm-46",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-5": {
+     "names": [
+      "GLM 5"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 5",
+     "config_base": "glm/glm-5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "moonshot/k2-thinking": {
+     "names": [
+      "Kimi K2 Thinking"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Kimi K2 Thinking",
+     "config_base": "moonshot/k2-thinking",
+     "status": "no_tier",
+     "tier": null
+    },
+    "moonshot/k25": {
+     "names": [
+      "Kimi K2.5 (Think)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Kimi K2.5 (Think)",
+     "config_base": "moonshot/k25",
+     "status": "no_tier",
+     "tier": null
+    },
+    "openai/gpt-5": {
+     "names": [
+      "GPT-5 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5",
+     "config_base": "openai/gpt-5",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-5-mini": {
+     "names": [
+      "GPT-5-mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5-mini",
+     "config_base": "openai/gpt-5-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-5-nano": {
+     "names": [
+      "GPT-5-nano (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-51": {
+     "names": [
+      "GPT-5.1 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5.1",
+     "config_base": "openai/gpt-51",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-52-high": {
+     "names": [
+      "GPT-5.2 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52-high",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o3": {
+     "names": [
+      "o3 (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "o3",
+     "config_base": "openai/o3",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o4-mini--high": {
+     "names": [
+      "o4-mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": "high",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o4-mini--low": {
+     "names": [
+      "o4-mini (low)"
+     ],
+     "rows": 120,
+     "name_tier": "low",
+     "path_tier": "low",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "openai/o4-mini--medium": {
+     "names": [
+      "o4-mini (medium)"
+     ],
+     "rows": 120,
+     "name_tier": "medium",
+     "path_tier": "medium",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "medium"
+    },
+    "openai/oss-120b": {
+     "names": [
+      "GPT OSS 120B (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT OSS 120B",
+     "config_base": "openai/oss-120b",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/oss-20b": {
+     "names": [
+      "GPT OSS 20B (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT OSS 20B",
+     "config_base": "openai/oss-20b",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "other/k2-think": {
+     "names": [
+      "K2-Think"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "K2-Think",
+     "config_base": "other/k2-think",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/qed-nano": {
+     "names": [
+      "QED-Nano"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "QED-Nano",
+     "config_base": "other/qed-nano",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwen3_235b_a22b": {
+     "names": [
+      "Qwen3-235B-A22B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Qwen3-235B-A22B",
+     "config_base": "qwen/qwen3_235b_a22b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "qwen/qwen3_30b_a3b": {
+     "names": [
+      "Qwen3-30B-A3B"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Qwen3-30B-A3B",
+     "config_base": "qwen/qwen3_30b_a3b",
+     "status": "no_tier",
+     "tier": null
+    },
+    "stepfun/3.5-flash": {
+     "names": [
+      "Step 3.5 Flash"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Step 3.5 Flash",
+     "config_base": "stepfun/3.5-flash",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-3-mini-high": {
+     "names": [
+      "Grok 3 Mini (high)"
+     ],
+     "rows": 120,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-high",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "xai/grok-3-mini-low": {
+     "names": [
+      "Grok 3 Mini (low)"
+     ],
+     "rows": 120,
+     "name_tier": "low",
+     "path_tier": null,
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-low",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "xai/grok-4": {
+     "names": [
+      "Grok 4"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4",
+     "config_base": "xai/grok-4",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-4-fast-reasoning": {
+     "names": [
+      "Grok 4 Fast R"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4 Fast R",
+     "config_base": "xai/grok-4-fast-reasoning",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-41-fast-reasoning": {
+     "names": [
+      "Grok 4.1 Fast (Reasoning)"
+     ],
+     "rows": 120,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4.1 Fast (Reasoning)",
+     "config_base": "xai/grok-41-fast-reasoning",
+     "status": "no_tier",
+     "tier": null
+    }
+   },
+   "endpoints": {
+    "GPT OSS 120B | openai/oss-120b": {
+     "display_base": "GPT OSS 120B",
+     "config_base": "openai/oss-120b",
+     "tiers": {
+      "high": [
+       "openai/oss-120b"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT OSS 20B | openai/oss-20b": {
+     "display_base": "GPT OSS 20B",
+     "config_base": "openai/oss-20b",
+     "tiers": {
+      "high": [
+       "openai/oss-20b"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5 | openai/gpt-5": {
+     "display_base": "GPT-5",
+     "config_base": "openai/gpt-5",
+     "tiers": {
+      "high": [
+       "openai/gpt-5"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5-mini | openai/gpt-5-mini": {
+     "display_base": "GPT-5-mini",
+     "config_base": "openai/gpt-5-mini",
+     "tiers": {
+      "high": [
+       "openai/gpt-5-mini"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5-nano | openai/gpt-5-nano": {
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano",
+     "tiers": {
+      "high": [
+       "openai/gpt-5-nano"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.1 | openai/gpt-51": {
+     "display_base": "GPT-5.1",
+     "config_base": "openai/gpt-51",
+     "tiers": {
+      "high": [
+       "openai/gpt-51"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.2 | openai/gpt-52-high": {
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52-high",
+     "tiers": {
+      "high": [
+       "openai/gpt-52-high"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "Grok 3 Mini | xai/grok-3-mini-high": {
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-high",
+     "tiers": {
+      "high": [
+       "xai/grok-3-mini-high"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "Grok 3 Mini | xai/grok-3-mini-low": {
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-low",
+     "tiers": {
+      "low": [
+       "xai/grok-3-mini-low"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o3 | openai/o3": {
+     "display_base": "o3",
+     "config_base": "openai/o3",
+     "tiers": {
+      "high": [
+       "openai/o3"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o4-mini | openai/o4-mini": {
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "tiers": {
+      "low": [
+       "openai/o4-mini--low"
+      ],
+      "medium": [
+       "openai/o4-mini--medium"
+      ],
+      "high": [
+       "openai/o4-mini--high"
+      ]
+     },
+     "status": "ok",
+     "pairs": [
+      [
+       "low",
+       "medium"
+      ],
+      [
+       "medium",
+       "high"
+      ]
+     ]
+    }
+   },
+   "pairs": [
+    {
+     "competition": "BRUMO",
+     "endpoint": "o4-mini | openai/o4-mini",
+     "tier_A": "low",
+     "tier_B": "medium",
+     "A": "openai/o4-mini--low",
+     "B": "openai/o4-mini--medium",
+     "seen": false
+    },
+    {
+     "competition": "BRUMO",
+     "endpoint": "o4-mini | openai/o4-mini",
+     "tier_A": "medium",
+     "tier_B": "high",
+     "A": "openai/o4-mini--medium",
+     "B": "openai/o4-mini--high",
+     "seen": false
+    }
+   ],
+   "null_problem_idx": 0
+  },
+  "CMIMC": {
+   "n_rows": 5600,
+   "n_configs": 35,
+   "n_problems": 40,
+   "configs": {
+    "anthropic/claude-sonnet-45": {
+     "names": [
+      "Claude-Sonnet-4.5 (Think)"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Claude-Sonnet-4.5 (Think)",
+     "config_base": "anthropic/claude-sonnet-45",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_r1_0528": {
+     "names": [
+      "DeepSeek-R1-0528"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-R1-0528",
+     "config_base": "deepseek/deepseek_r1_0528",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v31": {
+     "names": [
+      "DeepSeek-v3.1 (Think)"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.1 (Think)",
+     "config_base": "deepseek/deepseek_v31",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32": {
+     "names": [
+      "DeepSeek-v3.2-Exp (Think)"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2-Exp (Think)",
+     "config_base": "deepseek/deepseek_v32",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32_dec": {
+     "names": [
+      "DeepSeek-v3.2 (Think)"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2 (Think)",
+     "config_base": "deepseek/deepseek_v32_dec",
+     "status": "no_tier",
+     "tier": null
+    },
+    "deepseek/deepseek_v32_special": {
+     "names": [
+      "DeepSeek-v3.2-Speciale"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "DeepSeek-v3.2-Speciale",
+     "config_base": "deepseek/deepseek_v32_special",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-3-flash": {
+     "names": [
+      "Gemini 3 Flash"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 3 Flash",
+     "config_base": "gemini/gemini-3-flash",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-flash-2.5": {
+     "names": [
+      "Gemini 2.5 Flash (Thinking)"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Flash (Thinking)",
+     "config_base": "gemini/gemini-flash-2.5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/gemini-pro-2.5": {
+     "names": [
+      "Gemini 2.5 Pro"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 2.5 Pro",
+     "config_base": "gemini/gemini-pro-2.5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "gemini/riftrunner": {
+     "names": [
+      "Gemini 3 Pro (preview)"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Gemini 3 Pro (preview)",
+     "config_base": "gemini/riftrunner",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-45": {
+     "names": [
+      "GLM 4.5"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.5",
+     "config_base": "glm/glm-45",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-45-air": {
+     "names": [
+      "GLM 4.5 Air"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.5 Air",
+     "config_base": "glm/glm-45-air",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-46": {
+     "names": [
+      "GLM 4.6"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 4.6",
+     "config_base": "glm/glm-46",
+     "status": "no_tier",
+     "tier": null
+    },
+    "glm/glm-5": {
+     "names": [
+      "GLM 5"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "GLM 5",
+     "config_base": "glm/glm-5",
+     "status": "no_tier",
+     "tier": null
+    },
+    "moonshot/k2-thinking": {
+     "names": [
+      "Kimi K2 Thinking"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Kimi K2 Thinking",
+     "config_base": "moonshot/k2-thinking",
+     "status": "no_tier",
+     "tier": null
+    },
+    "moonshot/k25": {
+     "names": [
+      "Kimi K2.5 (Think)"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Kimi K2.5 (Think)",
+     "config_base": "moonshot/k25",
+     "status": "no_tier",
+     "tier": null
+    },
+    "openai/gpt-5": {
+     "names": [
+      "GPT-5 (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5",
+     "config_base": "openai/gpt-5",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-5-mini": {
+     "names": [
+      "GPT-5-mini (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5-mini",
+     "config_base": "openai/gpt-5-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-5-nano": {
+     "names": [
+      "GPT-5-nano (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-51": {
+     "names": [
+      "GPT-5.1 (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5.1",
+     "config_base": "openai/gpt-51",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/gpt-52-high": {
+     "names": [
+      "GPT-5.2 (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52-high",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o3": {
+     "names": [
+      "o3 (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "o3",
+     "config_base": "openai/o3",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o4-mini--high": {
+     "names": [
+      "o4-mini (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": "high",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/o4-mini--low": {
+     "names": [
+      "o4-mini (low)"
+     ],
+     "rows": 160,
+     "name_tier": "low",
+     "path_tier": "low",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "openai/o4-mini--medium": {
+     "names": [
+      "o4-mini (medium)"
+     ],
+     "rows": 160,
+     "name_tier": "medium",
+     "path_tier": "medium",
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "status": "tiered",
+     "tier": "medium"
+    },
+    "openai/oss-120b": {
+     "names": [
+      "GPT OSS 120B (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT OSS 120B",
+     "config_base": "openai/oss-120b",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "openai/oss-20b": {
+     "names": [
+      "GPT OSS 20B (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "GPT OSS 20B",
+     "config_base": "openai/oss-20b",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "other/k2-think": {
+     "names": [
+      "K2-Think"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "K2-Think",
+     "config_base": "other/k2-think",
+     "status": "no_tier",
+     "tier": null
+    },
+    "other/qed-nano": {
+     "names": [
+      "QED-Nano"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "QED-Nano",
+     "config_base": "other/qed-nano",
+     "status": "no_tier",
+     "tier": null
+    },
+    "stepfun/3.5-flash": {
+     "names": [
+      "Step 3.5 Flash"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Step 3.5 Flash",
+     "config_base": "stepfun/3.5-flash",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-3-mini-high": {
+     "names": [
+      "Grok 3 Mini (high)"
+     ],
+     "rows": 160,
+     "name_tier": "high",
+     "path_tier": null,
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-high",
+     "status": "tiered",
+     "tier": "high"
+    },
+    "xai/grok-3-mini-low": {
+     "names": [
+      "Grok 3 Mini (low)"
+     ],
+     "rows": 160,
+     "name_tier": "low",
+     "path_tier": null,
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-low",
+     "status": "tiered",
+     "tier": "low"
+    },
+    "xai/grok-4": {
+     "names": [
+      "Grok 4"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4",
+     "config_base": "xai/grok-4",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-4-fast-reasoning": {
+     "names": [
+      "Grok 4 Fast R"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4 Fast R",
+     "config_base": "xai/grok-4-fast-reasoning",
+     "status": "no_tier",
+     "tier": null
+    },
+    "xai/grok-41-fast-reasoning": {
+     "names": [
+      "Grok 4.1 Fast (Reasoning)"
+     ],
+     "rows": 160,
+     "name_tier": null,
+     "path_tier": null,
+     "display_base": "Grok 4.1 Fast (Reasoning)",
+     "config_base": "xai/grok-41-fast-reasoning",
+     "status": "no_tier",
+     "tier": null
+    }
+   },
+   "endpoints": {
+    "GPT OSS 120B | openai/oss-120b": {
+     "display_base": "GPT OSS 120B",
+     "config_base": "openai/oss-120b",
+     "tiers": {
+      "high": [
+       "openai/oss-120b"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT OSS 20B | openai/oss-20b": {
+     "display_base": "GPT OSS 20B",
+     "config_base": "openai/oss-20b",
+     "tiers": {
+      "high": [
+       "openai/oss-20b"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5 | openai/gpt-5": {
+     "display_base": "GPT-5",
+     "config_base": "openai/gpt-5",
+     "tiers": {
+      "high": [
+       "openai/gpt-5"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5-mini | openai/gpt-5-mini": {
+     "display_base": "GPT-5-mini",
+     "config_base": "openai/gpt-5-mini",
+     "tiers": {
+      "high": [
+       "openai/gpt-5-mini"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5-nano | openai/gpt-5-nano": {
+     "display_base": "GPT-5-nano",
+     "config_base": "openai/gpt-5-nano",
+     "tiers": {
+      "high": [
+       "openai/gpt-5-nano"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.1 | openai/gpt-51": {
+     "display_base": "GPT-5.1",
+     "config_base": "openai/gpt-51",
+     "tiers": {
+      "high": [
+       "openai/gpt-51"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "GPT-5.2 | openai/gpt-52-high": {
+     "display_base": "GPT-5.2",
+     "config_base": "openai/gpt-52-high",
+     "tiers": {
+      "high": [
+       "openai/gpt-52-high"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "Grok 3 Mini | xai/grok-3-mini-high": {
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-high",
+     "tiers": {
+      "high": [
+       "xai/grok-3-mini-high"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "Grok 3 Mini | xai/grok-3-mini-low": {
+     "display_base": "Grok 3 Mini",
+     "config_base": "xai/grok-3-mini-low",
+     "tiers": {
+      "low": [
+       "xai/grok-3-mini-low"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o3 | openai/o3": {
+     "display_base": "o3",
+     "config_base": "openai/o3",
+     "tiers": {
+      "high": [
+       "openai/o3"
+      ]
+     },
+     "status": "ok",
+     "pairs": []
+    },
+    "o4-mini | openai/o4-mini": {
+     "display_base": "o4-mini",
+     "config_base": "openai/o4-mini",
+     "tiers": {
+      "low": [
+       "openai/o4-mini--low"
+      ],
+      "medium": [
+       "openai/o4-mini--medium"
+      ],
+      "high": [
+       "openai/o4-mini--high"
+      ]
+     },
+     "status": "ok",
+     "pairs": [
+      [
+       "low",
+       "medium"
+      ],
+      [
+       "medium",
+       "high"
+      ]
+     ]
+    }
+   },
+   "pairs": [
+    {
+     "competition": "CMIMC",
+     "endpoint": "o4-mini | openai/o4-mini",
+     "tier_A": "low",
+     "tier_B": "medium",
+     "A": "openai/o4-mini--low",
+     "B": "openai/o4-mini--medium",
+     "seen": false
+    },
+    {
+     "competition": "CMIMC",
+     "endpoint": "o4-mini | openai/o4-mini",
+     "tier_A": "medium",
+     "tier_B": "high",
+     "A": "openai/o4-mini--medium",
+     "B": "openai/o4-mini--high",
+     "seen": false
+    }
+   ],
+   "null_problem_idx": 0
+  }
+ },
+ "cells": [
+  {
+   "competition": "AIME",
+   "endpoint": "o3-mini | openai/o3-mini",
+   "tier_A": "low",
+   "tier_B": "medium",
+   "A": "openai/o3-mini--low",
+   "B": "openai/o3-mini--medium",
+   "seen": false,
+   "id": "AIME|o3-mini|low->medium",
+   "n_frame": 30,
+   "n_complete": 30,
+   "n_breaking": 0,
+   "na_reasons": [],
+   "prompt_variant_breaking_problems": {
+    "user_only": 0,
+    "nonasst": 0,
+    "pre_asst": 0,
+    "full_runner_style": 0
+   },
+   "prompt_ab_diff_problems": 0,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "valid",
+   "primary": {
+    "K": 18,
+    "G": "17/27",
+    "R": "13/54",
+    "D": "7/18",
+    "D_F": "23/90",
+    "C": "2/15",
+    "G-D_F": "101/270",
+    "flag": 0,
+    "D_zero": 0,
+    "D_F_zero": 0
+   },
+   "acc_A_4slot": "29/60",
+   "acc_B_4slot": "23/30",
+   "stratum_30_70": 1,
+   "four_slot": [
+    {
+     "K": 18,
+     "G": "17/27",
+     "R": "13/54",
+     "D": "7/18",
+     "D_F": "23/90",
+     "C": "2/15",
+     "G-D_F": "101/270",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 15,
+     "G": "29/45",
+     "R": "1/9",
+     "D": "8/15",
+     "D_F": "14/45",
+     "C": "2/9",
+     "G-D_F": "1/3",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 15,
+     "G": "3/5",
+     "R": "1/9",
+     "D": "22/45",
+     "D_F": "13/45",
+     "C": "1/5",
+     "G-D_F": "14/45",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 14,
+     "G": "25/42",
+     "R": "1/14",
+     "D": "11/21",
+     "D_F": "5/18",
+     "C": "31/126",
+     "G-D_F": "20/63",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    }
+   ]
+  },
+  {
+   "competition": "AIME",
+   "endpoint": "o3-mini | openai/o3-mini",
+   "tier_A": "medium",
+   "tier_B": "high",
+   "A": "openai/o3-mini--medium",
+   "B": "openai/o3-mini",
+   "seen": false,
+   "id": "AIME|o3-mini|medium->high",
+   "n_frame": 30,
+   "n_complete": 17,
+   "n_breaking": 13,
+   "na_reasons": [
+    "prompt differs across 8 slots"
+   ],
+   "prompt_variant_breaking_problems": {
+    "user_only": 13,
+    "nonasst": 13,
+    "pre_asst": 13,
+    "full_runner_style": 13
+   },
+   "prompt_ab_diff_problems": 13,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 1
+   },
+   "contract": "NA"
+  },
+  {
+   "competition": "AIME",
+   "endpoint": "o4-mini | openai/o4-mini",
+   "tier_A": "low",
+   "tier_B": "medium",
+   "A": "openai/o4-mini--low",
+   "B": "openai/o4-mini--medium",
+   "seen": false,
+   "id": "AIME|o4-mini|low->medium",
+   "n_frame": 30,
+   "n_complete": 30,
+   "n_breaking": 0,
+   "na_reasons": [],
+   "prompt_variant_breaking_problems": {
+    "user_only": 0,
+    "nonasst": 0,
+    "pre_asst": 0,
+    "full_runner_style": 0
+   },
+   "prompt_ab_diff_problems": 0,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "valid",
+   "primary": {
+    "K": 12,
+    "G": "23/36",
+    "R": "1/4",
+    "D": "7/18",
+    "D_F": "19/90",
+    "C": "8/45",
+    "G-D_F": "77/180",
+    "flag": 0,
+    "D_zero": 0,
+    "D_F_zero": 0
+   },
+   "acc_A_4slot": "37/60",
+   "acc_B_4slot": "101/120",
+   "stratum_30_70": 1,
+   "four_slot": [
+    {
+     "K": 12,
+     "G": "23/36",
+     "R": "1/4",
+     "D": "7/18",
+     "D_F": "19/90",
+     "C": "8/45",
+     "G-D_F": "77/180",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 9,
+     "G": "17/27",
+     "R": "1/9",
+     "D": "14/27",
+     "D_F": "5/18",
+     "C": "13/54",
+     "G-D_F": "19/54",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 12,
+     "G": "23/36",
+     "R": "5/18",
+     "D": "13/36",
+     "D_F": "2/9",
+     "C": "5/36",
+     "G-D_F": "5/12",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 13,
+     "G": "25/39",
+     "R": "4/13",
+     "D": "1/3",
+     "D_F": "17/90",
+     "C": "13/90",
+     "G-D_F": "529/1170",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    }
+   ]
+  },
+  {
+   "competition": "AIME",
+   "endpoint": "o4-mini | openai/o4-mini",
+   "tier_A": "medium",
+   "tier_B": "high",
+   "A": "openai/o4-mini--medium",
+   "B": "openai/o4-mini--high",
+   "seen": false,
+   "id": "AIME|o4-mini|medium->high",
+   "n_frame": 30,
+   "n_complete": 30,
+   "n_breaking": 0,
+   "na_reasons": [],
+   "prompt_variant_breaking_problems": {
+    "user_only": 0,
+    "nonasst": 0,
+    "pre_asst": 0,
+    "full_runner_style": 0
+   },
+   "prompt_ab_diff_problems": 0,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "valid",
+   "primary": {
+    "K": 4,
+    "G": "7/12",
+    "R": "1/4",
+    "D": "1/3",
+    "D_F": "1/9",
+    "C": "2/9",
+    "G-D_F": "17/36",
+    "flag": 0,
+    "D_zero": 0,
+    "D_F_zero": 0
+   },
+   "acc_A_4slot": "101/120",
+   "acc_B_4slot": "11/12",
+   "stratum_30_70": 0,
+   "four_slot": [
+    {
+     "K": 4,
+     "G": "7/12",
+     "R": "1/4",
+     "D": "1/3",
+     "D_F": "1/9",
+     "C": "2/9",
+     "G-D_F": "17/36",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 7,
+     "G": "2/3",
+     "R": "11/21",
+     "D": "1/7",
+     "D_F": "1/30",
+     "C": "23/210",
+     "G-D_F": "19/30",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 5,
+     "G": "3/5",
+     "R": "2/5",
+     "D": "1/5",
+     "D_F": "1/15",
+     "C": "2/15",
+     "G-D_F": "8/15",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 3,
+     "G": "4/9",
+     "R": "1/3",
+     "D": "1/9",
+     "D_F": "4/45",
+     "C": "1/45",
+     "G-D_F": "16/45",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    }
+   ]
+  },
+  {
+   "competition": "HMMT",
+   "endpoint": "o3-mini | openai/o3-mini",
+   "tier_A": "low",
+   "tier_B": "medium",
+   "A": "openai/o3-mini--low",
+   "B": "openai/o3-mini--medium",
+   "seen": false,
+   "id": "HMMT|o3-mini|low->medium",
+   "n_frame": 30,
+   "n_complete": 30,
+   "n_breaking": 0,
+   "na_reasons": [],
+   "prompt_variant_breaking_problems": {
+    "user_only": 0,
+    "nonasst": 0,
+    "pre_asst": 0,
+    "full_runner_style": 0
+   },
+   "prompt_ab_diff_problems": 0,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "valid",
+   "primary": {
+    "K": 23,
+    "G": "8/23",
+    "R": "3/23",
+    "D": "5/23",
+    "D_F": "1/5",
+    "C": "2/115",
+    "G-D_F": "17/115",
+    "flag": 0,
+    "D_zero": 0,
+    "D_F_zero": 0
+   },
+   "acc_A_4slot": "17/60",
+   "acc_B_4slot": "8/15",
+   "stratum_30_70": 0,
+   "four_slot": [
+    {
+     "K": 23,
+     "G": "8/23",
+     "R": "3/23",
+     "D": "5/23",
+     "D_F": "1/5",
+     "C": "2/115",
+     "G-D_F": "17/115",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 23,
+     "G": "26/69",
+     "R": "10/69",
+     "D": "16/69",
+     "D_F": "2/9",
+     "C": "2/207",
+     "G-D_F": "32/207",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 21,
+     "G": "8/21",
+     "R": "1/7",
+     "D": "5/21",
+     "D_F": "4/15",
+     "C": "-1/35",
+     "G-D_F": "4/35",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 19,
+     "G": "20/57",
+     "R": "2/57",
+     "D": "6/19",
+     "D_F": "14/45",
+     "C": "4/855",
+     "G-D_F": "34/855",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    }
+   ]
+  },
+  {
+   "competition": "HMMT",
+   "endpoint": "o3-mini | openai/o3-mini",
+   "tier_A": "medium",
+   "tier_B": "high",
+   "A": "openai/o3-mini--medium",
+   "B": "openai/o3-mini",
+   "seen": true,
+   "id": "HMMT|o3-mini|medium->high",
+   "n_frame": 30,
+   "n_complete": 30,
+   "n_breaking": 0,
+   "na_reasons": [],
+   "prompt_variant_breaking_problems": {
+    "user_only": 0,
+    "nonasst": 0,
+    "pre_asst": 0,
+    "full_runner_style": 0
+   },
+   "prompt_ab_diff_problems": 0,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "valid",
+   "primary": {
+    "K": 11,
+    "G": "3/11",
+    "R": "0/1",
+    "D": "3/11",
+    "D_F": "1/6",
+    "C": "7/66",
+    "G-D_F": "7/66",
+    "flag": 0,
+    "D_zero": 0,
+    "D_F_zero": 0
+   },
+   "acc_A_4slot": "8/15",
+   "acc_B_4slot": "27/40",
+   "stratum_30_70": 1,
+   "four_slot": [
+    {
+     "K": 11,
+     "G": "3/11",
+     "R": "0/1",
+     "D": "3/11",
+     "D_F": "1/6",
+     "C": "7/66",
+     "G-D_F": "7/66",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 13,
+     "G": "5/13",
+     "R": "2/39",
+     "D": "1/3",
+     "D_F": "7/45",
+     "C": "8/45",
+     "G-D_F": "134/585",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 15,
+     "G": "17/45",
+     "R": "2/15",
+     "D": "11/45",
+     "D_F": "2/15",
+     "C": "1/9",
+     "G-D_F": "11/45",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 17,
+     "G": "8/17",
+     "R": "4/17",
+     "D": "4/17",
+     "D_F": "1/9",
+     "C": "19/153",
+     "G-D_F": "55/153",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    }
+   ]
+  },
+  {
+   "competition": "HMMT",
+   "endpoint": "o4-mini | openai/o4-mini",
+   "tier_A": "low",
+   "tier_B": "medium",
+   "A": "openai/o4-mini--low",
+   "B": "openai/o4-mini--medium",
+   "seen": false,
+   "id": "HMMT|o4-mini|low->medium",
+   "n_frame": 30,
+   "n_complete": 30,
+   "n_breaking": 0,
+   "na_reasons": [],
+   "prompt_variant_breaking_problems": {
+    "user_only": 0,
+    "nonasst": 0,
+    "pre_asst": 0,
+    "full_runner_style": 0
+   },
+   "prompt_ab_diff_problems": 0,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "valid",
+   "primary": {
+    "K": 15,
+    "G": "4/9",
+    "R": "4/15",
+    "D": "8/45",
+    "D_F": "8/45",
+    "C": "0/1",
+    "G-D_F": "4/15",
+    "flag": 0,
+    "D_zero": 0,
+    "D_F_zero": 0
+   },
+   "acc_A_4slot": "19/40",
+   "acc_B_4slot": "27/40",
+   "stratum_30_70": 1,
+   "four_slot": [
+    {
+     "K": 15,
+     "G": "4/9",
+     "R": "4/15",
+     "D": "8/45",
+     "D_F": "8/45",
+     "C": "0/1",
+     "G-D_F": "4/15",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 17,
+     "G": "25/51",
+     "R": "13/51",
+     "D": "4/17",
+     "D_F": "8/45",
+     "C": "44/765",
+     "G-D_F": "239/765",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 12,
+     "G": "5/12",
+     "R": "1/9",
+     "D": "11/36",
+     "D_F": "23/90",
+     "C": "1/20",
+     "G-D_F": "29/180",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 19,
+     "G": "31/57",
+     "R": "6/19",
+     "D": "13/57",
+     "D_F": "17/90",
+     "C": "67/1710",
+     "G-D_F": "607/1710",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    }
+   ]
+  },
+  {
+   "competition": "HMMT",
+   "endpoint": "o4-mini | openai/o4-mini",
+   "tier_A": "medium",
+   "tier_B": "high",
+   "A": "openai/o4-mini--medium",
+   "B": "openai/o4-mini--high",
+   "seen": false,
+   "id": "HMMT|o4-mini|medium->high",
+   "n_frame": 30,
+   "n_complete": 30,
+   "n_breaking": 0,
+   "na_reasons": [],
+   "prompt_variant_breaking_problems": {
+    "user_only": 0,
+    "nonasst": 0,
+    "pre_asst": 0,
+    "full_runner_style": 0
+   },
+   "prompt_ab_diff_problems": 0,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "valid",
+   "primary": {
+    "K": 7,
+    "G": "4/7",
+    "R": "5/21",
+    "D": "1/3",
+    "D_F": "1/6",
+    "C": "1/6",
+    "G-D_F": "17/42",
+    "flag": 0,
+    "D_zero": 0,
+    "D_F_zero": 0
+   },
+   "acc_A_4slot": "27/40",
+   "acc_B_4slot": "5/6",
+   "stratum_30_70": 1,
+   "four_slot": [
+    {
+     "K": 7,
+     "G": "4/7",
+     "R": "5/21",
+     "D": "1/3",
+     "D_F": "1/6",
+     "C": "1/6",
+     "G-D_F": "17/42",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 9,
+     "G": "5/9",
+     "R": "1/3",
+     "D": "2/9",
+     "D_F": "8/45",
+     "C": "2/45",
+     "G-D_F": "17/45",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 11,
+     "G": "7/11",
+     "R": "17/33",
+     "D": "4/33",
+     "D_F": "7/45",
+     "C": "-17/495",
+     "G-D_F": "238/495",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 12,
+     "G": "2/3",
+     "R": "4/9",
+     "D": "2/9",
+     "D_F": "2/15",
+     "C": "4/45",
+     "G-D_F": "8/15",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    }
+   ]
+  },
+  {
+   "competition": "BRUMO",
+   "endpoint": "o4-mini | openai/o4-mini",
+   "tier_A": "low",
+   "tier_B": "medium",
+   "A": "openai/o4-mini--low",
+   "B": "openai/o4-mini--medium",
+   "seen": false,
+   "id": "BRUMO|o4-mini|low->medium",
+   "n_frame": 30,
+   "n_complete": 30,
+   "n_breaking": 0,
+   "na_reasons": [],
+   "prompt_variant_breaking_problems": {
+    "user_only": 0,
+    "nonasst": 0,
+    "pre_asst": 0,
+    "full_runner_style": 0
+   },
+   "prompt_ab_diff_problems": 0,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "valid",
+   "primary": {
+    "K": 10,
+    "G": "17/30",
+    "R": "1/5",
+    "D": "11/30",
+    "D_F": "1/6",
+    "C": "1/5",
+    "G-D_F": "2/5",
+    "flag": 0,
+    "D_zero": 0,
+    "D_F_zero": 0
+   },
+   "acc_A_4slot": "2/3",
+   "acc_B_4slot": "101/120",
+   "stratum_30_70": 1,
+   "four_slot": [
+    {
+     "K": 10,
+     "G": "17/30",
+     "R": "1/5",
+     "D": "11/30",
+     "D_F": "1/6",
+     "C": "1/5",
+     "G-D_F": "2/5",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 9,
+     "G": "14/27",
+     "R": "4/27",
+     "D": "10/27",
+     "D_F": "8/45",
+     "C": "26/135",
+     "G-D_F": "46/135",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 8,
+     "G": "1/2",
+     "R": "1/6",
+     "D": "1/3",
+     "D_F": "8/45",
+     "C": "7/45",
+     "G-D_F": "29/90",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 13,
+     "G": "29/39",
+     "R": "14/39",
+     "D": "5/13",
+     "D_F": "8/45",
+     "C": "121/585",
+     "G-D_F": "331/585",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    }
+   ]
+  },
+  {
+   "competition": "BRUMO",
+   "endpoint": "o4-mini | openai/o4-mini",
+   "tier_A": "medium",
+   "tier_B": "high",
+   "A": "openai/o4-mini--medium",
+   "B": "openai/o4-mini--high",
+   "seen": false,
+   "id": "BRUMO|o4-mini|medium->high",
+   "n_frame": 30,
+   "n_complete": 30,
+   "n_breaking": 0,
+   "na_reasons": [],
+   "prompt_variant_breaking_problems": {
+    "user_only": 0,
+    "nonasst": 0,
+    "pre_asst": 0,
+    "full_runner_style": 0
+   },
+   "prompt_ab_diff_problems": 0,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "valid",
+   "primary": {
+    "K": 4,
+    "G": "5/12",
+    "R": "1/2",
+    "D": "-1/12",
+    "D_F": "1/90",
+    "C": "-17/180",
+    "G-D_F": "73/180",
+    "flag": 1,
+    "D_zero": 0,
+    "D_F_zero": 0
+   },
+   "acc_A_4slot": "101/120",
+   "acc_B_4slot": "13/15",
+   "stratum_30_70": 0,
+   "four_slot": [
+    {
+     "K": 4,
+     "G": "5/12",
+     "R": "1/2",
+     "D": "-1/12",
+     "D_F": "1/90",
+     "C": "-17/180",
+     "G-D_F": "73/180",
+     "flag": 1,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 4,
+     "G": "2/3",
+     "R": "7/12",
+     "D": "1/12",
+     "D_F": "2/45",
+     "C": "7/180",
+     "G-D_F": "28/45",
+     "flag": 0,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 3,
+     "G": "5/9",
+     "R": "2/3",
+     "D": "-1/9",
+     "D_F": "1/45",
+     "C": "-2/15",
+     "G-D_F": "8/15",
+     "flag": 1,
+     "D_zero": 0,
+     "D_F_zero": 0
+    },
+    {
+     "K": 8,
+     "G": "2/3",
+     "R": "2/3",
+     "D": "0/1",
+     "D_F": "1/45",
+     "C": "-1/45",
+     "G-D_F": "29/45",
+     "flag": 0,
+     "D_zero": 1,
+     "D_F_zero": 0
+    }
+   ]
+  },
+  {
+   "competition": "CMIMC",
+   "endpoint": "o4-mini | openai/o4-mini",
+   "tier_A": "low",
+   "tier_B": "medium",
+   "A": "openai/o4-mini--low",
+   "B": "openai/o4-mini--medium",
+   "seen": false,
+   "id": "CMIMC|o4-mini|low->medium",
+   "n_frame": 40,
+   "n_complete": 4,
+   "n_breaking": 36,
+   "na_reasons": [
+    "prompt differs across 8 slots"
+   ],
+   "prompt_variant_breaking_problems": {
+    "user_only": 36,
+    "nonasst": 36,
+    "pre_asst": 36,
+    "full_runner_style": 36
+   },
+   "prompt_ab_diff_problems": 36,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "NA"
+  },
+  {
+   "competition": "CMIMC",
+   "endpoint": "o4-mini | openai/o4-mini",
+   "tier_A": "medium",
+   "tier_B": "high",
+   "A": "openai/o4-mini--medium",
+   "B": "openai/o4-mini--high",
+   "seen": false,
+   "id": "CMIMC|o4-mini|medium->high",
+   "n_frame": 40,
+   "n_complete": 1,
+   "n_breaking": 39,
+   "na_reasons": [
+    "prompt differs across 8 slots"
+   ],
+   "prompt_variant_breaking_problems": {
+    "user_only": 39,
+    "nonasst": 39,
+    "pre_asst": 39,
+    "full_runner_style": 39
+   },
+   "prompt_ab_diff_problems": 39,
+   "prompt_within_side_diff": {
+    "A": 0,
+    "B": 0
+   },
+   "contract": "NA"
+  }
+ ],
+ "aggregates": {
+  "all": {
+   "G": {
+    "macro": "2909461/5738040",
+    "macro_pp": 50.7048,
+    "per_comp": {
+     "AIME": "67/108",
+     "HMMT": "26083/63756",
+     "BRUMO": "59/120"
+    },
+    "per_comp_pp": {
+     "AIME": 62.037,
+     "HMMT": 40.9107,
+     "BRUMO": 49.1667
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "R": {
+    "macro": "26227/104328",
+    "macro_pp": 25.139,
+    "per_comp": {
+     "AIME": "53/216",
+     "HMMT": "767/4830",
+     "BRUMO": "7/20"
+    },
+    "per_comp_pp": {
+     "AIME": 24.537,
+     "HMMT": 15.8799,
+     "BRUMO": 35.0
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "D": {
+    "macro": "8732/34155",
+    "macro_pp": 25.5658,
+    "per_comp": {
+     "AIME": "3/8",
+     "HMMT": "11399/45540",
+     "BRUMO": "17/120"
+    },
+    "per_comp_pp": {
+     "AIME": 37.5,
+     "HMMT": 25.0307,
+     "BRUMO": 14.1667
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "D_F": {
+    "macro": "19/120",
+    "macro_pp": 15.8333,
+    "per_comp": {
+     "AIME": "5/24",
+     "HMMT": "8/45",
+     "BRUMO": "4/45"
+    },
+    "per_comp_pp": {
+     "AIME": 20.8333,
+     "HMMT": 17.7778,
+     "BRUMO": 8.8889
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "C": {
+    "macro": "26593/273240",
+    "macro_pp": 9.7325,
+    "per_comp": {
+     "AIME": "1/6",
+     "HMMT": "367/5060",
+     "BRUMO": "19/360"
+    },
+    "per_comp_pp": {
+     "AIME": 16.6667,
+     "HMMT": 7.253,
+     "BRUMO": 5.2778
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "G-D_F": {
+    "macro": "1000469/2869020",
+    "macro_pp": 34.8715,
+    "per_comp": {
+     "AIME": "89/216",
+     "HMMT": "24581/106260",
+     "BRUMO": "29/72"
+    },
+    "per_comp_pp": {
+     "AIME": 41.2037,
+     "HMMT": 23.1329,
+     "BRUMO": 40.2778
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   }
+  },
+  "excluding_seen": {
+   "G": {
+    "macro": "267761/521640",
+    "macro_pp": 51.3306,
+    "per_comp": {
+     "AIME": "67/108",
+     "HMMT": "620/1449",
+     "BRUMO": "59/120"
+    },
+    "per_comp_pp": {
+     "AIME": 62.037,
+     "HMMT": 42.7881,
+     "BRUMO": 49.1667
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "R": {
+    "macro": "27361/104328",
+    "macro_pp": 26.2259,
+    "per_comp": {
+     "AIME": "53/216",
+     "HMMT": "1849/9660",
+     "BRUMO": "7/20"
+    },
+    "per_comp_pp": {
+     "AIME": 24.537,
+     "HMMT": 19.1408,
+     "BRUMO": 35.0
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "D": {
+    "macro": "1559/6210",
+    "macro_pp": 25.1047,
+    "per_comp": {
+     "AIME": "3/8",
+     "HMMT": "979/4140",
+     "BRUMO": "17/120"
+    },
+    "per_comp_pp": {
+     "AIME": 37.5,
+     "HMMT": 23.6473,
+     "BRUMO": 14.1667
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "D_F": {
+    "macro": "29/180",
+    "macro_pp": 16.1111,
+    "per_comp": {
+     "AIME": "5/24",
+     "HMMT": "67/360",
+     "BRUMO": "4/45"
+    },
+    "per_comp_pp": {
+     "AIME": 20.8333,
+     "HMMT": 18.6111,
+     "BRUMO": 8.8889
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "C": {
+    "macro": "1117/12420",
+    "macro_pp": 8.9936,
+    "per_comp": {
+     "AIME": "1/6",
+     "HMMT": "139/2760",
+     "BRUMO": "19/360"
+    },
+    "per_comp_pp": {
+     "AIME": 16.6667,
+     "HMMT": 5.0362,
+     "BRUMO": 5.2778
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   },
+   "G-D_F": {
+    "macro": "183719/521640",
+    "macro_pp": 35.2195,
+    "per_comp": {
+     "AIME": "89/216",
+     "HMMT": "1557/6440",
+     "BRUMO": "29/72"
+    },
+    "per_comp_pp": {
+     "AIME": 41.2037,
+     "HMMT": 24.177,
+     "BRUMO": 40.2778
+    },
+    "layers": {
+     "AIME": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "HMMT": {
+      "endpoints_valid": 2,
+      "endpoints_NA": 0
+     },
+     "BRUMO": {
+      "endpoints_valid": 1,
+      "endpoints_NA": 0
+     },
+     "CMIMC": {
+      "endpoints_valid": 0,
+      "endpoints_NA": 1
+     }
+    },
+    "n_comp_valid": 3
+   }
+  },
+  "sign_reversal_all": "1/9",
+  "R_dist_all": {
+   "min": "0/1",
+   "median": "13/54",
+   "max": "1/2",
+   "pos": 8,
+   "zero": 1,
+   "neg": 0
+  },
+  "C_dist_all": {
+   "min": "-17/180",
+   "median": "2/15",
+   "max": "2/9",
+   "pos": 7,
+   "zero": 1,
+   "neg": 1
+  },
+  "sign_reversal_excluding_seen": "1/8",
+  "R_dist_excluding_seen": {
+   "min": "3/23",
+   "median": "53/216",
+   "max": "1/2",
+   "pos": 8,
+   "zero": 0,
+   "neg": 0
+  },
+  "C_dist_excluding_seen": {
+   "min": "-17/180",
+   "median": "3/20",
+   "max": "2/9",
+   "pos": 6,
+   "zero": 1,
+   "neg": 1
+  }
+ },
+ "four_slot": [],
+ "notes": {
+  "otok0_idx123": {
+   "AIME|openai/o3-mini--low": 15,
+   "AIME|openai/o3-mini--medium": 15,
+   "AIME|openai/o4-mini--low": 0,
+   "AIME|openai/o4-mini--medium": 0,
+   "AIME|openai/o4-mini--high": 0,
+   "HMMT|openai/o3-mini--low": 0,
+   "HMMT|openai/o3-mini--medium": 0,
+   "HMMT|openai/o3-mini": 0,
+   "HMMT|openai/o4-mini--low": 0,
+   "HMMT|openai/o4-mini--medium": 0,
+   "HMMT|openai/o4-mini--high": 0,
+   "BRUMO|openai/o4-mini--low": 0,
+   "BRUMO|openai/o4-mini--medium": 0,
+   "BRUMO|openai/o4-mini--high": 0
+  },
+  "otok_64000": {
+   "AIME|openai/o3-mini--low": 0,
+   "AIME|openai/o3-mini--medium": 0,
+   "AIME|openai/o4-mini--low": 0,
+   "AIME|openai/o4-mini--medium": 0,
+   "AIME|openai/o4-mini--high": 3,
+   "HMMT|openai/o3-mini--low": 0,
+   "HMMT|openai/o3-mini--medium": 0,
+   "HMMT|openai/o3-mini": 0,
+   "HMMT|openai/o4-mini--low": 0,
+   "HMMT|openai/o4-mini--medium": 0,
+   "HMMT|openai/o4-mini--high": 6,
+   "BRUMO|openai/o4-mini--low": 0,
+   "BRUMO|openai/o4-mini--medium": 0,
+   "BRUMO|openai/o4-mini--high": 0
+  },
+  "empty_answer": 0,
+  "null_correct": 0,
+  "dup_rows": 0,
+  "source_values": {
+   "AIME": [
+    "None"
+   ],
+   "HMMT": [
+    "None"
+   ],
+   "BRUMO": [
+    "None"
+   ],
+   "CMIMC": [
+    "None"
+   ]
+  },
+  "prompt_variants": {},
+  "retained_slots": 3040
+ }
+}

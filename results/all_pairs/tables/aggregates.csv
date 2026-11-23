@@ -1,0 +1,133 @@
+set,quantity,layer,unit,exact,pp,counts
+all_cells,G,macro,,2909461/5738040,50.7048,competitions valid 3 / NA 1
+all_cells,G,competition,AIME,67/108,62.037,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+all_cells,G,endpoint,AIME | o3-mini | openai/o3-mini,17/27,62.963,cells 2: valid 1 / contract NA 1 / K=0 0
+all_cells,G,endpoint,AIME | o4-mini | openai/o4-mini,11/18,61.1111,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,G,competition,HMMT,26083/63756,40.9107,endpoints valid 2 / NA 0; cells valid 4 / contract NA 0 / K=0 0
+all_cells,G,endpoint,HMMT | o3-mini | openai/o3-mini,157/506,31.0277,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,G,endpoint,HMMT | o4-mini | openai/o4-mini,32/63,50.7937,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,G,competition,BRUMO,59/120,49.1667,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+all_cells,G,endpoint,BRUMO | o4-mini | openai/o4-mini,59/120,49.1667,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,G,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+all_cells,G,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+all_cells,R,macro,,26227/104328,25.139,competitions valid 3 / NA 1
+all_cells,R,competition,AIME,53/216,24.537,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+all_cells,R,endpoint,AIME | o3-mini | openai/o3-mini,13/54,24.0741,cells 2: valid 1 / contract NA 1 / K=0 0
+all_cells,R,endpoint,AIME | o4-mini | openai/o4-mini,1/4,25.0,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,R,competition,HMMT,767/4830,15.8799,endpoints valid 2 / NA 0; cells valid 4 / contract NA 0 / K=0 0
+all_cells,R,endpoint,HMMT | o3-mini | openai/o3-mini,3/46,6.5217,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,R,endpoint,HMMT | o4-mini | openai/o4-mini,53/210,25.2381,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,R,competition,BRUMO,7/20,35.0,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+all_cells,R,endpoint,BRUMO | o4-mini | openai/o4-mini,7/20,35.0,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,R,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+all_cells,R,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+all_cells,D,macro,,8732/34155,25.5658,competitions valid 3 / NA 1
+all_cells,D,competition,AIME,3/8,37.5,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+all_cells,D,endpoint,AIME | o3-mini | openai/o3-mini,7/18,38.8889,cells 2: valid 1 / contract NA 1 / K=0 0
+all_cells,D,endpoint,AIME | o4-mini | openai/o4-mini,13/36,36.1111,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,D,competition,HMMT,11399/45540,25.0307,endpoints valid 2 / NA 0; cells valid 4 / contract NA 0 / K=0 0
+all_cells,D,endpoint,HMMT | o3-mini | openai/o3-mini,62/253,24.5059,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,D,endpoint,HMMT | o4-mini | openai/o4-mini,23/90,25.5556,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,D,competition,BRUMO,17/120,14.1667,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+all_cells,D,endpoint,BRUMO | o4-mini | openai/o4-mini,17/120,14.1667,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,D,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+all_cells,D,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+all_cells,D_F,macro,,19/120,15.8333,competitions valid 3 / NA 1
+all_cells,D_F,competition,AIME,5/24,20.8333,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+all_cells,D_F,endpoint,AIME | o3-mini | openai/o3-mini,23/90,25.5556,cells 2: valid 1 / contract NA 1 / K=0 0
+all_cells,D_F,endpoint,AIME | o4-mini | openai/o4-mini,29/180,16.1111,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,D_F,competition,HMMT,8/45,17.7778,endpoints valid 2 / NA 0; cells valid 4 / contract NA 0 / K=0 0
+all_cells,D_F,endpoint,HMMT | o3-mini | openai/o3-mini,11/60,18.3333,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,D_F,endpoint,HMMT | o4-mini | openai/o4-mini,31/180,17.2222,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,D_F,competition,BRUMO,4/45,8.8889,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+all_cells,D_F,endpoint,BRUMO | o4-mini | openai/o4-mini,4/45,8.8889,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,D_F,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+all_cells,D_F,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+all_cells,C,macro,,26593/273240,9.7325,competitions valid 3 / NA 1
+all_cells,C,competition,AIME,1/6,16.6667,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+all_cells,C,endpoint,AIME | o3-mini | openai/o3-mini,2/15,13.3333,cells 2: valid 1 / contract NA 1 / K=0 0
+all_cells,C,endpoint,AIME | o4-mini | openai/o4-mini,1/5,20.0,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,C,competition,HMMT,367/5060,7.253,endpoints valid 2 / NA 0; cells valid 4 / contract NA 0 / K=0 0
+all_cells,C,endpoint,HMMT | o3-mini | openai/o3-mini,937/15180,6.1726,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,C,endpoint,HMMT | o4-mini | openai/o4-mini,1/12,8.3333,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,C,competition,BRUMO,19/360,5.2778,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+all_cells,C,endpoint,BRUMO | o4-mini | openai/o4-mini,19/360,5.2778,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,C,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+all_cells,C,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+all_cells,G_minus_D_F,macro,,1000469/2869020,34.8715,competitions valid 3 / NA 1
+all_cells,G_minus_D_F,competition,AIME,89/216,41.2037,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+all_cells,G_minus_D_F,endpoint,AIME | o3-mini | openai/o3-mini,101/270,37.4074,cells 2: valid 1 / contract NA 1 / K=0 0
+all_cells,G_minus_D_F,endpoint,AIME | o4-mini | openai/o4-mini,9/20,45.0,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,G_minus_D_F,competition,HMMT,24581/106260,23.1329,endpoints valid 2 / NA 0; cells valid 4 / contract NA 0 / K=0 0
+all_cells,G_minus_D_F,endpoint,HMMT | o3-mini | openai/o3-mini,1927/15180,12.6943,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,G_minus_D_F,endpoint,HMMT | o4-mini | openai/o4-mini,47/140,33.5714,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,G_minus_D_F,competition,BRUMO,29/72,40.2778,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+all_cells,G_minus_D_F,endpoint,BRUMO | o4-mini | openai/o4-mini,29/72,40.2778,cells 2: valid 2 / contract NA 0 / K=0 0
+all_cells,G_minus_D_F,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+all_cells,G_minus_D_F,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+excluding_seen,G,macro,,267761/521640,51.3306,competitions valid 3 / NA 1
+excluding_seen,G,competition,AIME,67/108,62.037,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+excluding_seen,G,endpoint,AIME | o3-mini | openai/o3-mini,17/27,62.963,cells 2: valid 1 / contract NA 1 / K=0 0
+excluding_seen,G,endpoint,AIME | o4-mini | openai/o4-mini,11/18,61.1111,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,G,competition,HMMT,620/1449,42.7881,endpoints valid 2 / NA 0; cells valid 3 / contract NA 0 / K=0 0
+excluding_seen,G,endpoint,HMMT | o3-mini | openai/o3-mini,8/23,34.7826,cells 1: valid 1 / contract NA 0 / K=0 0
+excluding_seen,G,endpoint,HMMT | o4-mini | openai/o4-mini,32/63,50.7937,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,G,competition,BRUMO,59/120,49.1667,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+excluding_seen,G,endpoint,BRUMO | o4-mini | openai/o4-mini,59/120,49.1667,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,G,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+excluding_seen,G,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+excluding_seen,R,macro,,27361/104328,26.2259,competitions valid 3 / NA 1
+excluding_seen,R,competition,AIME,53/216,24.537,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+excluding_seen,R,endpoint,AIME | o3-mini | openai/o3-mini,13/54,24.0741,cells 2: valid 1 / contract NA 1 / K=0 0
+excluding_seen,R,endpoint,AIME | o4-mini | openai/o4-mini,1/4,25.0,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,R,competition,HMMT,1849/9660,19.1408,endpoints valid 2 / NA 0; cells valid 3 / contract NA 0 / K=0 0
+excluding_seen,R,endpoint,HMMT | o3-mini | openai/o3-mini,3/23,13.0435,cells 1: valid 1 / contract NA 0 / K=0 0
+excluding_seen,R,endpoint,HMMT | o4-mini | openai/o4-mini,53/210,25.2381,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,R,competition,BRUMO,7/20,35.0,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+excluding_seen,R,endpoint,BRUMO | o4-mini | openai/o4-mini,7/20,35.0,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,R,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+excluding_seen,R,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+excluding_seen,D,macro,,1559/6210,25.1047,competitions valid 3 / NA 1
+excluding_seen,D,competition,AIME,3/8,37.5,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+excluding_seen,D,endpoint,AIME | o3-mini | openai/o3-mini,7/18,38.8889,cells 2: valid 1 / contract NA 1 / K=0 0
+excluding_seen,D,endpoint,AIME | o4-mini | openai/o4-mini,13/36,36.1111,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,D,competition,HMMT,979/4140,23.6473,endpoints valid 2 / NA 0; cells valid 3 / contract NA 0 / K=0 0
+excluding_seen,D,endpoint,HMMT | o3-mini | openai/o3-mini,5/23,21.7391,cells 1: valid 1 / contract NA 0 / K=0 0
+excluding_seen,D,endpoint,HMMT | o4-mini | openai/o4-mini,23/90,25.5556,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,D,competition,BRUMO,17/120,14.1667,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+excluding_seen,D,endpoint,BRUMO | o4-mini | openai/o4-mini,17/120,14.1667,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,D,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+excluding_seen,D,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+excluding_seen,D_F,macro,,29/180,16.1111,competitions valid 3 / NA 1
+excluding_seen,D_F,competition,AIME,5/24,20.8333,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+excluding_seen,D_F,endpoint,AIME | o3-mini | openai/o3-mini,23/90,25.5556,cells 2: valid 1 / contract NA 1 / K=0 0
+excluding_seen,D_F,endpoint,AIME | o4-mini | openai/o4-mini,29/180,16.1111,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,D_F,competition,HMMT,67/360,18.6111,endpoints valid 2 / NA 0; cells valid 3 / contract NA 0 / K=0 0
+excluding_seen,D_F,endpoint,HMMT | o3-mini | openai/o3-mini,1/5,20.0,cells 1: valid 1 / contract NA 0 / K=0 0
+excluding_seen,D_F,endpoint,HMMT | o4-mini | openai/o4-mini,31/180,17.2222,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,D_F,competition,BRUMO,4/45,8.8889,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+excluding_seen,D_F,endpoint,BRUMO | o4-mini | openai/o4-mini,4/45,8.8889,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,D_F,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+excluding_seen,D_F,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+excluding_seen,C,macro,,1117/12420,8.9936,competitions valid 3 / NA 1
+excluding_seen,C,competition,AIME,1/6,16.6667,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+excluding_seen,C,endpoint,AIME | o3-mini | openai/o3-mini,2/15,13.3333,cells 2: valid 1 / contract NA 1 / K=0 0
+excluding_seen,C,endpoint,AIME | o4-mini | openai/o4-mini,1/5,20.0,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,C,competition,HMMT,139/2760,5.0362,endpoints valid 2 / NA 0; cells valid 3 / contract NA 0 / K=0 0
+excluding_seen,C,endpoint,HMMT | o3-mini | openai/o3-mini,2/115,1.7391,cells 1: valid 1 / contract NA 0 / K=0 0
+excluding_seen,C,endpoint,HMMT | o4-mini | openai/o4-mini,1/12,8.3333,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,C,competition,BRUMO,19/360,5.2778,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+excluding_seen,C,endpoint,BRUMO | o4-mini | openai/o4-mini,19/360,5.2778,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,C,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+excluding_seen,C,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
+excluding_seen,G_minus_D_F,macro,,183719/521640,35.2195,competitions valid 3 / NA 1
+excluding_seen,G_minus_D_F,competition,AIME,89/216,41.2037,endpoints valid 2 / NA 0; cells valid 3 / contract NA 1 / K=0 0
+excluding_seen,G_minus_D_F,endpoint,AIME | o3-mini | openai/o3-mini,101/270,37.4074,cells 2: valid 1 / contract NA 1 / K=0 0
+excluding_seen,G_minus_D_F,endpoint,AIME | o4-mini | openai/o4-mini,9/20,45.0,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,G_minus_D_F,competition,HMMT,1557/6440,24.177,endpoints valid 2 / NA 0; cells valid 3 / contract NA 0 / K=0 0
+excluding_seen,G_minus_D_F,endpoint,HMMT | o3-mini | openai/o3-mini,17/115,14.7826,cells 1: valid 1 / contract NA 0 / K=0 0
+excluding_seen,G_minus_D_F,endpoint,HMMT | o4-mini | openai/o4-mini,47/140,33.5714,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,G_minus_D_F,competition,BRUMO,29/72,40.2778,endpoints valid 1 / NA 0; cells valid 2 / contract NA 0 / K=0 0
+excluding_seen,G_minus_D_F,endpoint,BRUMO | o4-mini | openai/o4-mini,29/72,40.2778,cells 2: valid 2 / contract NA 0 / K=0 0
+excluding_seen,G_minus_D_F,competition,CMIMC,undefined,,endpoints valid 0 / NA 1; cells valid 0 / contract NA 2 / K=0 0
+excluding_seen,G_minus_D_F,endpoint,CMIMC | o4-mini | openai/o4-mini,undefined,,cells 2: valid 0 / contract NA 2 / K=0 0
